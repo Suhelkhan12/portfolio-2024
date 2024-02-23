@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import HeaderBackground from "@/components/headerbackground/HeaderBackground";
 import "./globals.css";
 import React from "react";
 
@@ -26,7 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <HeaderBackground />
+        <div className="relative z-10 px-12">{children}</div>
+      </body>
     </html>
   );
 }
