@@ -5,7 +5,7 @@ import Navlink from "../navlink/Navlink";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between p-4">
+    <nav className="flex items-center justify-between  p-4">
       <div className="flex items-center gap-10">
         <Link href="/">
           <Image src="/navlogo.png" alt="Coding-logo" width={32} height={32} />

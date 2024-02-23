@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ComponentPropsWithoutRef } from "react";
 
 export type ReactChildrenProp = {
   children: React.ReactNode;
@@ -15,3 +15,6 @@ export type SocialImageType = {
   alt: string;
   link: string;
 };
+
+export type ButtonProps = ReactChildrenProp &
+  ComponentPropsWithoutRef<"button">;
