@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import HeaderBackground from "@/components/headerbackground/HeaderBackground";
 import "./globals.css";
 import React from "react";
+import Navbar from "@/components/navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,8 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <HeaderBackground />
-        <div className="relative z-10 px-12">{children}</div>
+        <div className="relative z-10 mx-auto flex w-full max-w-[80rem] ">
+          <HeaderBackground />
+          <div className="navbar-bg fixed left-[50%] top-6 z-50 w-[90%] translate-x-[-50%] md:top-8 lg:max-w-[64rem] ">
+            <Navbar />
+          </div>
+          {children}
+        </div>
       </body>
     </html>
   );
