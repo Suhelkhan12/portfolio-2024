@@ -24,6 +24,7 @@ const Navbar = () => {
             href={image.link}
             key={image.alt}
             className=" opacity-50 transition hover:scale-110 hover:opacity-100"
+            target="blank"
           >
             <Image src={image.src} alt={image.alt} width={24} height={24} />
           </Link>

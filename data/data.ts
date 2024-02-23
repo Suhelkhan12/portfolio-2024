@@ -19,16 +19,16 @@ export const navlinkImages: SocialImageType[] = [
   {
     src: "/LinkedIn.svg",
     alt: "Linkedin",
-    link: "#",
+    link: "https://www.linkedin.com/in/suhel-khan-925aa222a/",
   },
   {
     src: "/X.svg",
     alt: "Twitter",
-    link: "#",
+    link: "https://twitter.com/suhel7822",
   },
   {
     src: "/Github.svg",
     alt: "Github",
-    link: "#",
+    link: "https://github.com/Suhelkhan12",
   },
 ];
