@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Section from "@/components/section/Section";
 import Link from "next/link";
