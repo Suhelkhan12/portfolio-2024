@@ -29,12 +29,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="relative z-10 mx-auto flex w-full max-w-[80rem] ">
+        <div className="relative z-10 mx-auto w-full ">
           <HeaderBackground />
           <div className="navbar-bg fixed left-[50%] top-6 z-50 w-[90%] translate-x-[-50%] md:top-8 lg:max-w-[64rem] ">
             <Navbar />
           </div>
-          {children}
+          <main className="mx-auto px-4 sm:max-w-[80rem]">{children}</main>
         </div>
       </body>
     </html>
