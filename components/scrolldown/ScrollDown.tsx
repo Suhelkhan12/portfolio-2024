@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ScrollDown = () => {
   return (
-    <div className="mt-14  flex w-full items-center justify-between">
+    <div className="mt-20  flex w-full items-center justify-between">
       <div className="relative w-28 sm:w-40">
         <Image
           className="animate-spin-slow"
