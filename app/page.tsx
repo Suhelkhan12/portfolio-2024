@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Section from "@/components/section/Section";
-import Link from "next/link";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
 import ScrollDown from "@/components/scrolldown/ScrollDown";
@@ -16,16 +15,9 @@ const page = () => {
           </h1>
           <div className=" w-full lg:w-[1000px]">
             <p className=" text-[20px] font-medium leading-normal md:text-[24px] lg:text-[40px]">
-              I'm a <span className="text-white/80">UI engineer</span> at{" "}
-              <Link
-                href="https://parallelhq.com"
-                className="text-white/80"
-                target="blank"
-              >
-                Parallel↗
-              </Link>
-              . I translate design concepts into functional code, bringing ideas
-              to life with precision and efficiency.
+              I'm a <span className="text-white/80">UI engineer</span> at . I
+              translate design concepts into functional code, bringing ideas to
+              life with precision and efficiency.
             </p>
           </div>
           <div className="flex gap-4">
