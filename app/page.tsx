@@ -24,8 +24,8 @@ const page = () => {
               >
                 Parallel↗
               </Link>
-              . I translate design concepts into functional code, bring ideas to
-              life with precision and efficiency.
+              . I translate design concepts into functional code, bringing ideas
+              to life with precision and efficiency.
             </p>
           </div>
           <div className="flex gap-4">
