@@ -25,8 +25,18 @@ const config: Config = {
         "bounce-slow": "bounce 2s linear infinite",
       },
       colors: {
-        basicLight: "#C5C5C5",
-        basicDarkGray: "#808080",
+        bgLight: '#FBFBFB',
+        navLight: 'rgba(255,255,255,0.25)',
+        basicOnyx: '#181818',
+        basicBlack: '#0D0D0D',
+        basicDarkGray: '#808080',
+        basicMediumGray: 'rgba(128, 128, 128, 0.5)',
+        basicLightGray: '#C5C5C5',
+        ligthFaintWhite: '#F3F3F3',
+        lightCardBorder: '#EBEBEB',
+        lightCardBg: '#F6F6F6',
+        lightBlack: 'rgba(21, 21, 21, 0.1)'
+        
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

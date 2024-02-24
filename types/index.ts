@@ -1,4 +1,5 @@
 import React, { ComponentPropsWithoutRef } from "react";
+import { IconType } from "react-icons";
 
 export type ReactChildrenProp = {
   children: React.ReactNode;
@@ -11,7 +12,7 @@ export type NavlinkType = {
 };
 
 export type SocialImageType = {
-  src: string;
+  src: IconType;
   alt: string;
   link: string;
 };

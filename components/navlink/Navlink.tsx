@@ -8,9 +8,9 @@ const Navlink = ({ href, name }: NavlinkType) => {
   return (
     <Link
       href={href}
-      className={`text-[1rem] font-medium leading-normal text-basicLight transition hover:text-white ${path === href && "text-white"}`}
+      className={`relative z-0 origin-top text-[1rem] font-medium leading-normal transition before:absolute before:-inset-2 before:rounded-md before:bg-white/40 before:opacity-0 hover:before:opacity-100   ${path === href && "before:opacity-100"}`}
     >
-      {name}
+      <p className="relative z-10">{name}</p>
     </Link>
   );
 };

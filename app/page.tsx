@@ -9,18 +9,21 @@ const page = () => {
   return (
     <div className=" relative h-[100vh] overflow-hidden pt-8">
       <Section>
-        <div className=" flex flex-col gap-4 text-basicDarkGray md:gap-6">
-          <h1 className="text-[48px] font-bold md:text-[56px] lg:text-[96px]">
-            Hi, I'm <span className="text-white">Suhel</span>
-          </h1>
-          <div className=" w-full lg:w-[1000px]">
-            <p className=" text-[20px] font-medium leading-normal md:text-[24px] lg:text-[40px]">
-              I'm a <span className="text-white/80">UI engineer</span> at . I
-              translate design concepts into functional code, bringing ideas to
-              life with precision and efficiency.
-            </p>
+        <div className=" flex flex-col gap-8 text-basicDarkGray sm:gap-10">
+          <div className="flex flex-col gap-4 lg:gap-8">
+            <h1 className="text-[3rem] font-bold leading-normal md:text-[3.5rem] lg:text-[5rem]">
+              Hi👋, I'm <span className=" text-basicOnyx">Suhel</span>
+            </h1>
+            <div className=" w-full lg:w-[1000px]">
+              <p className=" text-[1rem] leading-normal md:text-[1.5rem] lg:text-[2rem]">
+                I'm a <span className=" text-basicBlack">UI engineer</span>. I
+                translate design concepts into functional code, bringing ideas
+                to life with precision and efficiency. I'm fueled by new tech,
+                football and anime.
+              </p>
+            </div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-col gap-4 sm:flex-row ">
             <PrimaryButton>See my resume</PrimaryButton>
             <SecondaryButton>Let's connect</SecondaryButton>
           </div>

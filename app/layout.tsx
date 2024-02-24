@@ -4,6 +4,8 @@ import HeaderBackground from "@/components/headerbackground/HeaderBackground";
 import "./globals.css";
 import React from "react";
 import Navbar from "@/components/navbar/Navbar";
+import { FaCode } from "react-icons/fa";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,9 +30,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className + " bg-bgLight"}>
         <HeaderBackground />
-        <div className="navbar-bg fixed left-[50%] top-6 z-50 w-[90%] translate-x-[-50%] md:top-8 lg:max-w-[64rem] ">
+        <div className="relative z-10 mt-4 flex justify-center text-3xl font-normal sm:hidden ">
+          <Link href="/">
+            <FaCode />
+          </Link>
+        </div>
+        <div className="fixed left-[50%] top-6 z-50 hidden w-[90%] translate-x-[-50%] rounded-xl border border-navLight bg-navLight backdrop:blur-sm sm:block md:top-8 lg:max-w-[64rem] ">
           <Navbar />
         </div>
         <main className="relative z-10 mx-auto px-4 sm:max-w-[80rem]">
