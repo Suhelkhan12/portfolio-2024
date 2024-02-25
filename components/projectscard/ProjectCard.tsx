@@ -14,7 +14,7 @@ const ProjectCard = (props: ProjectCardProps) => {
           alt={props.name}
           width={845}
           height={845}
-          className=" transition-global group-hover:scale-125"
+          className=" transition-global group-hover:scale-110"
         />
       </div>
       <div className=" mt-8 flex flex-col gap-3 ">
