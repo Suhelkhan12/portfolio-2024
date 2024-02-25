@@ -3,7 +3,7 @@ import Image from "next/image";
 const ScrollDown = () => {
   return (
     <div className="mt-20  flex w-full items-center justify-between">
-      <div className="relative w-28 sm:w-40">
+      <div className="relative w-28 sm:w-36">
         <Image
           className="animate-spin-slow"
           src="/scroll-text-light.svg"
@@ -21,10 +21,10 @@ const ScrollDown = () => {
         </div>
       </div>
       <div className=" flex items-center gap-4 text-basicDarkGray ">
-        <div className=" size-4 animate-pulse rounded-full bg-green-400"></div>
+        <div className=" size-3 animate-pulse rounded-full bg-green-400"></div>
         <div>
-          <h2 className=" sm:text-2xl">OPEN TO WORK</h2>
-          <p>Based in India</p>
+          <h2 className="text-xl">OPEN TO WORK</h2>
+          <p className=" text-sm">Based in India</p>
         </div>
       </div>
     </div>

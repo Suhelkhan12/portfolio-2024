@@ -5,7 +5,7 @@ import Navlink from "../navlink/Navlink";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between p-4">
+    <nav className="flex items-center justify-between p-4 ">
       <div className="flex items-center gap-10">
         <Link href="/" className="transition hover:rotate-6">
           <FaCode className="text-3xl text-basicOnyx" />

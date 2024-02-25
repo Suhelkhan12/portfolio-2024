@@ -1,13 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import Section from "@/components/section/Section";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
-import SecondaryButton from "@/components/buttons/SecondaryButton";
 import ScrollDown from "@/components/scrolldown/ScrollDown";
 
 const page = () => {
   return (
-    <Section>
+    <section className="pt-16 sm:pt-36">
       <div className=" flex flex-col gap-8 text-basicDarkGray sm:gap-10">
         <div className="flex flex-col gap-4 lg:gap-8">
           <h1 className="text-[3rem] font-bold leading-normal md:text-[3.5rem] lg:text-[5rem]">
@@ -23,12 +21,11 @@ const page = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 sm:flex-row ">
-          <PrimaryButton>See my resume</PrimaryButton>
-          <SecondaryButton>Let's connect</SecondaryButton>
+          <PrimaryButton>See my work</PrimaryButton>
         </div>
       </div>
       <ScrollDown />
-    </Section>
+    </section>
   );
 };
 
