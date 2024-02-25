@@ -14,7 +14,9 @@ const page = () => {
         <div className="relative z-10 flex flex-col gap-8 text-basicDarkGray sm:gap-10">
           <div className="flex flex-col gap-4 lg:gap-8">
             <h1 className="text-[3rem] font-bold leading-normal md:text-[3.5rem] lg:text-[5rem]">
-              Hi👋, I'm <span className=" text-basicOnyx">Suhel</span>
+              Hi
+              <span className=" inline-block animate-wave">👋</span>, I'm{" "}
+              <span className=" text-basicOnyx">Suhel</span>
             </h1>
             <div className=" w-full lg:w-[1000px]">
               <p className=" text-[1.5rem] leading-normal md:text-[1.5rem] lg:text-[2rem]">

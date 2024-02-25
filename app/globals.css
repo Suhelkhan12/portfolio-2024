@@ -31,26 +31,9 @@
     height: 140px;
   }
   .primaryBtnLight {
-    background: var(
-      --Gradient-Dark-Gradient,
-      linear-gradient(180deg, #1a1a1a 0%, #131313 100%)
-    );
+    background: var(--Gradient-Dark-Gradient, linear-gradient(180deg, #1a1a1a 0%, #131313 100%));
   }
   .secondaryButtonDark {
     background: var(--Basic-Onyx, #181818);
   }
-  /* .link-hover::after{
-    content: '';
-    width: 0%;
-    height: 1px;
-    background: var(--Basic-Onyx);
-    position:absolute;
-    bottom:0;
-    left: 0;
-    transition: width .5s;
-  }
-
-  .link-hover:hover::after{
-    width: 100%;
-  } */
 }

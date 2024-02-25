@@ -19,10 +19,21 @@ const config: Config = {
             animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
           },
         },
+        wave: { // Corrected keyframe name
+          "0%": { transform: "rotate(0.0deg);" },
+          "10%": { transform: "rotate(14.0deg);" },
+          "20%": { transform: "rotate(-8.0deg);" },
+          "30%": { transform: "rotate(14.0deg);" },
+          "40%": { transform: "rotate(-4.0deg);" },
+          "50%": { transform: "rotate(10.0deg);" },
+          "60%": { transform: "rotate(0.0deg);" },
+          "100%": { transform: "rotate(0.0deg);" },
+        },
       },
       animation: {
         "spin-slow": "spin 15s linear infinite",
         "bounce-slow": "bounce 2s linear infinite",
+        "wave": "wave 2s linear infinite"
       },
       colors: {
         bgLight: '#FBFBFB',
