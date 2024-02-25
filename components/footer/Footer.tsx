@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="relative z-10 mx-auto pt-8 sm:max-w-[80rem]">
         <div className="flex flex-col gap-16">
           <div className="flex flex-col gap-4 ">
-            <p>{`{Get in touch}`}</p>
+            <p className=" text-basicMediumGray">{`{Get in touch}`}</p>
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between ">
-              <h2 className="max-w-[45rem] text-3xl font-semibold leading-normal md:text-4xl">
+              <h2 className="max-w-[45rem] text-3xl font-semibold leading-normal text-white md:text-4xl">
                 Thanks for stopping by ッ. If you like what you see then let's
                 connect.
               </h2>
@@ -25,14 +25,16 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col-reverse items-start gap-8 sm:flex-row sm:items-end sm:justify-between">
-            <p>Made with love © 2024 Suhel Khan. </p>
+            <p className=" text-basicDarkGray">
+              Made with love © 2024 Suhel Khan.{" "}
+            </p>
             <div className="flex flex-col gap-6 sm:gap-8">
               <div className="flex flex-col gap-2 sm:gap-3">
                 <p className=" text-sm text-basicDarkGray">Socials</p>
                 <div className="flex gap-4">
                   <Link
                     href="#"
-                    className="text-base transition hover:text-basicDarkGray"
+                    className="text-base text-white transition hover:text-basicDarkGray"
                     target="blank"
                   >
                     Linkedin
@@ -40,22 +42,22 @@ const Footer = () => {
                   <Link
                     href="mailto:suhelkhan9588321151@gmail.com"
                     target="blank"
-                    className="text-base transition hover:text-basicDarkGray"
+                    className="text-base text-white transition hover:text-basicDarkGray"
                   >
                     Gmail
                   </Link>
                   <Link
                     href="tel:+919588321151"
-                    className="text-base transition hover:text-basicDarkGray"
+                    className="text-base text-white transition hover:text-basicDarkGray"
                   >
                     Contact
                   </Link>
                 </div>
               </div>
               <div className="flex flex-col gap-2 sm:gap-3">
-                <p className=" text-sm text-basicDarkGray">Info</p>
+                <p className=" text-sm  text-basicDarkGray">Info</p>
                 <div className="">
-                  <p className="text-base">Haryana, India.</p>
+                  <p className="text-base text-white">Haryana, India.</p>
                 </div>
               </div>
             </div>

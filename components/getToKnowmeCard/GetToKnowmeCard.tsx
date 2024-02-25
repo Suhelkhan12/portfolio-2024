@@ -8,9 +8,9 @@ const GetToKnowmeCard = (props: GetToKnowMeCardProps) => {
   return (
     <Link
       href={props.link}
-      className="transition-global flex size-[100%] flex-col items-center justify-center  overflow-hidden rounded-lg border border-lightCardBorder bg-lightCardBg py-8 hover:shadow-lg md:pb-0 md:pt-16 lg:size-[31.5rem]"
+      className="transition-global flex size-[100%] flex-col items-center justify-center  overflow-hidden rounded-lg bg-[#151515;] py-8 hover:shadow-lg md:pb-0 md:pt-16 lg:size-[31.5rem]"
     >
-      <H2 classnames=" md:text-[2rem] text-[1.5rem] font-semibold text-basicOnyx">
+      <H2 classnames=" md:text-[2rem] text-[1.5rem] font-semibold text-white">
         {props.heading}{" "}
         <span className="inline-block text-xl md:hidden">
           {" "}

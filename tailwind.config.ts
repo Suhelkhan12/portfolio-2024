@@ -39,14 +39,18 @@ const config: Config = {
         bgLight: '#FBFBFB',
         navLight: 'rgba(255,255,255,0.25)',
         basicOnyx: '#181818',
-        basicBlack: '#0D0D0D',
         basicDarkGray: '#808080',
         basicMediumGray: 'rgba(128, 128, 128, 0.5)',
         basicLightGray: '#C5C5C5',
         ligthFaintWhite: '#F3F3F3',
         lightCardBorder: '#EBEBEB',
         lightCardBg: '#F6F6F6',
-        lightBlack: 'rgba(21, 21, 21, 0.1)'
+        lightBlack: 'rgba(21, 21, 21, 0.1)',
+
+        darkCardBorder: '#383737',
+        darkBg: '#0D0D0D',
+        darkNav:'rgba(24, 24, 29, 0.30)',
+        dardCardBorder: '#383737'
         
       },
       backgroundImage: {

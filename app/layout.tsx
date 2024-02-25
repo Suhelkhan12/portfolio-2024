@@ -8,6 +8,7 @@ import Link from "next/link";
 import Footer from "@/components/footer/Footer";
 
 import "./globals.css";
+import HeaderBackground from "@/components/headerbackground/HeaderBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     "skills",
     "experience",
   ],
+  authors: [{ url: "https://suhel.xyz", name: "Suhel khan" }],
 };
 
 export default function RootLayout({
@@ -32,17 +34,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + " bg-bgLight"}>
+      <body className={inter.className + " bg-darkBg"}>
         <SpeedInsights />
-        <div className="relative z-10 mt-4 flex justify-center text-3xl font-normal sm:hidden ">
-          <Link href="/">
-            <FaCode />
-          </Link>
+        <div className="fixed top-3 z-[99] flex w-full items-center justify-center text-3xl font-normal text-white sm:hidden ">
+          <div className="flex size-[60px] items-center justify-center rounded-full bg-black/50 backdrop-blur-lg">
+            <Link href="/">
+              <FaCode />
+            </Link>
+          </div>
         </div>
-        <div className="fixed left-[50%] top-6 z-50 hidden w-[90%] translate-x-[-50%] rounded-xl border border-navLight bg-navLight backdrop-blur-md sm:block md:top-8 lg:max-w-[64rem] ">
+        <div className="fixed left-[50%] top-6 z-50 hidden w-[90%] translate-x-[-50%] rounded-xl bg-darkNav backdrop-blur-md sm:block md:top-8 lg:max-w-[64rem] ">
           <Navbar />
         </div>
-        <main className="relative z-10 mx-auto px-4 sm:max-w-[80rem]">
+        <main className="relative z-10 overflow-hidden px-4">
+          <HeaderBackground />
           {children}
         </main>
         <Footer />

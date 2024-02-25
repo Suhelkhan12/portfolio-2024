@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="flex items-center justify-between p-4 ">
       <div className="flex items-center gap-10">
         <Link href="/" className="transition hover:rotate-6">
-          <FaCode className="text-3xl text-basicOnyx" />
+          <FaCode className="text-3xl text-white" />
         </Link>
         <ul className="flex gap-10">
           {navlinks.map((link) => (
@@ -26,7 +26,7 @@ const Navbar = () => {
             className="opacity-50 transition hover:scale-110 hover:opacity-100"
             target="blank"
           >
-            <image.src className="text-2xl" />
+            <image.src className="text-2xl text-basicLightGray" />
           </Link>
         ))}
       </div>

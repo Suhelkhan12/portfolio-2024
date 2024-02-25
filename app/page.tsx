@@ -10,17 +10,17 @@ import GetToKnowmeCard from "@/components/getToKnowmeCard/GetToKnowmeCard";
 const page = () => {
   return (
     <>
-      <section className="pt-16 sm:pt-36 md:h-screen">
+      <section className="mx-auto pt-20 sm:max-w-[80rem] sm:pt-36 md:h-screen">
         <div className="relative z-10 flex flex-col gap-8 text-basicDarkGray sm:gap-10">
           <div className="flex flex-col gap-4 lg:gap-8">
             <h1 className="text-[3rem] font-bold leading-normal md:text-[3.5rem] lg:text-[5rem]">
               Hi
               <span className=" inline-block animate-wave">👋</span>, I'm{" "}
-              <span className=" text-basicOnyx">Suhel</span>
+              <span className=" text-white">Suhel</span>
             </h1>
             <div className=" w-full lg:w-[1000px]">
               <p className=" text-[1.5rem] leading-normal md:text-[1.5rem] lg:text-[2rem]">
-                I'm a <span className=" text-basicBlack">UI engineer</span>. I
+                I'm a <span className=" text-white">UI engineer</span>. I
                 translate design concepts into functional code, bringing ideas
                 to life with precision and efficiency. I'm fueled by new tech,
                 football and anime.
@@ -34,8 +34,8 @@ const page = () => {
         <ScrollDown />
       </section>
 
-      <section className="mt-28">
-        <H2 classnames="md:text-5xl text-4xl  font-bold text-basicOnyx">
+      <section className="mx-auto mt-28 sm:max-w-[80rem]">
+        <H2 classnames="md:text-5xl text-4xl  font-bold text-white">
           Selected works
         </H2>
         <div className=" mt-8 grid grid-cols-1 gap-8 sm:gap-6 md:grid-cols-2 md:gap-8">
@@ -45,8 +45,8 @@ const page = () => {
         </div>
       </section>
 
-      <section className="mt-28">
-        <H2 classnames="md:text-5xl text-4xl font-bold text-basicOnyx">
+      <section className="mx-auto mt-28 sm:max-w-[80rem]">
+        <H2 classnames="md:text-5xl text-4xl font-bold text-white">
           Get to know me
         </H2>
         <div className="mt-8 flex flex-col justify-center gap-8 sm:gap-6 md:grid-cols-2 md:flex-row md:gap-8">
