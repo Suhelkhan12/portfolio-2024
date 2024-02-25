@@ -19,3 +19,19 @@ export type SocialImageType = {
 
 export type ButtonProps = ReactChildrenProp &
   ComponentPropsWithoutRef<"button">;
+
+export type ProjectCardProps = {
+  name:string,
+  description:string,
+  githubLink?: string,
+  liveLink?:string,
+  tags:string[]
+  image:string
+}
+
+export type GetToKnowMeCardProps = {
+  heading:string,
+  subheading:string,
+  image:string,
+  link:string
+}

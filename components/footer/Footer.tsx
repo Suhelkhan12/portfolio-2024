@@ -5,7 +5,7 @@ import FooterBg from "../footerBackground/FooterBg";
 /* eslint-disable react/no-unescaped-entities */
 const Footer = () => {
   return (
-    <footer className="relative   mt-28 overflow-hidden border-t border-black/10 px-4 pb-4 ">
+    <footer className="relative mt-28 overflow-hidden border-t border-black/10 px-4 pb-4 ">
       <div className="relative z-10 mx-auto pt-8 sm:max-w-[80rem]">
         <div className="flex flex-col gap-16">
           <div className="flex flex-col gap-4 ">

@@ -9,6 +9,9 @@
 }
 
 @layer utilities {
+  .transition-global {
+    transition: all 1.3s;
+  }
   .header-bg-elipse-1 {
     background: rgba(63, 100, 233, 0.43);
     filter: blur(150px);
