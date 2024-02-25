@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import HeaderBackground from "@/components/headerbackground/HeaderBackground";
 import "./globals.css";
 import React from "react";
 import Navbar from "@/components/navbar/Navbar";
 import { FaCode } from "react-icons/fa";
 import Link from "next/link";
 import Footer from "@/components/footer/Footer";
-import FooterBg from "@/components/footerBackground/FooterBg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +31,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + " bg-bgLight"}>
-        <HeaderBackground />
         <div className="relative z-10 mt-4 flex justify-center text-3xl font-normal sm:hidden ">
           <Link href="/">
             <FaCode />
@@ -46,7 +43,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <FooterBg />
       </body>
     </html>
   );

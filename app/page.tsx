@@ -6,7 +6,7 @@ import ScrollDown from "@/components/scrolldown/ScrollDown";
 const page = () => {
   return (
     <section className="pt-16 sm:pt-36">
-      <div className=" flex flex-col gap-8 text-basicDarkGray sm:gap-10">
+      <div className="relative z-10 flex flex-col gap-8 text-basicDarkGray sm:gap-10">
         <div className="flex flex-col gap-4 lg:gap-8">
           <h1 className="text-[3rem] font-bold leading-normal md:text-[3.5rem] lg:text-[5rem]">
             Hi👋, I'm <span className=" text-basicOnyx">Suhel</span>
