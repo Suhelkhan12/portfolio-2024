@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar/Navbar";
 import { FaCode } from "react-icons/fa";
 import Link from "next/link";
 import Footer from "@/components/footer/Footer";
+import FooterBg from "@/components/footerBackground/FooterBg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +46,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <FooterBg />
       </body>
     </html>
   );
