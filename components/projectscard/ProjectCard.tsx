@@ -24,17 +24,17 @@ const ProjectCard = (props: ProjectCardProps) => {
             {props.githubLink && (
               <Link
                 href={props.githubLink}
-                className=" transition-global text-white group-hover:text-xl"
+                className=" transition-global text-white"
               >
-                <FaGithub />
+                <FaGithub className=" text-2xl" />
               </Link>
             )}
             {props.liveLink && (
               <Link
                 href={props.liveLink}
-                className=" transition-global text-white group-hover:text-2xl"
+                className=" transition-global text-white"
               >
-                <IoMdLink />
+                <IoMdLink className=" text-2xl" />
               </Link>
             )}
           </div>
