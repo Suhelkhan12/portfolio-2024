@@ -7,7 +7,7 @@ const ScrollDown = () => {
       <div className="relative w-28 sm:w-36">
         <Image
           className="animate-spin-slow"
-          src="/scroll.svg"
+          src="/Scroll.svg"
           alt="Scroll-down-image"
           width={160}
           height={160}
