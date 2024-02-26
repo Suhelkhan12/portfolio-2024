@@ -65,7 +65,6 @@ export const projectsData: ProjectCardProps[] = [
 ]
 
 // get to know me cards data
-
 export const getToKnowMeData: GetToKnowMeCardProps[]=[
   {
     heading: 'About me',
