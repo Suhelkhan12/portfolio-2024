@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 
 const Info = () => {
@@ -6,7 +5,7 @@ const Info = () => {
     <div className="flex flex-col gap-12">
       <div className="flex flex-col gap-8">
         <h2 className=" text-2xl font-semibold text-basicLightGray">
-          Hi there, I'm Suhel, a frontend engineer currently at{" "}
+          Hi there, I&apos;m Suhel, a frontend engineer currently at{" "}
           <Link href="https://parallelhq.com" className=" text-white">
             Parallel<span className="text-lg font-medium">↗</span>
           </Link>{" "}
@@ -16,7 +15,7 @@ const Info = () => {
           I have an insatiable curiosity for exploring the possibilities of
           technology and understanding the diverse perspectives that shape our
           world. Each line of code I write and each project I undertake is
-          informed by the rich tapestry of cultures and experiences I've
+          informed by the rich tapestry of cultures and experiences I&apos;ve
           encountered.
         </p>
         {/* <p className="text-lg font-normal text-basicDarkGray">
@@ -30,7 +29,7 @@ const Info = () => {
         <p className="text-lg font-normal text-basicDarkGray">
           I draw from the diversity of human experiences to inform my coding
           practices. My journey as a developer is not just about writing code;
-          it's about connecting technology with human behavior and cultural
+          it&apos;s about connecting technology with human behavior and cultural
           insights to build bridges across communities and foster innovation in
           the digital sphere.
         </p>
@@ -38,8 +37,8 @@ const Info = () => {
           In my spare time, you can find me obsessing over many hobbies that
           satisfy my inner tinkerer and techy. These include custom mechanical
           keyboards, hi-fidelity video games, football, and street photography.
-          I'm always on the lookout for another money trap... but these hobbies
-          allow me to appreciate the little things while iterating until
+          I&apos;m always on the lookout for another money trap... but these
+          hobbies allow me to appreciate the little things while iterating until
           everything is just right.
         </p>
       </div>
