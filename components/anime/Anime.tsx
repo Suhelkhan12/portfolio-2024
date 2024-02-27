@@ -5,14 +5,9 @@ const Anime = () => {
   return (
     <div className="flex gap-4">
       {animeImages.map((image) => (
-        <Image
-          src={image.image}
-          alt={image.name}
-          key={image.name}
-          width={150}
-          height={100}
-          className="rounded-lg"
-        />
+        <div key={image.name} className="flex overflow-hidden rounded-lg">
+          <Image src={image.image} alt={image.name} width={150} height={100} />
+        </div>
       ))}
     </div>
   );
