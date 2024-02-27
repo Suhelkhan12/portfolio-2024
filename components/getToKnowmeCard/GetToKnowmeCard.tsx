@@ -1,8 +1,8 @@
 import { type GetToKnowMeCardProps } from "@/types";
 import Link from "next/link";
 import Image from "next/image";
-import H2 from "../sectionHeading/H2";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import H2 from "../heading/H2";
 
 const GetToKnowmeCard = (props: GetToKnowMeCardProps) => {
   return (

@@ -77,5 +77,24 @@ export const getToKnowMeData: GetToKnowMeCardProps[]=[
     subheading: 'Technology I use and currenly learning.',
     image: '/tech.svg',
     link: '/techstack'
+  },
+]
+
+export const animeImages = [
+  {
+    name:'onepice',
+    image:'/new-onepiece.jpeg'
+  },
+  {
+    name:'demonslayer',
+    image:'/demon-slayer.jpeg'
+  },
+  {
+    name:'avatar',
+    image:'/avatar-aibender.jpeg'
+  },
+  {
+    name:'fire-forece',
+    image:'/fire-force.jpg'
   }
 ]

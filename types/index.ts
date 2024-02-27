@@ -17,8 +17,10 @@ export type SocialImageType = {
   link: string;
 };
 
-export type ButtonProps = ReactChildrenProp &
-  ComponentPropsWithoutRef<"button">;
+export type ButtonProps =  {
+  classNames?: string
+} & ReactChildrenProp &
+  ComponentPropsWithoutRef<"button"> 
 
 export type ProjectCardProps = {
   name:string,

@@ -46,7 +46,7 @@ export default function RootLayout({
         <div className="fixed left-[50%] top-6 z-50 hidden w-[90%] translate-x-[-50%] rounded-xl bg-darkNav backdrop-blur-md sm:block md:top-8 lg:max-w-[64rem] ">
           <Navbar />
         </div>
-        <main className="relative z-10 overflow-hidden px-4">
+        <main className="relative z-10 overflow-hidden">
           <HeaderBackground />
           {children}
         </main>
