@@ -26,7 +26,7 @@ const Navbar = () => {
             className="opacity-50 transition hover:scale-110 hover:opacity-100"
             target="blank"
           >
-            <image.src className="text-2xl text-basicLightGray" />
+            <image.src className="text-2xl text-basicLightGray  hover:text-white" />
           </Link>
         ))}
       </div>
