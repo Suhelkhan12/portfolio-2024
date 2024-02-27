@@ -31,7 +31,7 @@ const page = () => {
       <Wrapper>
         <div className="flex justify-between">
           <H2 classnames="md:text-5xl text-4xl font-bold text-white">
-            What I'm watching
+            What I&apos;m watching
           </H2>
           <Anime />
         </div>
