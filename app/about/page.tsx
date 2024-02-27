@@ -30,9 +30,14 @@ const page = () => {
       <Separator />
       <Wrapper>
         <div className="flex justify-between">
-          <H2 classnames="md:text-5xl text-4xl font-bold text-white">
-            What I&apos;m watching
-          </H2>
+          <div className="flex flex-col gap-3">
+            <H2 classnames="md:text-5xl text-4xl font-bold text-white">
+              What I&apos;m watching
+            </H2>
+            <p className="text-lg font-normal text-basicDarkGray">
+              One Piece, Demon Slayer, Avatar: The last Airbender, Fire Force{" "}
+            </p>
+          </div>
           <Anime />
         </div>
       </Wrapper>
