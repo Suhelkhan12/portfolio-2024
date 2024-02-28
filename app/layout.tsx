@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     "skills",
     "experience",
   ],
+  creator: "Suhel khan",
   authors: [{ url: "https://suhel.xyz", name: "Suhel khan" }],
   twitter: {
     card: "summary_large_image",
@@ -33,9 +34,14 @@ export const metadata: Metadata = {
       "Welcome to Suhel's portfolio! Talented Frontend developer specializing in JavaScript, React, and cutting-edge web technologies. Explore projects, skills, and passion for intuitive user experiences. #FrontendDev #WebDev",
   },
   metadataBase: new URL("https://suhel.xyz"),
-  openGraph: {
-    images: "/opengraph-image.png",
-  },
+  // openGraph: {
+  //   title: "Suhel khan portfolio website",
+  //   description:
+  //     "Suhel khan is a frontend developer with an experience of 2 years in development with both coding and low code tools",
+  //   images: "/opengraph-image.png",
+  //   locale: "en_US",
+  //   type: "website",
+  // },
   alternates: {
     canonical: "/",
     languages: {

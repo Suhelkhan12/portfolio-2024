@@ -8,7 +8,7 @@ const Portrait = () => {
     <div className="flex flex-col items-center gap-10">
       <div className=" h-[28rem] w-[22rem] shrink-0 overflow-hidden rounded-sm">
         <Image
-          src="/compressed.png"
+          src="/Suhel.png"
           alt="Suhel-khan-image"
           width={572}
           height={728}
