@@ -228,7 +228,7 @@ export const techCards: TechCardProps[]=[
   },
   {
     name:'SQL',
-    tag:'Databaw',
+    tag:'Database',
     image:'/tech/sql.png',
     category:'learning'
   },

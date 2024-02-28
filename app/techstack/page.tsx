@@ -1,10 +1,18 @@
+import { Metadata } from "next";
 import Separator from "@/components/graySeparator/Separator";
 import H1 from "@/components/heading/H1";
 import H2 from "@/components/heading/H2";
 import TechCard from "@/components/techCard/TechCard";
 import Wrapper from "@/components/wrapper/Wrapper";
-
 import { techCards } from "@/data/data";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Technologies used by Suhel Khan",
+    description:
+      "Suhel Khan is a skilled technologist proficient in a variety of cutting-edge technologies. With expertise in JavaScript frameworks such as React and Next.js. Suhel has demonstrated versatility across multiple programming paradigms. Suhel's portfolio includes impactful projects where he has leveraged these technologies With a passion for innovation and a commitment to staying abreast of emerging technologies, Suhel excels in dynamic environments, delivering robust solutions tailored to business needs.",
+  };
+}
 
 const page = () => {
   return (
