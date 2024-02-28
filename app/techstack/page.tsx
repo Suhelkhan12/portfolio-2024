@@ -13,7 +13,7 @@ const page = () => {
         <div className="flex flex-col gap-2">
           <H1>Techstack</H1>
           <p className=" text-[1.5rem] font-normal text-basicMediumGray">
-            The dev tools, apps, devices, and games I use and play.
+            The dev tools I know and am currently learning.
           </p>
         </div>
       </Wrapper>

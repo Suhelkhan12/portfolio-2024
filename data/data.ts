@@ -211,13 +211,13 @@ export const techCards: TechCardProps[]=[
   {
     name:'Node.js',
     tag:'Backend',
-    image:'/tech/node.png',
+    image:'/tech/node-new.png',
     category:'learning'
   },
   {
     name:'Express',
     tag:'Node framework',
-    image:'/tech/express.png',
+    image:'/tech/express-new.png',
     category:'learning'
   },
   {
