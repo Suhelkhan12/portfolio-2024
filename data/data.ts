@@ -115,7 +115,7 @@ export const techCards: TechCardProps[]=[
   {
     name:'Taiwind',
     tag:'Styling',
-    image:'/public/tech/TailwindCSS.svg',
+    image:'/tech/TailwindCSS.svg',
     category:'development'
   },
   {
@@ -181,7 +181,7 @@ export const techCards: TechCardProps[]=[
   {
     name:'Webflow',
     tag:'Editor',
-    image:'tech/webflow.png',
+    image:'/tech/webflow.png',
     category:'low-code'
   },
   {
