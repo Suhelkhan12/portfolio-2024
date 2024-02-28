@@ -15,16 +15,23 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Suhel | Persona Portfolio Website",
   description:
-    "Welcome to Suhel's portfolio. I'm  a Frontend developer Explore my projects, skills, experience and my interests.",
+    "Welcome to Suhel's portfolio. As a talented Frontend developer, Suhel Khan invites you to explore his projects, skills, experience, and interests. Dive into a showcase of innovative web development, featuring expertise in JavaScript, React, and other cutting-edge technologies. Discover Suhel's passion for crafting intuitive user experiences and leveraging the latest tools to bring digital visions to life.",
   keywords: [
     "portfolio",
     "Suhel Khan",
+    "frontend",
+    "ui engineer",
     "developer",
     "projects",
     "skills",
     "experience",
   ],
   authors: [{ url: "https://suhel.xyz", name: "Suhel khan" }],
+  twitter: {
+    card: "summary_large_image",
+    description:
+      "Welcome to Suhel's portfolio! Talented Frontend developer specializing in JavaScript, React, and cutting-edge web technologies. Explore projects, skills, and passion for intuitive user experiences. #FrontendDev #WebDev",
+  },
 };
 
 export default function RootLayout({

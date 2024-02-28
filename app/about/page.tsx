@@ -8,13 +8,21 @@ import Wrapper from "@/components/wrapper/Wrapper";
 import { Metadata } from "next";
 import React from "react";
 
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: "About Suhel khan",
-    description:
-      "Suhel is Frontend engineer at Parallelhq, banglore. He has an insatiable curiosity for exploring the possibilities of technology and understanding the diverse perspectives that shape our world. He believes taht technology should seamlessly integrate into our lives. My passion lies in simplifying complex systems, merging technical expertise with empathy and creativity.",
-  };
-}
+export const metaData: Metadata = {
+  title: "About Suhel khan",
+  description:
+    "Suhel is Frontend engineer at Parallelhq, banglore. He has an insatiable curiosity for exploring the possibilities of technology and understanding the diverse perspectives that shape our world. He believes taht technology should seamlessly integrate into our lives. My passion lies in simplifying complex systems, merging technical expertise with empathy and creativity.",
+  keywords: [
+    "portfolio",
+    "Suhel Khan",
+    "frontend",
+    "ui engineer",
+    "developer",
+    "projects",
+    "skills",
+    "experience",
+  ],
+};
 
 const page = () => {
   return (
