@@ -11,7 +11,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Suhel Khan: Frontend Engineer | Portfolio, Projects.",
   description:
-    "Suhel is Frontend engineer at Parallelhq, banglore. He has an insatiable curiosity for exploring the possibilities of technology and understanding the diverse perspectives that shape our world. He believes taht technology should seamlessly integrate into our lives.",
+    "Suhel is Frontend engineer at Parallelhq, banglore. He has an insatiable curiosity for exploring the possibilities of technology and understanding the diverse perspectives that shape our world",
   keywords: [
     "portfolio",
     "Suhel Khan",

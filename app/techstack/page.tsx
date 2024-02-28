@@ -9,7 +9,7 @@ import { techCards } from "@/data/data";
 export const metadata: Metadata = {
   title: "Suhel Khan's skill: Frontend Tools, Frameworks, and Technologies",
   description:
-    "Suhel Khan is a skilled technologist proficient in a variety of cutting-edge technologies. With expertise in JavaScript frameworks such as React and Next.js. Suhel has demonstrated versatility across multiple programming paradigms. Suhel's portfolio includes impactful projects where he has leveraged these technologies.",
+    "Suhel Khan is a skilled technologist proficient in a variety of cutting-edge technologies. With expertise in JavaScript frameworks such as React and Next.js. Suhel has demonstrated versatility across multiple programming paradigms.",
   keywords: [
     "Suhel Khan",
     "techstack",

@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Suhel | Personal Portfolio Website",
   description:
-    "Welcome to Suhel's portfolio. As a talented Frontend developer, Suhel Khan invites you to explore his projects, skills, experience, and interests. Dive into a showcase of innovative web development, featuring expertise in JavaScript, React, and other cutting-edge technologies. Discover Suhel's passion for crafting intuitive user experiences and leveraging the latest tools to bring digital visions to life.",
+    "Welcome to Suhel's portfolio. As a talented Frontend developer, Suhel Khan invites you to explore his projects, skills, experience, and interests. Dive into a showcase of innovative web development.",
   keywords: [
     "portfolio",
     "Suhel Khan",
@@ -34,20 +34,13 @@ export const metadata: Metadata = {
       "Welcome to Suhel's portfolio! Talented Frontend developer specializing in JavaScript, React, and cutting-edge web technologies. Explore projects, skills, and passion for intuitive user experiences. #FrontendDev #WebDev",
   },
   metadataBase: new URL("https://suhel.xyz"),
-  // openGraph: {
-  //   title: "Suhel khan portfolio website",
-  //   description:
-  //     "Suhel khan is a frontend developer with an experience of 2 years in development with both coding and low code tools",
-  //   images: "/opengraph-image.png",
-  //   locale: "en_US",
-  //   type: "website",
-  // },
   alternates: {
     canonical: "/",
     languages: {
       "en-US": "/en-US",
     },
   },
+  category: "Frontend Developer",
 };
 
 export default function RootLayout({
