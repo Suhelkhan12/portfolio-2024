@@ -5,7 +5,16 @@ import H2 from "@/components/heading/H2";
 import Info from "@/components/info/Info";
 import Portrait from "@/components/portrait/Portrait";
 import Wrapper from "@/components/wrapper/Wrapper";
+import { Metadata } from "next";
 import React from "react";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "About Suhel khan",
+    description:
+      "Suhel is Frontend engineer at Parallelhq, banglore. He has an insatiable curiosity for exploring the possibilities of technology and understanding the diverse perspectives that shape our world.",
+  };
+}
 
 const page = () => {
   return (

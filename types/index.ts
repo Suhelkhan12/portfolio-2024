@@ -37,3 +37,10 @@ export type GetToKnowMeCardProps = {
   image:string,
   link:string
 }
+
+export type TechCardProps = {
+  name: string,
+  tag:string,
+  image:string
+  category:string
+}
