@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col gap-16">
           <div className="flex flex-col gap-4 ">
             <p className=" text-basicMediumGray">{`{Get in touch}`}</p>
-            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between ">
+            <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between ">
               <h2 className="max-w-[45rem] text-3xl font-semibold leading-normal text-white md:text-4xl">
                 HMU for work, coffee chats, advice, or LMK about your favourite
                 animes ッ.

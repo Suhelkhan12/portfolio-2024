@@ -35,25 +35,23 @@ const page = () => {
   return (
     <section className=" relative z-50 pt-20 sm:pt-36">
       <Wrapper>
-        <div className="px-4">
-          <div className="flex flex-col gap-2">
-            <H1>Just a little bit about me</H1>
-            <p className=" text-[1.5rem] font-normal text-basicMediumGray">
-              Who I am and what I do.
-            </p>
-          </div>
+        <div className="flex flex-col gap-2 px-4">
+          <H1>Just a little bit about me</H1>
+          <p className="text-[1.25rem] font-normal text-basicMediumGray sm:text-[1.5rem]">
+            Who I am and what I do.
+          </p>
         </div>
       </Wrapper>
       <Separator />
       <Wrapper>
-        <div className="flex gap-[4.5rem] px-4">
+        <div className="flex flex-col-reverse gap-12 px-4 md:gap-[4.5rem] lg:flex-row">
           <Info />
           <Portrait />
         </div>
       </Wrapper>
       <Separator />
       <Wrapper>
-        <div className="flex justify-between">
+        <div className="flex flex-col justify-between gap-4 px-4 lg:flex-row lg:gap-0">
           <div className="flex flex-col gap-3">
             <H2 classnames="md:text-5xl text-4xl font-bold text-white">
               What I&apos;m watching

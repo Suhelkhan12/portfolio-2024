@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { IoIosArrowDropright } from "react-icons/io";
+import PrimaryButton from "../buttons/PrimaryButton";
 
 const Info = () => {
   return (
     <div className="flex flex-col gap-12">
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-4 md:gap-8">
         <h2 className=" text-2xl font-semibold text-basicLightGray">
           Hi there, I&apos;m Suhel, a frontend engineer currently at{" "}
           <Link href="https://parallelhq.com" className=" text-white">
@@ -42,7 +44,7 @@ const Info = () => {
           everything is just right.
         </p>
       </div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col  gap-4 md:gap-8">
         <h2 className=" text-2xl font-semibold text-basicLightGray">
           I believe that
         </h2>
@@ -54,6 +56,16 @@ const Info = () => {
           navigate the challenges of our digital world with ease.
         </p>
       </div>
+      <Link
+        href="https://www.linkedin.com/in/suhel-khan-925aa222a/"
+        target="blank"
+        className="flex sm:hidden "
+      >
+        <PrimaryButton classNames="grow flex items-center justify-center gap-2 group ">
+          Get in touch{" "}
+          <IoIosArrowDropright className="transition group-hover:translate-x-1" />
+        </PrimaryButton>
+      </Link>
     </div>
   );
 };
