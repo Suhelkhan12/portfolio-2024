@@ -7,6 +7,7 @@ import ProjectCard from "@/components/projectscard/ProjectCard";
 import GetToKnowmeCard from "@/components/getToKnowmeCard/GetToKnowmeCard";
 import H2 from "@/components/heading/H2";
 import Wrapper from "@/components/wrapper/Wrapper";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -31,7 +32,9 @@ const page = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row ">
-                <PrimaryButton>See my work</PrimaryButton>
+                <Link href="/work">
+                  <PrimaryButton>See my work</PrimaryButton>
+                </Link>
               </div>
             </div>
             <ScrollDown />
