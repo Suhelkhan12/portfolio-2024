@@ -1,6 +1,9 @@
-import { type NavlinkType, type SocialImageType,type ProjectCardProps, GetToKnowMeCardProps, TechCardProps } from "@/types";
+import { type NavlinkType, type SocialImageType,type ProjectCardProps, GetToKnowMeCardProps, TechCardProps, MobileNavProps } from "@/types";
 import { FaGithub , FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { IoHomeOutline,IoPersonOutline } from "react-icons/io5";
+import { MdOutlineWorkOutline } from "react-icons/md";
+import { GoPencil } from "react-icons/go";
 
 
 // nav links
@@ -232,4 +235,27 @@ export const techCards: TechCardProps[]=[
     image:'/tech/sql.png',
     category:'learning'
   },
+]
+
+export const mobileNavLinks: MobileNavProps[] = [
+  { 
+    slug: '/',
+    id:'home',
+    icon: IoHomeOutline
+  },
+  {
+    slug: '/about',
+    id:'about',
+    icon: IoPersonOutline
+  },
+  {
+    slug: '/work',
+    id:'work',
+    icon: GoPencil
+  },
+  {
+    slug: '/techstack',
+    id:'skills',
+    icon: MdOutlineWorkOutline
+  }
 ]

@@ -44,3 +44,9 @@ export type TechCardProps = {
   image:string
   category:string
 }
+
+export type MobileNavProps = {
+  slug:string,
+  id: string,
+  icon: IconType
+}
