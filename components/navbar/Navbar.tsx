@@ -39,9 +39,9 @@ const Navbar = () => {
             <Link
               href={link.slug}
               key={link.id}
-              className=" flex size-[40px] items-center justify-center"
+              className=" flex items-center justify-center p-1 text-white"
             >
-              <link.icon />
+              <link.icon className="text-[20px]" />
             </Link>
           ))}
         </div>

@@ -247,15 +247,16 @@ export const mobileNavLinks: MobileNavProps[] = [
     slug: '/about',
     id:'about',
     icon: IoPersonOutline
+  }
+  ,
+  {
+    slug: '/techstack',
+    id:'skills',
+    icon: MdOutlineWorkOutline
   },
   {
     slug: '/work',
     id:'work',
     icon: GoPencil
-  },
-  {
-    slug: '/techstack',
-    id:'skills',
-    icon: MdOutlineWorkOutline
   }
 ]
