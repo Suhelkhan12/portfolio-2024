@@ -31,11 +31,9 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-4 sm:flex-row ">
-                <Link href="/work">
-                  <PrimaryButton>See my work</PrimaryButton>
-                </Link>
-              </div>
+              <Link href="/work">
+                <PrimaryButton>See my work</PrimaryButton>
+              </Link>
             </div>
             <ScrollDown />
           </div>
