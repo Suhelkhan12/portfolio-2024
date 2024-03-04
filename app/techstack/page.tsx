@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <section className="relative z-50 pt-20 sm:pt-36">
+    <section className="relative z-50 mb-28 pt-20 sm:pt-36">
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
           <H1>Techstack</H1>

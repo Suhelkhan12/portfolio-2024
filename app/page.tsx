@@ -55,7 +55,7 @@ const page = () => {
         </Wrapper>
       </section>
 
-      <section className=" mt-28 ">
+      <section className=" my-28 ">
         <Wrapper>
           <div className="px-4">
             <H2 classnames="md:text-5xl text-4xl font-bold text-white">
