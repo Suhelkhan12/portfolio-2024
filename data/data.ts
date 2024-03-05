@@ -260,3 +260,10 @@ export const mobileNavLinks: MobileNavProps[] = [
     icon: GoPencil
   }
 ]
+
+export const portraitText = [
+'I always drink hot coffee.',
+'I enjoy football.',
+'Animes are best.',
+'Upcoming Full Stack Dev.'
+]

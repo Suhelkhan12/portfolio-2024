@@ -37,4 +37,15 @@
   .secondaryButtonDark {
     background: var(--Basic-Onyx, #181818);
   }
+  .clicktext::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px; /* Adjust this value to control the position of the arrow */
+    border: solid transparent;
+    border-width: 10px;
+    border-top-color: #ccc; /* Change this to match your background color */
+    z-index: 10;
+  }
 }

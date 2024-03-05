@@ -2,10 +2,12 @@ import Image from "next/image";
 import PrimaryButton from "../buttons/PrimaryButton";
 import { IoIosArrowDropright } from "react-icons/io";
 import Link from "next/link";
+import ClickText from "./ClickText";
 
 const Portrait = () => {
   return (
-    <div className="flex flex-col items-center gap-10">
+    <div className="relative flex flex-col items-center gap-10">
+      <ClickText />
       <div className="relative h-[400px] w-[80%] overflow-hidden rounded-sm sm:h-[28rem] sm:w-[22rem]">
         <Image
           src="/Suhel.png"
