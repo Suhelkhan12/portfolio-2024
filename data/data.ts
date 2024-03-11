@@ -1,4 +1,4 @@
-import { type NavlinkType, type SocialImageType,type ProjectCardProps, GetToKnowMeCardProps, TechCardProps, MobileNavProps } from "@/types";
+import { type NavlinkType, type SocialImageType,type ProjectCardProps, GetToKnowMeCardProps, TechCardProps, MobileNavProps, WorkCardProps } from "@/types";
 import { FaGithub , FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoHomeOutline,IoPersonOutline } from "react-icons/io5";
@@ -266,4 +266,39 @@ export const portraitText = [
 'I enjoy football.',
 'Animes are best.',
 'Upcoming Full Stack Dev.'
+]
+
+export const workCardsData: WorkCardProps[] = [
+  {
+    workLogo: '/work/cashinvoice.svg',
+    name:'Cashinvoice',
+    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
+    tags:['Webflow', 'Finsweet', 'GSAP'],
+    image:'/work/cashinvoice.png',
+    liveLink: 'https://cashinvoice.in',
+  },
+  {
+    workLogo: '/work/cashinvoice.svg',
+    name:'Cashinvoice',
+    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
+    tags:['Webflow', 'Finsweet', 'GSAP'],
+    image:'/work/cashinvoice.png',
+    liveLink: 'https://cashinvoice.in',
+  },
+  {
+    workLogo: '/work/cashinvoice.svg',
+    name:'Cashinvoice',
+    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
+    tags:['Webflow', 'Finsweet', 'GSAP'],
+    image:'/work/cashinvoice.png',
+    liveLink: 'https://cashinvoice.in',
+  },
+  {
+    workLogo: '/work/cashinvoice.svg',
+    name:'Cashinvoice',
+    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
+    tags:['Webflow', 'Finsweet', 'GSAP'],
+    image:'/work/cashinvoice.png',
+    liveLink: 'https://cashinvoice.in',
+  }
 ]

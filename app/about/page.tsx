@@ -51,7 +51,7 @@ const page = () => {
       </Wrapper>
       <Separator />
       <Wrapper>
-        <div className="flex flex-col justify-between gap-4 px-4 lg:flex-row lg:gap-0">
+        <div className="flex flex-col justify-between gap-4 px-4 lg:flex-row lg:gap-8">
           <div className="flex flex-col gap-3">
             <H2 classnames="md:text-5xl text-4xl font-bold text-white">
               What I&apos;m watching
