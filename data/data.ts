@@ -44,26 +44,33 @@ export const navlinkImages: SocialImageType[] = [
 // all projects data
 export const projectsData: ProjectCardProps[] = [
   {
-    name: 'Cashinvoice',
-    description:'Amazing freelance project',
-    liveLink: 'https://www.cashinvoice.in/',
-    tags: ['Webflow','Splide','Gsap','Finsweet'],
-    image: '/first.png'
+    name:'Cashinvoice',
+    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
+    tags:['Webflow', 'Finsweet', 'GSAP'],
+    image:'/work/cashinvoice.png',
+    liveLink: 'https://cashinvoice.in',
   },
   {
-    name: 'Foodies',
-    description:'Amazing food project',
-    githubLink: 'https://github.com/Suhelkhan12/Foodies',
-    tags: ['Nextjs','Reactjs','Server-actions','Sqlite'],
-    image: '/second.png'
+    name:'Cashinvoice',
+    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
+    tags:['Webflow', 'Finsweet', 'GSAP'],
+    image:'/work/cashinvoice.png',
+    liveLink: 'https://cashinvoice.in',
   },
   {
-    name: 'Anime world',
-    description:'Amazing anime project',
-    githubLink: 'https://github.com/Suhelkhan12/Foodies',
-    tags: ['Nextjs','Reactjs','Server-actions'],
-    image: '/third.png'
+    name:'Cashinvoice',
+    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
+    tags:['Webflow', 'Finsweet', 'GSAP'],
+    image:'/work/cashinvoice.png',
+    liveLink: 'https://cashinvoice.in',
   },
+  {
+    name:'Cashinvoice',
+    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
+    tags:['Webflow', 'Finsweet', 'GSAP'],
+    image:'/work/cashinvoice.png',
+    liveLink: 'https://cashinvoice.in',
+  }
   
 ]
 
@@ -270,7 +277,6 @@ export const portraitText = [
 
 export const workCardsData: WorkCardProps[] = [
   {
-    workLogo: '/work/cashinvoice.svg',
     name:'Cashinvoice',
     description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
@@ -278,7 +284,6 @@ export const workCardsData: WorkCardProps[] = [
     liveLink: 'https://cashinvoice.in',
   },
   {
-    workLogo: '/work/cashinvoice.svg',
     name:'Cashinvoice',
     description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
@@ -286,7 +291,6 @@ export const workCardsData: WorkCardProps[] = [
     liveLink: 'https://cashinvoice.in',
   },
   {
-    workLogo: '/work/cashinvoice.svg',
     name:'Cashinvoice',
     description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
@@ -294,7 +298,6 @@ export const workCardsData: WorkCardProps[] = [
     liveLink: 'https://cashinvoice.in',
   },
   {
-    workLogo: '/work/cashinvoice.svg',
     name:'Cashinvoice',
     description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],

@@ -16,7 +16,7 @@ const page = () => {
       </Wrapper>
       <Separator />
       <Wrapper>
-        <div className=" mt-8 grid grid-cols-1 gap-8 sm:gap-6 md:grid-cols-2 md:gap-8">
+        <div className=" mt-8 grid grid-cols-1 gap-8 px-4 sm:gap-6 md:grid-cols-2 md:gap-8">
           {workCardsData.map((data) => (
             <ProjectCard {...data} key={data.name} />
           ))}

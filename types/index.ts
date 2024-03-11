@@ -52,5 +52,4 @@ export type MobileNavProps = {
 }
 
 export type WorkCardProps = {
-  workLogo: string;
 } & ProjectCardProps;

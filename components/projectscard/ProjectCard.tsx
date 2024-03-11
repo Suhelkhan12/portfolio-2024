@@ -2,12 +2,15 @@ import Image from "next/image";
 import ProjectTag from "../projectTag/ProjectTag";
 import { ProjectCardProps } from "@/types";
 import Link from "next/link";
-import { IoMdLink } from "react-icons/io";
+// import { IoMdLink } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = (props: ProjectCardProps) => {
   return (
-    <div className="group rounded-lg border border-darkCardBorder bg-basicOnyx p-4">
+    <Link
+      href={props.liveLink!}
+      className="group rounded-lg border border-darkCardBorder bg-basicOnyx p-4"
+    >
       <div className="w-full overflow-hidden rounded-lg ">
         <Image
           src={props.image}
@@ -29,14 +32,14 @@ const ProjectCard = (props: ProjectCardProps) => {
                 <FaGithub className=" text-2xl" />
               </Link>
             )}
-            {props.liveLink && (
+            {/* {props.liveLink && (
               <Link
                 href={props.liveLink}
                 className=" transition-global text-white"
               >
                 <IoMdLink className=" text-2xl" />
               </Link>
-            )}
+            )} */}
           </div>
         </div>
         <p className=" text-basicDarkGray">{props.description}</p>
@@ -46,7 +49,7 @@ const ProjectCard = (props: ProjectCardProps) => {
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
