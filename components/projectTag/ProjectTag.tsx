@@ -4,8 +4,8 @@ type ProjectTagProps = {
 
 const ProjectTag = ({ text }: ProjectTagProps) => {
   return (
-    <div className=" rounded-full bg-ligthFaintWhite/80 px-2 py-1 text-basicOnyx">
-      <p className=" text-xs font-medium">{text}</p>
+    <div className=" rounded-full border border-ligthFaintWhite/35 bg-ligthFaintWhite/10 px-3 py-2 text-ligthFaintWhite/55 transition duration-300  ease-in-out group-hover:border-ligthFaintWhite group-hover:text-ligthFaintWhite ">
+      <p className=" text-xs">{text}</p>
     </div>
   );
 };

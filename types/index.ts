@@ -29,6 +29,7 @@ export type ProjectCardProps = {
   liveLink?:string,
   tags:string[]
   image:string
+  logo:string
 }
 
 export type GetToKnowMeCardProps = {
@@ -51,5 +52,4 @@ export type MobileNavProps = {
   icon: IconType
 }
 
-export type WorkCardProps = {
-} & ProjectCardProps;
+export type WorkCardProps =  ProjectCardProps;

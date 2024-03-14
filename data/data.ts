@@ -45,6 +45,7 @@ export const navlinkImages: SocialImageType[] = [
 export const projectsData: ProjectCardProps[] = [
   {
     name:'Cashinvoice',
+    logo:'/work/cashinvoice-logo.svg',
     description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/cashinvoice.png',
@@ -52,6 +53,7 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name:'Shineagro',
+    logo:'/work/shineagro-logo.svg',
     description: 'Shine Agro is your reliable partner for top-quality farm produce, supplying fresh, nutritious, ethically grown products to B2B partners with a focus on sustainability and dependable delivery.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/shineagro.png',
@@ -59,6 +61,7 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name:'Cashinvoice',
+    logo:'/work/shineagro-logo.svg',
     description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/cashinvoice.png',
@@ -66,6 +69,7 @@ export const projectsData: ProjectCardProps[] = [
   },
   {
     name:'Cashinvoice',
+    logo:'/work/shineagro-logo.svg',
     description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/cashinvoice.png',
@@ -277,6 +281,7 @@ export const portraitText = [
 export const workCardsData: WorkCardProps[] = [
   {
     name:'Cashinvoice',
+    logo: '/work/cashinvoice-logo.svg',
     description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/cashinvoice.png',
@@ -284,6 +289,7 @@ export const workCardsData: WorkCardProps[] = [
   },
   {
     name:'Shineagro',
+    logo:'/work/shineagro-logo.svg',
     description: 'Shine Agro is your reliable partner for top-quality farm produce, supplying fresh, nutritious, ethically grown products to B2B partners with a focus on sustainability and dependable delivery.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/shineagro.png',
@@ -291,6 +297,7 @@ export const workCardsData: WorkCardProps[] = [
   },
   {
     name:'Cashinvoice',
+    logo:'/work/shineagro-logo.svg',
     description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/cashinvoice.png',
@@ -298,6 +305,7 @@ export const workCardsData: WorkCardProps[] = [
   },
   {
     name:'Cashinvoice',
+    logo:'/work/shineagro-logo.svg',
     description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/cashinvoice.png',
