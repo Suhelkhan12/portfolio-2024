@@ -51,10 +51,10 @@ export const projectsData: ProjectCardProps[] = [
     liveLink: 'https://cashinvoice.in',
   },
   {
-    name:'Cashinvoice',
-    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
+    name:'Shineagro',
+    description: 'Shine Agro is your reliable partner for top-quality farm produce, supplying fresh, nutritious, ethically grown products to B2B partners with a focus on sustainability and dependable delivery.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
-    image:'/work/cashinvoice.png',
+    image:'/work/shineagro.png',
     liveLink: 'https://cashinvoice.in',
   },
   {
@@ -71,7 +71,6 @@ export const projectsData: ProjectCardProps[] = [
     image:'/work/cashinvoice.png',
     liveLink: 'https://cashinvoice.in',
   }
-  
 ]
 
 // get to know me cards data
@@ -284,10 +283,10 @@ export const workCardsData: WorkCardProps[] = [
     liveLink: 'https://cashinvoice.in',
   },
   {
-    name:'Cashinvoice',
-    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
+    name:'Shineagro',
+    description: 'Shine Agro is your reliable partner for top-quality farm produce, supplying fresh, nutritious, ethically grown products to B2B partners with a focus on sustainability and dependable delivery.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
-    image:'/work/cashinvoice.png',
+    image:'/work/shineagro.png',
     liveLink: 'https://cashinvoice.in',
   },
   {
