@@ -11,7 +11,7 @@ const ProjectCard = (props: ProjectCardProps) => {
       href={props.liveLink!}
       className="group rounded-lg bg-basicOnyx p-4 transition hover:bg-white/5"
     >
-      <div className="relative h-[20rem]  w-full overflow-hidden rounded-lg ">
+      <div className="relative h-[12rem]  w-full overflow-hidden rounded-lg md:h-[16rem] lg:h-[20rem] ">
         <Image
           src={props.image}
           alt={props.name}
@@ -28,24 +28,22 @@ const ProjectCard = (props: ProjectCardProps) => {
         ))}
       </div>
       <div className=" mt-4 flex flex-col gap-2 ">
-        <div className="flex items-center justify-between">
-          <h2 className=" text-[2rem] font-medium text-white">{props.name}</h2>
-          <div className="flex  gap-5">
-            {props.githubLink && (
-              <Link
-                href={props.githubLink}
-                className=" transition-global text-white"
-              >
-                <FaGithub className=" text-2xl" />
-              </Link>
-            )}
-          </div>
-        </div>
+        <h2 className=" text-[2rem] font-medium text-white">{props.name}</h2>
         <p className=" text-basicDarkGray">{props.description}</p>
       </div>
 
-      <div className="mt-12 flex items-center justify-start gap-2 text-white transition duration-300  ease-in-out group-hover:text-blue-500">
-        <p>See live website</p> <MdOutlineArrowOutward />
+      <div className="mt-12 flex items-center justify-between gap-2 text-white transition duration-300  ease-in-out group-hover:text-blue-500">
+        {props.liveLink && (
+          <Link href={props.liveLink} className="flex items-center gap-2">
+            <p>See live website</p> <MdOutlineArrowOutward />
+          </Link>
+        )}
+
+        {props.githubLink && (
+          <Link href={props.githubLink}>
+            <FaGithub />
+          </Link>
+        )}
       </div>
     </Link>
   );

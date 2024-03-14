@@ -60,12 +60,13 @@ export const projectsData: ProjectCardProps[] = [
     liveLink: 'https://cashinvoice.in',
   },
   {
-    name:'Cashinvoice',
-    logo:'/work/shineagro-logo.svg',
-    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
-    tags:['Webflow', 'Finsweet', 'GSAP'],
-    image:'/work/cashinvoice.png',
-    liveLink: 'https://cashinvoice.in',
+    name:'Devflow',
+    logo:'/work/devflow-logo.svg',
+    description: 'Revolutionize knowledge sharing and career growth with our StackOverflow-inspired app, seamlessly integrating Q&A forums with job listings across diverse roles.',
+    tags:['Nextjs', 'Server actions', 'Tailwind','Shadcn', 'Mongodb', 'Clerk'],
+    image:'/work/devflow.png',
+    githubLink: '#',
+    liveLink:'#'
   },
   {
     name:'Cashinvoice',
@@ -296,12 +297,13 @@ export const workCardsData: WorkCardProps[] = [
     liveLink: 'https://cashinvoice.in',
   },
   {
-    name:'Cashinvoice',
-    logo:'/work/shineagro-logo.svg',
-    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
-    tags:['Webflow', 'Finsweet', 'GSAP'],
-    image:'/work/cashinvoice.png',
-    liveLink: 'https://cashinvoice.in',
+    name:'Devflow',
+    logo:'/work/devflow-logo.svg',
+    description: 'Revolutionize knowledge sharing and career growth with our StackOverflow-inspired app, seamlessly integrating Q&A forums with job listings across diverse roles.',
+    tags:['Nextjs', 'Server actions', 'Tailwind','Shadcn', 'Mongodb', 'Clerk'],
+    image:'/work/devflow.png',
+    githubLink: '#',
+    liveLink: '#'
   },
   {
     name:'Cashinvoice',
