@@ -34,7 +34,7 @@ const Footer = () => {
                 <p className=" text-sm text-basicDarkGray">Socials</p>
                 <div className="flex gap-4">
                   <Link
-                    href="#"
+                    href="https://www.linkedin.com/in/suhel-khan-925aa222a/"
                     className="group flex items-center gap-1 text-base text-white transition hover:text-basicDarkGray"
                     target="blank"
                   >

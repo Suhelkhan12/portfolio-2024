@@ -57,7 +57,7 @@ export const projectsData: ProjectCardProps[] = [
     description: 'Shine Agro is your reliable partner for top-quality farm produce, supplying fresh, nutritious, ethically grown products to B2B partners with a focus on sustainability and dependable delivery.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/shineagro.png',
-    liveLink: 'https://cashinvoice.in',
+    liveLink: 'https://shineagrotech.com',
   },
   {
     name:'Devflow',
@@ -65,7 +65,7 @@ export const projectsData: ProjectCardProps[] = [
     description: 'Revolutionize knowledge sharing and career growth with our StackOverflow-inspired app, seamlessly integrating Q&A forums with job listings across diverse roles.',
     tags:['Nextjs', 'Server actions', 'Tailwind','Shadcn', 'Mongodb', 'Clerk'],
     image:'/work/devflow.png',
-    githubLink: '#',
+    githubLink: 'https://github.com/Suhelkhan12/devflow.git',
     liveLink:'#'
   },
   {
@@ -294,7 +294,7 @@ export const workCardsData: WorkCardProps[] = [
     description: 'Shine Agro is your reliable partner for top-quality farm produce, supplying fresh, nutritious, ethically grown products to B2B partners with a focus on sustainability and dependable delivery.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/shineagro.png',
-    liveLink: 'https://cashinvoice.in',
+    liveLink: 'https://shineagrotech.com',
   },
   {
     name:'Devflow',
@@ -302,7 +302,7 @@ export const workCardsData: WorkCardProps[] = [
     description: 'Revolutionize knowledge sharing and career growth with our StackOverflow-inspired app, seamlessly integrating Q&A forums with job listings across diverse roles.',
     tags:['Nextjs', 'Server actions', 'Tailwind','Shadcn', 'Mongodb', 'Clerk'],
     image:'/work/devflow.png',
-    githubLink: '#',
+    githubLink: 'https://github.com/Suhelkhan12/devflow.git',
     liveLink: '#'
   },
   {

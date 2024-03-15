@@ -8,7 +8,11 @@ const Info = () => {
       <div className="flex flex-col gap-4 md:gap-8">
         <h2 className=" text-2xl font-semibold text-basicLightGray">
           Hi there, I&apos;m Suhel, a frontend engineer currently at{" "}
-          <Link href="https://parallelhq.com" className=" text-white">
+          <Link
+            href="https://parallelhq.com"
+            target="_blank"
+            className=" text-white"
+          >
             Parallel<span className="text-lg font-medium">↗</span>
           </Link>{" "}
           based in India.
@@ -20,14 +24,7 @@ const Info = () => {
           informed by the rich tapestry of cultures and experiences I&apos;ve
           encountered.
         </p>
-        {/* <p className="text-lg font-normal text-basicDarkGray">
-        With a deep commitment to emerging technologies and an unwavering belief
-        in the power of inclusive design, I strive to create digital experiences
-        that seamlessly blend functionality with cultural relevance. As a
-        perpetual learner in the realm of software development, I am dedicated
-        to refining my craft and embracing new technologies to create meaningful
-        solutions that positively impact society.
-      </p> */}
+
         <p className="text-lg font-normal text-basicDarkGray">
           I draw from the diversity of human experiences to inform my coding
           practices. My journey as a developer is not just about writing code;
