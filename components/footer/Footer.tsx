@@ -16,10 +16,7 @@ const Footer = () => {
                 HMU for work, coffee chats, advice, or LMK about your favourite
                 animes ッ.
               </h2>
-              <Link
-                href="https://www.linkedin.com/in/suhel-khan-925aa222a/"
-                target="blank"
-              >
+              <Link href="/contact" target="blank">
                 <SecondaryButton>Get in touch</SecondaryButton>
               </Link>
             </div>

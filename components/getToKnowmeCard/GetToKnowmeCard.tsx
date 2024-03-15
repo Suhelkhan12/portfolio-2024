@@ -7,7 +7,7 @@ const GetToKnowmeCard = (props: GetToKnowMeCardProps) => {
   return (
     <Link
       href={props.link}
-      className=" flex size-[100%] flex-col items-center justify-center  overflow-hidden  rounded-2xl bg-[#151515;] py-8 transition hover:bg-basicOnyx md:py-12 "
+      className="group  flex size-[100%] flex-col items-center justify-center  rounded-2xl bg-[#151515;] py-8 transition hover:bg-basicOnyx md:py-12 "
     >
       <H2 classnames=" md:text-[2.5rem] text-[1.5rem] font-semibold text-white">
         {props.heading}{" "}
@@ -22,5 +22,3 @@ const GetToKnowmeCard = (props: GetToKnowMeCardProps) => {
 };
 
 export default GetToKnowmeCard;
-
-// lg:size-[31.5rem]

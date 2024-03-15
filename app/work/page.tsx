@@ -3,13 +3,51 @@ import H1 from "@/components/heading/H1";
 import Separator from "@/components/graySeparator/Separator";
 import { workCardsData } from "@/data/data";
 import ProjectCard from "@/components/projectscard/ProjectCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Suhel Khan's Tech Portfolio",
+  description:
+    "Delve into the diverse tech expertise of Suhel Khan, a seasoned technologist proficient in an array of cutting-edge technologies.",
+  keywords: [
+    "Suhel Khan",
+    "techstack",
+    "frontend",
+    "ui engineer",
+    "developer",
+    "react",
+    "nextjs",
+    "gsap",
+    "sanity",
+    "tailwindcss",
+    "mongodb",
+    "portfolio",
+    "projects",
+    "side projects",
+    "tech expertise",
+    "programming paradigms",
+    "frontend tools",
+    "backend technologies",
+    "responsive design",
+    "dynamic animations",
+    "data management",
+    "web development",
+  ],
+  twitter: {
+    title: "Suhel Khan's Tech Portfolio",
+    description:
+      "Delve into the diverse tech expertise of Suhel Khan, a seasoned technologist proficient in an array of cutting-edge technologies.",
+    card: "summary_large_image",
+  },
+};
+
 const page = () => {
   return (
     <section className="relative z-50 mb-28 pt-20 sm:pt-36">
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
           <H1>Work</H1>
-          <p className="text-[1.25rem] font-normal text-basicMediumGray md:text-[1.5rem]">
+          <p className="text-basicMediumGray text-[1.25rem] font-normal md:text-[1.5rem]">
             List of my selected works and side projects.
           </p>
         </div>

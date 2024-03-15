@@ -49,7 +49,7 @@ const config: Config = {
 
         darkCardBorder: '#383737',
         darkBg: '#0D0D0D',
-        darkNav:'rgba(24, 24, 29, 0.30)',
+        darkNav:'rgba(24, 24, 29, 0.50)',
         dardCardBorder: '#383737'
         
       },

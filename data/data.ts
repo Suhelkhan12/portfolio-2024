@@ -83,12 +83,12 @@ export const getToKnowMeData: GetToKnowMeCardProps[]=[
   {
     heading: 'About me',
     subheading: 'Who I am what I do?',
-    link: '/about'
+    link: '/about',
   },
   {
     heading: 'Techstack',
     subheading: 'Technology I use and currenly learning.',
-    link: '/techstack'
+    link: '/techstack',
   },
 ]
 
