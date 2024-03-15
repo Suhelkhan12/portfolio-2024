@@ -8,6 +8,7 @@ import GetToKnowmeCard from "@/components/getToKnowmeCard/GetToKnowmeCard";
 import H2 from "@/components/heading/H2";
 import Wrapper from "@/components/wrapper/Wrapper";
 import Link from "next/link";
+import SecondaryButton from "@/components/buttons/SecondaryButton";
 
 const page = () => {
   return (
@@ -31,8 +32,8 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <Link href="/work">
-                <PrimaryButton>See my work</PrimaryButton>
+              <Link href="/contact">
+                <PrimaryButton>Let's connect</PrimaryButton>
               </Link>
             </div>
             <ScrollDown />
@@ -43,13 +44,21 @@ const page = () => {
       <section className=" mt-28 ">
         <Wrapper>
           <div className="px-4">
-            <H2 classnames="md:text-5xl text-4xl  font-bold text-white">
-              Selected works
+            <H2 classnames="md:text-[3.5rem] text-[2.5rem]  font-bold text-white">
+              Selected work
             </H2>
-            <div className=" mt-8 grid grid-cols-1 gap-8 sm:gap-6 md:grid-cols-2 md:gap-8">
+            <div
+              className=" mt-8 grid grid-cols-1 gap-8 sm:gap-6 md:grid-cols-2 md:gap-8"
+              id="#work"
+            >
               {projectsData.map((project) => (
                 <ProjectCard {...project} key={project.name} />
               ))}
+            </div>
+            <div className=" mt-8 md:mt-12 lg:mt-16 ">
+              <Link href="/work">
+                <SecondaryButton>View more projects</SecondaryButton>
+              </Link>
             </div>
           </div>
         </Wrapper>
@@ -58,10 +67,10 @@ const page = () => {
       <section className=" my-28 ">
         <Wrapper>
           <div className="px-4">
-            <H2 classnames="md:text-5xl text-4xl font-bold text-white">
+            <H2 classnames="md:text-[3.5rem] text-[2.5rem] font-bold text-white">
               Get to know me
             </H2>
-            <div className="mt-8 flex flex-col flex-wrap justify-center gap-8 sm:gap-6 md:grid-cols-2 md:flex-row md:gap-8">
+            <div className="mt-8 flex flex-col gap-8 sm:gap-6 md:flex-row md:gap-8">
               {getToKnowMeData.map((data) => (
                 <GetToKnowmeCard {...data} key={data.heading} />
               ))}

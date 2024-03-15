@@ -35,7 +35,6 @@ export type ProjectCardProps = {
 export type GetToKnowMeCardProps = {
   heading:string,
   subheading:string,
-  image:string,
   link:string
 }
 
