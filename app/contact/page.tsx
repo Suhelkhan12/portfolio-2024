@@ -40,7 +40,21 @@ const Contact = () => {
         </div>
       </Wrapper>
       <Separator />
-      <Wrapper>hello</Wrapper>
+      <Wrapper>
+        <div className="px-4">
+          <div className=" w-full rounded-xl border border-darkCardBorder bg-basicOnyx text-white shadow-lg shadow-black/20">
+            <div className=" flex justify-between p-3 sm:p-4">
+              <div className=" flex items-center gap-2">
+                <div className=" size-3 rounded-full bg-red-500"></div>
+                <div className=" size-3 rounded-full bg-yellow-500"></div>
+                <div className=" size-3 rounded-full bg-green-500"></div>
+              </div>
+              <p className=" text-sm font-medium md:text-base">New message</p>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </Wrapper>
     </section>
   );
 };
