@@ -1,3 +1,4 @@
+import ContactForm from "@/components/contactFrom/ContactForm";
 import Separator from "@/components/graySeparator/Separator";
 import H1 from "@/components/heading/H1";
 import Wrapper from "@/components/wrapper/Wrapper";
@@ -42,8 +43,8 @@ const Contact = () => {
       <Separator />
       <Wrapper>
         <div className="px-4">
-          <div className=" w-full rounded-xl border border-darkCardBorder bg-basicOnyx text-white shadow-lg shadow-black/20">
-            <div className=" flex justify-between p-3 sm:p-4">
+          <div className=" w-full rounded-xl  bg-basicOnyx text-white shadow-lg shadow-black/20">
+            <div className=" flex justify-between border-b border-white/10 p-3 sm:p-4">
               <div className=" flex items-center gap-2">
                 <div className=" size-3 rounded-full bg-red-500"></div>
                 <div className=" size-3 rounded-full bg-yellow-500"></div>
@@ -51,6 +52,9 @@ const Contact = () => {
               </div>
               <p className=" text-sm font-medium md:text-base">New message</p>
               <div></div>
+            </div>
+            <div className=" mb-2 px-8 py-3">
+              <ContactForm />
             </div>
           </div>
         </div>
