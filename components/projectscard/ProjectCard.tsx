@@ -3,6 +3,7 @@ import ProjectTag from "../projectTag/ProjectTag";
 import { ProjectCardProps } from "@/types";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import { IoIosArrowForward } from "react-icons/io";
 
 const ProjectCard = (props: ProjectCardProps) => {
   const linkToUse = props.githubLink || props.liveLink;
@@ -22,6 +23,9 @@ const ProjectCard = (props: ProjectCardProps) => {
           />
           <div className="absolute inset-0 flex size-full translate-y-full items-center justify-center bg-black transition-transform duration-500 ease-in-out group-hover:translate-y-0">
             <Image src={props.logo} width={100} height={100} alt={props.name} />
+          </div>
+          <div className=" group absolute bottom-4 right-4 z-50 flex size-8 items-center justify-center rounded-full border border-basicOnyx/50 bg-ligthFaintWhite">
+            <IoIosArrowForward />
           </div>
         </div>
         <div className=" mt-6 flex flex-wrap gap-4">
