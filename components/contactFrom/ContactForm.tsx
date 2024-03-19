@@ -88,12 +88,14 @@ const ContactForm = () => {
           )}
         />
 
-        <Button
-          type="submit"
-          className="primaryBtnLight rounded-full p-8 text-lg transition duration-300 hover:bg-basicOnyx/10 hover:text-basicDarkGray hover:shadow-lg"
-        >
-          Submit your response :)
-        </Button>
+        <div className=" flex justify-end">
+          <Button
+            type="submit"
+            className="primaryBtnLight rounded-full p-8 text-lg transition duration-300 hover:bg-basicOnyx/10 hover:text-basicDarkGray hover:shadow-lg"
+          >
+            Submit your response :)
+          </Button>
+        </div>
       </form>
     </Form>
   );

@@ -47,9 +47,7 @@ const page = () => {
       <Separator />
       <Wrapper>
         <div className="flex flex-col gap-4 px-4 md:gap-8">
-          <H2 classnames="text-[3rem] font-bold text-basicDarkGray">
-            Dev & Design
-          </H2>
+          <H2 classnames="text-[3rem] font-bold text-basicDarkGray">Dev</H2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {techCards
               .filter((card) => card.category === "development")
@@ -63,7 +61,7 @@ const page = () => {
       <Wrapper>
         <div className="flex flex-col gap-4 px-4 md:gap-8">
           <H2 classnames=" text-[2rem] md:text-[3rem] font-bold text-basicDarkGray">
-            Low-code & Freelancing
+            Low-code
           </H2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {techCards

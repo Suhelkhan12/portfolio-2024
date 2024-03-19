@@ -55,7 +55,7 @@ const Contact = () => {
               </p>
               <div></div>
             </div>
-            <div className=" mb-2 px-4 py-3 md:px-8">
+            <div className=" mb-2 px-4 pb-8 pt-3 md:px-8">
               <ContactForm />
             </div>
           </div>
