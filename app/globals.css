@@ -42,10 +42,10 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    margin-left: -10px; /* Adjust this value to control the position of the arrow */
+    margin-left: -10px; 
     border: solid transparent;
     border-width: 10px;
-    border-top-color: #ccc; /* Change this to match your background color */
+    border-top-color: var(--ligthFaintWhite); 
     z-index: 10;
   }
 }
