@@ -42,7 +42,7 @@ const ContactForm = () => {
                 <Input
                   placeholder="Enter your name"
                   {...field}
-                  className="border-0 border-b border-b-darkCardBorder bg-transparent px-0 placeholder:text-basicMediumGray"
+                  className="rounded-none border-0 border-b border-b-darkCardBorder bg-transparent px-0 placeholder:text-basicMediumGray"
                   style={{ boxShadow: "none", background: "transparent" }}
                 />
               </FormControl>
@@ -60,7 +60,7 @@ const ContactForm = () => {
                 <Input
                   placeholder="Enter your email"
                   {...field}
-                  className=" border-0 border-b border-b-darkCardBorder bg-transparent px-0 placeholder:text-basicMediumGray "
+                  className=" rounded-none border-0 border-b border-b-darkCardBorder bg-transparent px-0 placeholder:text-basicMediumGray "
                   style={{ boxShadow: "none", background: "transparent" }}
                 />
               </FormControl>
@@ -79,7 +79,7 @@ const ContactForm = () => {
                   rows={10}
                   placeholder="Write your message here"
                   {...field}
-                  className=" resize-none border-0  bg-darkBg p-6 placeholder:text-basicMediumGray "
+                  className=" resize-none rounded-none border-0  bg-darkBg p-6 placeholder:text-basicMediumGray "
                   style={{ boxShadow: "none" }}
                 />
               </FormControl>
@@ -90,7 +90,7 @@ const ContactForm = () => {
 
         <Button
           type="submit"
-          className="primaryBtnLight rounded-full p-4 text-lg transition duration-300 hover:bg-basicOnyx/10 hover:text-basicDarkGray hover:shadow-lg sm:p-8"
+          className="primaryBtnLight rounded-full p-8 text-lg transition duration-300 hover:bg-basicOnyx/10 hover:text-basicDarkGray hover:shadow-lg"
         >
           Submit your response :)
         </Button>
