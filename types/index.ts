@@ -10,6 +10,7 @@ export const formSchema = z.object({
     message: 'Too long!'
   }),
   email: z.string().email({message: 'Invalid email!'}),
+  message: z.string().min(5, {message:'Too short!'})
 });
 
 export type ReactChildrenProp = {

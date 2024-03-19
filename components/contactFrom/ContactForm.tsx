@@ -12,6 +12,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { z } from "zod";
 import { Button } from "../ui/button";
 
@@ -21,6 +22,7 @@ const ContactForm = () => {
     defaultValues: {
       username: "",
       email: "",
+      message: "",
     },
   });
 
@@ -42,7 +44,6 @@ const ContactForm = () => {
                   {...field}
                   className="border-0 border-b border-b-darkCardBorder bg-transparent px-0 placeholder:text-basicMediumGray"
                   style={{ boxShadow: "none", background: "transparent" }}
-                  // Add this line to remove box-shadow and background
                 />
               </FormControl>
               <FormMessage className="text-xs font-normal text-red-500" />
@@ -61,7 +62,25 @@ const ContactForm = () => {
                   {...field}
                   className=" border-0 border-b border-b-darkCardBorder bg-transparent px-0 placeholder:text-basicMediumGray "
                   style={{ boxShadow: "none", background: "transparent" }}
-                  // Add this line to remove box-shadow and background
+                />
+              </FormControl>
+              <FormMessage className="text-xs font-normal text-red-500" />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="message"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Textarea
+                  rows={10}
+                  placeholder="Write your message here"
+                  {...field}
+                  className=" resize-none border-0  bg-darkBg p-6 placeholder:text-basicMediumGray "
+                  style={{ boxShadow: "none" }}
                 />
               </FormControl>
               <FormMessage className="text-xs font-normal text-red-500" />
@@ -71,7 +90,7 @@ const ContactForm = () => {
 
         <Button
           type="submit"
-          className="primaryBtnLight rounded-full p-8 text-lg transition duration-300 hover:bg-basicOnyx/10 hover:text-basicDarkGray hover:shadow-lg"
+          className="primaryBtnLight rounded-full p-4 text-lg transition duration-300 hover:bg-basicOnyx/10 hover:text-basicDarkGray hover:shadow-lg sm:p-8"
         >
           Submit your response :)
         </Button>

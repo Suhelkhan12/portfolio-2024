@@ -16,7 +16,7 @@ const Footer = () => {
                 HMU for work, coffee chats, advice, or LMK about your favourite
                 animes ッ.
               </h2>
-              <Link href="/contact" target="blank">
+              <Link href="/contact">
                 <SecondaryButton>Get in touch</SecondaryButton>
               </Link>
             </div>

@@ -45,15 +45,17 @@ const Contact = () => {
         <div className="px-4">
           <div className=" w-full rounded-xl  bg-basicOnyx text-white shadow-lg shadow-black/20">
             <div className=" flex justify-between border-b border-white/10 p-3 sm:p-4">
-              <div className=" flex items-center gap-2">
+              <div className="  hidden items-center gap-1 sm:flex sm:gap-2">
                 <div className=" size-3 rounded-full bg-red-500"></div>
                 <div className=" size-3 rounded-full bg-yellow-500"></div>
                 <div className=" size-3 rounded-full bg-green-500"></div>
               </div>
-              <p className=" text-sm font-medium md:text-base">New message</p>
+              <p className=" text-sm font-normal sm:font-medium md:text-base">
+                New message
+              </p>
               <div></div>
             </div>
-            <div className=" mb-2 px-8 py-3">
+            <div className=" mb-2 px-4 py-3 md:px-8">
               <ContactForm />
             </div>
           </div>
