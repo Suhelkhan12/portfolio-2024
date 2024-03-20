@@ -36,13 +36,13 @@ const ContactForm = () => {
           control={form.control}
           name="username"
           render={({ field }) => (
-            <FormItem>
-              <FormLabel className=" text-lg font-medium">Name</FormLabel>
+            <FormItem className="flex items-center gap-2  border-0 border-b border-b-darkCardBorder">
+              <FormLabel className=" text-base font-medium">Name:</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Enter your name"
                   {...field}
-                  className="rounded-none border-0 border-b border-b-darkCardBorder bg-transparent px-0 placeholder:text-basicMediumGray"
+                  className="!m-0 rounded-none border-none bg-transparent  !p-0 px-0 placeholder:text-basicMediumGray"
                   style={{ boxShadow: "none", background: "transparent" }}
                 />
               </FormControl>
@@ -54,13 +54,13 @@ const ContactForm = () => {
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem>
-              <FormLabel className=" text-lg font-medium">Email</FormLabel>
+            <FormItem className="flex items-center gap-2 border-0 border-b border-b-darkCardBorder">
+              <FormLabel className=" text-base font-medium">Email:</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Enter your email"
                   {...field}
-                  className=" rounded-none border-0 border-b border-b-darkCardBorder bg-transparent px-0 placeholder:text-basicMediumGray "
+                  className=" !m-0 rounded-none border-none  bg-transparent !p-0 px-0 placeholder:text-basicMediumGray  "
                   style={{ boxShadow: "none", background: "transparent" }}
                 />
               </FormControl>
@@ -79,7 +79,7 @@ const ContactForm = () => {
                   rows={10}
                   placeholder="Write your message here"
                   {...field}
-                  className=" resize-none rounded-none border-0  bg-darkBg p-6 placeholder:text-basicMediumGray "
+                  className=" resize-none rounded-lg border-0  bg-darkBg p-6 placeholder:text-basicMediumGray "
                   style={{ boxShadow: "none" }}
                 />
               </FormControl>
