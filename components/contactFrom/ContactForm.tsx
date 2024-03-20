@@ -37,7 +37,7 @@ const ContactForm = () => {
           name="username"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className=" text-lg font-medium">Name:</FormLabel>
+              <FormLabel className=" text-lg font-medium">Name</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Enter your name"
@@ -55,7 +55,7 @@ const ContactForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className=" text-lg font-medium">Email:</FormLabel>
+              <FormLabel className=" text-lg font-medium">Email</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Enter your email"

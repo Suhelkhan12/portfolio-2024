@@ -69,12 +69,12 @@ export const projectsData: ProjectCardProps[] = [
     liveLink:'#'
   },
   {
-    name:'Cashinvoice',
-    logo:'/work/shineagro-logo.svg',
-    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
-    tags:['Webflow', 'Finsweet', 'GSAP'],
-    image:'/work/cashinvoice.png',
-    liveLink: 'https://cashinvoice.in',
+    name:'Word Gamble',
+    logo:"/work/wordle-logo.png",
+    description: 'I was so amazed by the popularity of wordle. Being a developer I started thinking about the logic and decided to give it a try.',
+    tags:['React', 'React-router', 'Zod', 'Zustand', 'Tainwind'],
+    image:'/work/wordle.png',
+    githubLink: 'https://github.com/Suhelkhan12/Wordle.git'
   }
 ]
 
@@ -304,11 +304,11 @@ export const workCardsData: WorkCardProps[] = [
     liveLink: '#'
   },
   {
-    name:'Cashinvoice',
-    logo:'/work/shineagro-logo.svg',
-    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
-    tags:['Webflow', 'Finsweet', 'GSAP'],
-    image:'/work/cashinvoice.png',
-    liveLink: 'https://cashinvoice.in',
+    name:'Word Gamble',
+    logo:"/work/wordle-logo.png",
+    description: 'I was so amazed by the popularity of wordle. Being a developer I started thinking about the logic and decided to give it a try.',
+    tags:['React', 'React-router', 'Zod', 'Zustand', 'Tainwind'],
+    image:'/work/wordle.png',
+    githubLink: 'https://github.com/Suhelkhan12/Wordle.git'
   }
 ]
