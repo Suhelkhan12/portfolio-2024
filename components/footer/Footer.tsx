@@ -35,23 +35,23 @@ const Footer = () => {
                     className="group flex items-center gap-1 text-base text-white transition hover:text-basicDarkGray"
                     target="blank"
                   >
-                    <IoIosArrowRoundForward className="transition group-hover:translate-x-1" />
                     Linkedin
+                    <IoIosArrowRoundForward className="transition group-hover:translate-x-1" />
                   </Link>
                   <Link
-                    href="mailto:suhelkhan9588321151@gmail.com"
+                    href="https://twitter.com/suhel7822"
                     target="blank"
                     className=" group flex items-center gap-1 text-base text-white transition hover:text-basicDarkGray"
                   >
+                    Twitter
                     <IoIosArrowRoundForward className="transition group-hover:translate-x-1" />
-                    Gmail
                   </Link>
                   <Link
-                    href="tel:+919588321151"
+                    href="https://github.com/Suhelkhan12"
                     className=" group flex items-center gap-1 text-base text-white transition hover:text-basicDarkGray"
                   >
+                    Github
                     <IoIosArrowRoundForward className="transition group-hover:translate-x-1" />
-                    Contact
                   </Link>
                 </div>
               </div>

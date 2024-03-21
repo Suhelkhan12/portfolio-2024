@@ -36,7 +36,7 @@ const ContactForm = () => {
           control={form.control}
           name="username"
           render={({ field }) => (
-            <FormItem className="flex items-center gap-2  border-0 border-b border-b-darkCardBorder">
+            <FormItem className="flex items-center gap-2  border-0 border-b border-b-darkCardBorder pb-2">
               <FormLabel className=" text-base font-medium">Name:</FormLabel>
               <FormControl>
                 <Input
@@ -54,7 +54,7 @@ const ContactForm = () => {
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem className="flex items-center gap-2 border-0 border-b border-b-darkCardBorder">
+            <FormItem className="flex items-center gap-2 border-0 border-b border-b-darkCardBorder pb-2">
               <FormLabel className=" text-base font-medium">Email:</FormLabel>
               <FormControl>
                 <Input
