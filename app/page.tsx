@@ -13,7 +13,7 @@ import SecondaryButton from "@/components/buttons/SecondaryButton";
 const page = () => {
   return (
     <>
-      <section className="h-screen  pt-20 sm:pt-36">
+      <section className="pt-20  sm:pt-36 md:h-screen">
         <Wrapper>
           <div className="px-4">
             <div className="relative z-10 flex flex-col gap-8 text-basicDarkGray sm:gap-10">
