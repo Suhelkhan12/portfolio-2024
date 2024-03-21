@@ -3,7 +3,7 @@ import OpenToWork from "../opentowork/OpenToWork";
 
 const ScrollDown = () => {
   return (
-    <div className="mt-20  flex w-full items-center justify-between">
+    <div className="mt-10 flex  w-full flex-col-reverse justify-between gap-8 md:mt-20 md:flex-row md:items-center md:gap-0">
       <div className="relative w-28 sm:w-36">
         <Image
           className="animate-spin-slow"
