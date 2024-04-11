@@ -1,9 +1,9 @@
-interface EmailProps {
+interface EmailTemplateProps {
   username: string;
   message: string;
 }
 
-const EmailTemplate = ({ message, username }: EmailProps) => {
+const EmailTemplate = ({ message, username }: EmailTemplateProps) => {
   return (
     <div>
       <h1>Hi, {username}</h1>

@@ -3,8 +3,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formSchema } from "@/types";
 
-import { sendEmail } from "@/app/api/api/sendemail/route";
-
 import {
   Form,
   FormControl,
@@ -30,7 +28,6 @@ const ContactForm = () => {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
-    await sendEmail();
   }
 
   return (
