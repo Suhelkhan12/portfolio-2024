@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formSchema } from "@/types";
 
+import { sendEmail } from "@/app/api/api/sendemail/route";
+
 import {
   Form,
   FormControl,
@@ -21,14 +23,16 @@ const ContactForm = () => {
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: "",
-      email: "",
+      useremail: "",
       message: "",
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
+    await sendEmail();
   }
+
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -52,7 +56,7 @@ const ContactForm = () => {
         />
         <FormField
           control={form.control}
-          name="email"
+          name="useremail"
           render={({ field }) => (
             <FormItem className="flex items-center gap-2 border-0 border-b border-b-darkCardBorder pb-2">
               <FormLabel className=" text-base font-medium">Email:</FormLabel>

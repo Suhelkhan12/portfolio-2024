@@ -9,7 +9,7 @@ export const formSchema = z.object({
   }).max(50, {
     message: 'Too long!'
   }),
-  email: z.string().email({message: 'Invalid email!'}),
+  useremail: z.string().email({message: 'Invalid email!'}),
   message: z.string().min(5, {message:'Too short!'})
 });
 
