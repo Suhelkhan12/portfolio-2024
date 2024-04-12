@@ -312,3 +312,35 @@ export const workCardsData: WorkCardProps[] = [
     githubLink: 'https://github.com/Suhelkhan12/Wordle.git'
   }
 ]
+
+export const experienceDetails = [
+  {
+    id: 1,
+    companyname: 'ParallelHq',
+    designation:'UI Engineer',
+    dateLocation: 'January 2024 - Present | Bengaluru, India.',
+    about: 'Contributed to UI design and development for websites. Implemented user-centric design principles to enhance usability and accessibility. Collaborated with cross-functional teams to iterate on designs and improve user experience.'
+  },
+  {
+    id: 2,
+    companyname: 'Teamflexbox',
+    designation:'Frontend developer',
+    dateLocation: 'July 2023 - Present | Delhi, India.',
+    about: 'Engaged in UI design and development for websites. Applied user-centric design principles to enrich usability and accessibility. Worked collaboratively with cross-functional teams to iterate on designs and enhance user experience.'
+  }
+]
+
+export const educationDetails = [
+  {
+    id:1,
+    university: 'Delhi univeristy',
+    dateLocatoin: 'July 2018 - August 2021 | 8/10 CGPA',
+    degreeName: 'Bsc(hons) Mathematics'
+  },
+  {
+    id:2,
+    university: 'Panjab univeristy',
+    dateLocatoin: 'August 2021 - present | 7/10 CGPA',
+    degreeName: 'Masters in computer science and applications'
+  }
+]

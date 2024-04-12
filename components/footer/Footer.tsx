@@ -12,9 +12,9 @@ const Footer = () => {
           <div className="flex flex-col gap-4 ">
             <p className=" text-basicMediumGray">{`{Get in touch}`}</p>
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between ">
-              <h2 className="max-w-[45rem] text-3xl font-semibold leading-normal text-white md:text-4xl">
-                HMU for work, coffee chats, advice, or LMK about your favourite
-                animes ッ.
+              <h2 className="max-w-[45rem] text-2xl font-semibold leading-normal text-white md:text-3xl">
+                Thanks for reaching the bottom of this page. If you like what
+                you see, let's connect and build something togetherッ.
               </h2>
               <Link href="/contact">
                 <SecondaryButton>Get in touch</SecondaryButton>
@@ -24,7 +24,7 @@ const Footer = () => {
 
           <div className="flex flex-col-reverse items-start gap-8 sm:flex-row sm:items-end sm:justify-between">
             <p className=" text-basicDarkGray">
-              Thanks for stopping by. © 2024 Suhel Khan.{" "}
+              © 2024 Suhel Khan - created with inspo from the world.
             </p>
             <div className="flex flex-col gap-6 sm:gap-8">
               <div className="flex flex-col gap-2 sm:gap-3">
