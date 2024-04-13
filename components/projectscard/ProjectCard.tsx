@@ -11,7 +11,7 @@ const ProjectCard = (props: ProjectCardProps) => {
     <Link
       href={linkToUse!}
       target="_blank"
-      className="group flex flex-col justify-between rounded-2xl bg-basicOnyx p-6 transition hover:bg-white/5 "
+      className="group flex flex-col justify-between rounded-2xl bg-basicOnyx p-4 transition hover:bg-white/5 md:p-5 lg:p-6 "
     >
       <div>
         <div className="relative h-[12rem]  w-full overflow-hidden rounded-lg md:h-[16rem] lg:h-[20rem] ">
@@ -28,7 +28,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             <IoIosArrowForward />
           </div>
         </div>
-        <div className=" mt-6 flex flex-wrap gap-4">
+        <div className=" mt-6 flex flex-wrap gap-2 md:gap-3 lg:gap-4">
           {props.tags.map((tag) => (
             <ProjectTag text={tag} key={props.name} />
           ))}
@@ -42,13 +42,15 @@ const ProjectCard = (props: ProjectCardProps) => {
       <div className="mt-12 flex items-center justify-between gap-2 text-white transition duration-300  ease-in-out group-hover:text-blue-500">
         {props.liveLink === linkToUse && (
           <div className="flex items-center gap-2">
-            <p>See live website</p> <MdOutlineArrowOutward />
+            <p className="text-sm">See live website</p>{" "}
+            <MdOutlineArrowOutward />
           </div>
         )}
         {props.githubLink === linkToUse && (
-          <div className="flex w-full justify-between">
+          <div className="flex w-full items-center justify-between">
             <div className="flex items-center gap-2">
-              <p>Github repository</p> <MdOutlineArrowOutward />
+              <p className="text-sm">Github repository</p>{" "}
+              <MdOutlineArrowOutward />
             </div>
             <div className=" transition duration-300 sm:opacity-0 sm:group-hover:opacity-100">
               <ProjectTag text="Learning Experiment" />
