@@ -17,7 +17,9 @@ const page = () => {
           <div className="flex flex-col gap-4 px-4 md:gap-8">
             <div className=" rounded-lg bg-basicOnyx/70 p-4 text-ligthFaintWhite md:p-10 lg:px-28 lg:py-20 ">
               <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
-                <H2 classnames=" text-[3rem] font-bold ">Suhel khan</H2>
+                <H2 classnames="md:text-[2.5] text-[2rem] lg:text-[3rem] font-bold ">
+                  Suhel khan
+                </H2>
                 <div className="flex flex-col gap-1 text-sm">
                   <p>Suhelkhan.com</p>
                   <Link
@@ -28,7 +30,7 @@ const page = () => {
                   </Link>
                 </div>
               </div>
-              <div className="mt-10 flex flex-col gap-16 md:mt-20 lg:gap-24">
+              <div className="mt-10 flex flex-col gap-12 md:mt-20 lg:gap-24">
                 <div className="flex w-full flex-col gap-4 lg:flex-row lg:gap-24 ">
                   <p className="text-base">Experience</p>
                   <div className="flex flex-col gap-8 lg:gap-12">
