@@ -96,19 +96,19 @@ export const getToKnowMeData: GetToKnowMeCardProps[]=[
 export const animeImages = [
   {
     name:'onepice',
-    image:'/new-onepiece.jpeg'
+    image:'/onepiece.jpeg'
   },
   {
     name:'demonslayer',
-    image:'/demon-slayer.jpeg'
+    image:'/demonslayer.jpeg'
   },
   {
-    name:'avatar',
-    image:'/avatar-aibender.jpeg'
+    name:'jutsu',
+    image:'/jjk.jpeg'
   },
   {
-    name:'fire-forece',
-    image:'/fire-force.jpg'
+    name:'naruto',
+    image:'/naruto.jpeg'
   }
 ]
 

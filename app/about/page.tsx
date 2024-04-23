@@ -57,7 +57,7 @@ const page = () => {
               What I&apos;m watching
             </H2>
             <p className="text-lg font-normal text-basicDarkGray">
-              One Piece, Demon Slayer, Avatar: The last Airbender, Fire Force{" "}
+              One Piece, Demon Slayer, Avatar: The last Airbender, Naruto{" "}
             </p>
           </div>
           <Anime />
