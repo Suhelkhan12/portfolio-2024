@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     "experience",
   ],
   creator: "Suhel khan",
-  authors: [{ url: "https://suhel.xyz", name: "Suhel khan" }],
+  authors: [{ url: "https://suhelkhan.com", name: "Suhel khan" }],
   twitter: {
     card: "summary_large_image",
     description:
       "Welcome to Suhel's portfolio! Talented Frontend developer specializing in JavaScript, React, and cutting-edge web technologies. Explore projects, skills, and passion for intuitive user experiences. #FrontendDev #WebDev",
   },
-  metadataBase: new URL("https://suhel.xyz"),
+  metadataBase: new URL("https://suhelkhan.com"),
   alternates: {
     canonical: "/",
     languages: {
