@@ -32,7 +32,10 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <Link href="/contact">
+              <Link
+                href="https://www.linkedin.com/in/suhel-khan-925aa222a/"
+                target="blank"
+              >
                 <PrimaryButton>Let's connect</PrimaryButton>
               </Link>
             </div>
@@ -55,9 +58,9 @@ const page = () => {
                 <ProjectCard {...project} key={project.name} />
               ))}
             </div>
-            <div className=" mt-8 md:mt-12 lg:mt-16 ">
+            <div className="mt-8 flex items-center justify-center md:mt-12 lg:mt-16 ">
               <Link href="/work">
-                <SecondaryButton>View more projects</SecondaryButton>
+                <SecondaryButton>View more</SecondaryButton>
               </Link>
             </div>
           </div>

@@ -12,7 +12,7 @@ import GetToKnowmeCard from "@/components/getToKnowmeCard/GetToKnowmeCard";
 const page = () => {
   return (
     <>
-      <section className="relative z-50 pt-20 sm:pt-36 md:mb-28">
+      <section className="relative z-50 pt-20 sm:pt-36 md:mb-16">
         <Wrapper>
           <div className="flex flex-col gap-4 px-4 md:gap-8">
             <div className=" rounded-lg bg-basicOnyx/70 p-4 text-ligthFaintWhite md:p-10 lg:px-28 lg:py-20 ">
@@ -85,10 +85,13 @@ const page = () => {
           </div>
         </Wrapper>
       </section>
-      <section className="my-12 md:my-24">
+      <section className="mb-16">
         <Wrapper>
           <div className="px-4">
-            <div className="mt-8 flex flex-col gap-8 sm:gap-6 md:flex-row md:gap-8">
+            <H2 classnames="md:text-[2.5] text-[2rem] lg:text-[3rem] font-bold text-ligthFaintWhite ">
+              More about me
+            </H2>
+            <div className=" mt-4 flex flex-col gap-8 sm:gap-6 md:flex-row md:gap-8">
               {getToKnowMeData.map((data) => (
                 <GetToKnowmeCard {...data} key={data.heading} />
               ))}

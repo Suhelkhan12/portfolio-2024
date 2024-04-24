@@ -16,7 +16,10 @@ const Footer = () => {
                 Thanks for reaching the bottom of this page. If you like what
                 you see, let's connect and build something togetherッ.
               </h2>
-              <Link href="/contact">
+              <Link
+                href="https://www.linkedin.com/in/suhel-khan-925aa222a/"
+                target="blank"
+              >
                 <SecondaryButton>Get in touch</SecondaryButton>
               </Link>
             </div>
