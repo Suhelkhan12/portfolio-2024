@@ -1,4 +1,4 @@
-import { type NavlinkType, type SocialImageType,type ProjectCardProps, GetToKnowMeCardProps, TechCardProps, MobileNavProps, WorkCardProps } from "@/types";
+import { type NavlinkType, type SocialImageType,type ProjectCardProps, GetToKnowMeCardProps, TechCardProps, MobileNavProps, WorkCardProps, FreetimeCardProps } from "@/types";
 import { FaGithub , FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoHomeOutline,IoPersonOutline } from "react-icons/io5";
@@ -93,24 +93,7 @@ export const getToKnowMeData: GetToKnowMeCardProps[]=[
   },
 ]
 
-export const animeImages = [
-  {
-    name:'onepice',
-    image:'/onepiece.jpeg'
-  },
-  {
-    name:'demonslayer',
-    image:'/demonslayer.jpeg'
-  },
-  {
-    name:'jutsu',
-    image:'/jjk.jpeg'
-  },
-  {
-    name:'naruto',
-    image:'/naruto.jpeg'
-  }
-]
+
 
 export const techCards: TechCardProps[]=[
   {
@@ -348,5 +331,52 @@ export const educationDetails = [
     university: 'Panjab univeristy',
     dateLocatoin: 'August 2021 - present | 7/10 CGPA',
     degreeName: 'Masters in computer science and applications'
+  }
+]
+
+export const freeeTimeCardData: FreetimeCardProps[] = [
+  {
+    heading:'Anime',
+    subheading:"Anime transcend mere pastimes for me; they're wellsprings of inspiration. Each intricate narrative and meticulously crafted scene ignite my creativity, influencing my storytelling techniques and enriching my development endeavors.",
+    images:[
+      {
+        name:'onepice',
+        image:'/onepiece.jpeg'
+      },
+      {
+        name:'demonslayer',
+        image:'/demonslayer.jpeg'
+      },
+      {
+        name:'jutsu',
+        image:'/jjk.jpeg'
+      },
+      {
+        name:'naruto',
+        image:'/naruto.jpeg'
+      }
+    ]
+  },
+  {
+    heading:'Mountains',
+    subheading:"Beyond coding, I find solace and inspiration in trekking through mountains. Each step in nature's vast landscapes mirrors the problem-solving journey in coding, fostering resilience, balance, and innovative thinking.",
+    images: [
+      {
+        name:'Trek1',
+        image:'/trek1.jpg'
+      },
+      {
+        name:'Trek2',
+        image:'/trek2.jpg'
+      },
+      {
+        name:'Trek3',
+        image:'/trek3.jpg'
+      },
+      {
+        name:'Trek4',
+        image:'/trek4.jpg'
+      },
+    ]
   }
 ]

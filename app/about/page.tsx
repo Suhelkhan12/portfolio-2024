@@ -1,10 +1,11 @@
-import Anime from "@/components/anime/Anime";
+import Freetimecard from "@/components/freetimecard/Freetimecard";
 import Separator from "@/components/graySeparator/Separator";
 import H1 from "@/components/heading/H1";
 import H2 from "@/components/heading/H2";
 import Info from "@/components/info/Info";
 import Portrait from "@/components/portrait/Portrait";
 import Wrapper from "@/components/wrapper/Wrapper";
+import { freeeTimeCardData } from "@/data/data";
 import { Metadata } from "next";
 import React from "react";
 
@@ -51,16 +52,20 @@ const page = () => {
       </Wrapper>
       <Separator />
       <Wrapper>
-        <div className="flex flex-col justify-between gap-4 px-4 lg:flex-row lg:gap-8">
+        <div className="flex flex-col justify-between gap-4 px-4 lg:gap-8">
           <div className="flex flex-col gap-3">
             <H2 classnames="md:text-5xl text-4xl font-bold text-white">
-              What I&apos;m watching
+              When I&apos;m not coding
             </H2>
-            <p className="text-lg font-normal text-basicDarkGray">
-              One Piece, Demon Slayer, Avatar: The last Airbender, Naruto{" "}
-            </p>
           </div>
-          <Anime />
+          <div className="mt-3 grid gap-5 sm:grid-cols-1 md:grid-cols-2">
+            {freeeTimeCardData.map((freeeTimeCardData) => (
+              <Freetimecard
+                key={freeeTimeCardData.heading}
+                {...freeeTimeCardData}
+              />
+            ))}
+          </div>
         </div>
       </Wrapper>
     </section>

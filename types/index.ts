@@ -64,3 +64,11 @@ export type MobileNavProps = {
 }
 
 export type WorkCardProps =  ProjectCardProps;
+
+export type FreetimeCardProps = {
+  heading:string,
+  subheading:string,
+  images: {
+    name:string,image:string
+  }[]
+}
