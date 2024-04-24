@@ -371,7 +371,7 @@ export const freeeTimeCardData: FreetimeCardProps[] = [
       },
       {
         name:'Trek3',
-        image:'/trek3.jpg'
+        image:'/trek3.jpeg'
       },
       {
         name:'Trek4',
