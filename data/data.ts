@@ -1,4 +1,4 @@
-import { type NavlinkType, type SocialImageType,type ProjectCardProps, GetToKnowMeCardProps, TechCardProps, MobileNavProps, WorkCardProps, FreetimeCardProps } from "@/types";
+import { type NavlinkType, type SocialImageType,type ProjectCardProps, GetToKnowMeCardProps, TechCardProps, MobileNavProps, WorkCardProps, FreetimeCardProps, ExperienceProps } from "@/types";
 import { FaGithub , FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoHomeOutline,IoPersonOutline } from "react-icons/io5";
@@ -302,20 +302,29 @@ export const workCardsData: WorkCardProps[] = [
   }
 ]
 
-export const experienceDetails = [
+export const experienceDetails: ExperienceProps[] = [
   {
     id: 1,
     companyname: 'ParallelHq',
     designation:'UI Engineer',
     dateLocation: 'January 2024 - Present | Bengaluru, India.',
-    about: 'Contributed to UI design and development for websites. Implemented user-centric design principles to enhance usability and accessibility. Collaborated with cross-functional teams to iterate on designs and improve user experience.'
+    about: [
+      {id:'1',point:"Respoinsible for UI design and development for websites, emphasizing user-centric principles for enhanced usability and accessibility."},
+      {id:'2',point:"Collaborate cross-functionally to refine designs and elevate user experience."},
+      {id:'3',point:"Engage in comprehensive analysis and problem-solving to address complex design challenges, ensuring seamless integration and functionality across various platforms."},
+      {id:'5',point:"Demonstrated adaptability and proficiency in addressing varying project demands while upholding stringent standards of quality and efficiency."}
+    ]
   },
   {
     id: 2,
     companyname: 'Teamflexbox',
-    designation:'Frontend developer',
+    designation:'Frontend developer(Freelance)',
     dateLocation: 'July 2023 - Present | Delhi, India.',
-    about: 'Engaged in UI design and development for websites. Applied user-centric design principles to enrich usability and accessibility. Worked collaboratively with cross-functional teams to iterate on designs and enhance user experience.'
+    about: [
+      {id:'1',point:"Led the conceptualization and refinement of intuitive user interfaces for diverse websites, harmonizing aesthetic appeal with usability."},
+      {id:'2',point:"Implemented user-centric design methodologies to ensure optimal accessibility and functionality, enhancing overall user experience."},
+      {id:'5',point:"Demonstrated adaptability and proficiency in addressing varying project demands while upholding stringent standards of quality and efficiency."}
+    ]
   }
 ]
 

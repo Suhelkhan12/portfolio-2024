@@ -72,3 +72,11 @@ export type FreetimeCardProps = {
     name:string,image:string
   }[]
 }
+
+export type ExperienceProps = {
+  id:number,
+  companyname:string,
+  designation:string,
+  dateLocation:string,
+  about: {id:string,point:string}[]
+}

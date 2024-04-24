@@ -2,12 +2,7 @@ import H2 from "@/components/heading/H2";
 import Wrapper from "@/components/wrapper/Wrapper";
 import React from "react";
 import Link from "next/link";
-import {
-  educationDetails,
-  experienceDetails,
-  getToKnowMeData,
-} from "@/data/data";
-import GetToKnowmeCard from "@/components/getToKnowmeCard/GetToKnowmeCard";
+import { educationDetails, experienceDetails } from "@/data/data";
 
 const page = () => {
   return (
@@ -31,34 +26,10 @@ const page = () => {
                 </div>
               </div>
               <div className="mt-10 flex flex-col gap-12 md:mt-20 lg:gap-24">
-                <div className="flex w-full flex-col gap-4 lg:flex-row lg:gap-24 ">
-                  <p className="text-base">Experience</p>
-                  <div className="flex flex-col gap-8 lg:gap-12">
-                    {experienceDetails.map((experience) => (
-                      <div key={experience.id} className="flex flex-col gap-3">
-                        <div className="flex flex-col gap-1">
-                          <div className="flex items-center gap-2">
-                            <p className=" text-[1.125rem] font-semibold sm:text-xl sm:font-semibold">
-                              {experience.companyname}
-                            </p>
-                            <div className=" size-1 rounded-full bg-basicLightGray"></div>
-                            <p className="text-sm sm:text-xl">
-                              {experience.designation}
-                            </p>
-                          </div>
-                          <p className="text-sm text-basicDarkGray sm:text-base">
-                            {experience.dateLocation}{" "}
-                          </p>
-                        </div>
-                        <p className=" text-sm sm:text-base md:max-w-[50rem]">
-                          {experience.about}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
                 <div className="flex w-full flex-col gap-4 lg:flex-row lg:gap-24">
-                  <p className="text-base">Education</p>
+                  <p className="text-[1.5rem] font-medium sm:text-base">
+                    Education
+                  </p>
                   <div className="flex flex-col gap-8 lg:gap-12">
                     {educationDetails.map((educationDetail) => (
                       <div
@@ -66,7 +37,7 @@ const page = () => {
                         className="flex flex-col gap-3"
                       >
                         <div className="flex flex-col gap-1">
-                          <p className="text-[1.125rem] font-semibold sm:text-xl sm:font-semibold">
+                          <p className="text-[1.125rem] font-medium sm:text-xl sm:font-semibold">
                             {educationDetail.university}
                           </p>
                           <p className="text-sm text-basicDarkGray sm:text-base">
@@ -80,21 +51,42 @@ const page = () => {
                     ))}
                   </div>
                 </div>
+                <div className="flex w-full flex-col gap-4 lg:flex-row lg:gap-24 ">
+                  <p className=" text-[1.5rem] font-medium sm:text-base">
+                    Experience
+                  </p>
+                  <div className="flex flex-col gap-8 lg:gap-12">
+                    {experienceDetails.map((experience) => (
+                      <div key={experience.id} className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-1">
+                          <div className="flex items-center gap-2">
+                            <p className=" text-[1.125rem] font-medium sm:text-xl sm:font-semibold">
+                              {experience.companyname}
+                            </p>
+                            <div className=" size-1 rounded-full bg-basicLightGray"></div>
+                            <p className="text-sm sm:text-xl">
+                              {experience.designation}
+                            </p>
+                          </div>
+                          <p className="text-sm text-basicDarkGray sm:text-base">
+                            {experience.dateLocation}{" "}
+                          </p>
+                        </div>
+
+                        <ul className=" list-disc pl-4 md:pl-0">
+                          {experience.about.map((item) => (
+                            <li key={item.id} className="mb-1">
+                              <p className=" text-sm sm:text-base md:max-w-[50rem]">
+                                {item.point}
+                              </p>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </Wrapper>
-      </section>
-      <section className="mb-16">
-        <Wrapper>
-          <div className="px-4">
-            <H2 classnames="md:text-[2.5] text-[2rem] lg:text-[3rem] font-bold text-ligthFaintWhite ">
-              More about me
-            </H2>
-            <div className=" mt-4 flex flex-col gap-8 sm:gap-6 md:flex-row md:gap-8">
-              {getToKnowMeData.map((data) => (
-                <GetToKnowmeCard {...data} key={data.heading} />
-              ))}
             </div>
           </div>
         </Wrapper>
