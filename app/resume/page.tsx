@@ -2,6 +2,7 @@ import H2 from "@/components/heading/H2";
 import Wrapper from "@/components/wrapper/Wrapper";
 import React from "react";
 import Link from "next/link";
+import { MdOutlineArrowOutward } from "react-icons/md";
 import { educationDetails, experienceDetails } from "@/data/data";
 
 const page = () => {
@@ -87,6 +88,21 @@ const page = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="my-6 flex flex-col gap-2 text-[1.5rem]  font-medium text-ligthFaintWhite md:my-8">
+              <p className="">
+                Alternatively, here&apos;s a fancy sheet of paper.
+              </p>
+              <Link
+                href="/SuhelkhanResume.pdf"
+                target="_blank"
+                className=" flex items-center gap-1 text-blue-500 transition hover:text-blue-600"
+              >
+                Résumé
+                <span>
+                  <MdOutlineArrowOutward />
+                </span>
+              </Link>
             </div>
           </div>
         </Wrapper>
