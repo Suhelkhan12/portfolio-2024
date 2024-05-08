@@ -89,7 +89,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="my-6 flex flex-col gap-2 text-base  font-medium  text-ligthFaintWhite md:my-8 md:text-[1.5rem]">
+            <div className="my-6 flex gap-2 text-base  font-medium  text-ligthFaintWhite md:my-8 md:text-[1.5rem]">
               <p className="">
                 Alternatively, here&apos;s a fancy sheet of paper.
               </p>
