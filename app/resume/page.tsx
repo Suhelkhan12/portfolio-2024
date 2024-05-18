@@ -89,14 +89,12 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="my-6 flex gap-2 text-base  font-medium  text-ligthFaintWhite md:my-8 md:text-[1.5rem]">
-              <p className="">
-                Alternatively, here&apos;s a fancy sheet of paper.
-              </p>
+            <div className="my-6 flex justify-center gap-2 text-center font-medium  text-ligthFaintWhite md:my-8 md:text-[1.25rem]">
+              <p>Alternatively, here&apos;s a fancy sheet of paper</p>
               <Link
                 href="/SuhelkhanResume.pdf"
                 target="_blank"
-                className=" flex items-center gap-1 text-blue-500 transition hover:text-blue-600"
+                className=" flex items-center text-blue-500 transition hover:text-blue-600"
               >
                 Résumé
                 <span>
