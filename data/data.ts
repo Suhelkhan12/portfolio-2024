@@ -299,6 +299,14 @@ export const workCardsData: WorkCardProps[] = [
     tags:['React', 'React-router', 'Zod', 'Zustand', 'Tainwind'],
     image:'/work/wordle.png',
     githubLink: 'https://github.com/Suhelkhan12/Wordle.git'
+  },
+  {
+    name:'Remind me',
+    logo:"/work/devflow-logo.svg",
+    description: 'Full stack reminde me web app.',
+    tags:['Nextjs','Server-actions', 'Prisma', 'Zod', 'Tainwind'],
+    image:'/work/remindme.png',
+    githubLink: 'https://github.com/Suhelkhan12/Remind-me'
   }
 ]
 
