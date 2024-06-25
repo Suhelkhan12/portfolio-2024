@@ -25,7 +25,7 @@ const page = () => {
                 </h1>
                 <div className=" w-full lg:w-[1000px]">
                   <p className=" text-[1.5rem] leading-normal md:text-[1.5rem] lg:text-[2rem]">
-                    I'm a <span className=" text-white">UI engineer</span>. I
+                    I'm a <span className=" text-white">Developer</span>. I
                     translate design concepts into functional code, bringing
                     ideas to life with precision and efficiency. I'm fueled by
                     new tech, football and anime.
