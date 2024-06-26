@@ -1,20 +1,30 @@
-import Image from "next/image";
 import OpenToWork from "../opentowork/OpenToWork";
 
 const ScrollDown = () => {
   return (
-    <div className="mt-10 flex  w-full flex-col-reverse justify-between gap-8 md:mt-20 md:flex-row md:items-center md:gap-0">
-      <div className="relative w-28 sm:w-36">
-        <Image
-          className="animate-spin-slow"
-          src="/Scroll.svg"
-          alt="Scroll-down-image"
-          width={160}
-          height={160}
-        />
-        <div className="absolute top-0 flex size-full animate-bounce-slow items-center justify-center">
-          <Image src="/arrow.svg" alt="Smaller-image" width={15} height={15} />
-        </div>
+    <div className="mt-12 flex w-full  justify-center gap-8 md:mt-24 md:flex-row md:items-center md:justify-between md:gap-0">
+      <div className=" hidden md:block"></div>
+      <div className="relative flex h-12 w-8 items-center rounded-[24px] border-[2px] border-white p-1">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className=" animate-bounce"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            {" "}
+            <path
+              d="M7.33199 16.3154C6.94146 15.9248 6.3083 15.9248 5.91777 16.3154C5.52725 16.7059 5.52725 17.339 5.91777 17.7296L10.5834 22.3952C11.3644 23.1762 12.6308 23.1762 13.4118 22.3952L18.0802 17.7267C18.4707 17.3362 18.4707 16.703 18.0802 16.3125C17.6897 15.922 17.0565 15.922 16.666 16.3125L13 19.9786V2.0001C13 1.44781 12.5523 1.0001 12 1.0001C11.4477 1.0001 11 1.44781 11 2.0001V19.9833L7.33199 16.3154Z"
+              fill="#fff"
+            ></path>{" "}
+          </g>
+        </svg>
       </div>
       <OpenToWork />
     </div>

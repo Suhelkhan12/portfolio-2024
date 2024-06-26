@@ -2,7 +2,7 @@ import React from "react";
 
 const OpenToWork = () => {
   return (
-    <div className=" flex items-center gap-4 text-basicDarkGray ">
+    <div className=" hidden items-center gap-4 text-basicDarkGray sm:flex ">
       <div className=" size-3 rounded-full">
         <span className="relative flex size-3">
           <span className="absolute inline-flex size-full animate-ping rounded-full bg-green-500 opacity-75"></span>

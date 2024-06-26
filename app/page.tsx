@@ -8,11 +8,12 @@ import Wrapper from "@/components/wrapper/Wrapper";
 import Link from "next/link";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
+import ScrollDown from "@/components/scrolldown/ScrollDown";
 
 const page = () => {
   return (
     <>
-      <section className="xxl:h-auto flex min-h-screen items-center justify-center sm:pt-[220px] md:block">
+      <section className="flex items-center justify-center pt-[160px]  md:block md:pt-[200px] ">
         <Wrapper>
           <div className="px-4">
             <div className="relative z-10 flex flex-col gap-8 text-basicDarkGray sm:gap-10">
@@ -37,15 +38,16 @@ const page = () => {
                   <PrimaryButton>Let's connect</PrimaryButton>
                 </Link>
               </div>
+              <ScrollDown />
             </div>
           </div>
         </Wrapper>
       </section>
 
-      <section className=" xxl:h-auto mb-28 flex items-center md:my-28 lg:min-h-[100vh] ">
+      <section className=" flex min-h-screen items-center">
         <Wrapper>
           <div className="px-4">
-            <div className=" sticky top-10 mx-auto w-full max-w-[800px] text-center text-white ">
+            <div className="mx-auto w-full max-w-[800px] text-center text-white">
               <H2 classnames="md:text-[3rem] text-[1.5rem] font-semibold ">
                 Great frontend should aim to feel intuitive, as if there was
                 never a better way to implement it.
