@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import PrimaryButton from "@/components/buttons/PrimaryButton";
-import ScrollDown from "@/components/scrolldown/ScrollDown";
 import { getToKnowMeData, projectsData } from "@/data/data";
 import ProjectCard from "@/components/projectscard/ProjectCard";
 import GetToKnowmeCard from "@/components/getToKnowmeCard/GetToKnowmeCard";
@@ -9,11 +7,12 @@ import H2 from "@/components/heading/H2";
 import Wrapper from "@/components/wrapper/Wrapper";
 import Link from "next/link";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
+import PrimaryButton from "@/components/buttons/PrimaryButton";
 
 const page = () => {
   return (
     <>
-      <section className="flex  min-h-screen flex-col items-center justify-center pt-20 sm:pt-36">
+      <section className="xxl:h-auto flex min-h-screen items-center justify-center sm:pt-[220px] md:block">
         <Wrapper>
           <div className="px-4">
             <div className="relative z-10 flex flex-col gap-8 text-basicDarkGray sm:gap-10">
@@ -23,23 +22,35 @@ const page = () => {
                   <span className=" inline-block animate-wave">👋</span>, I'm{" "}
                   <span className=" text-white">Suhel</span>
                 </h1>
-                <div className=" w-full lg:w-[1000px]">
-                  <p className=" text-[1.5rem] leading-normal md:text-[1.5rem] lg:text-[2rem]">
-                    I'm a <span className=" text-white">Frontend devloper</span>
-                    . I translate design concepts into functional code, bringing
-                    ideas to life with precision and efficiency. I'm fueled by
-                    new tech, football and anime.
+                <div className=" w-full lg:w-[800px]">
+                  <p className="text-[1.5rem] leading-normal md:text-[1.5rem] lg:text-[2rem]">
+                    I'm an India based{" "}
+                    <span className=" text-white">Frontend dev</span>. I love
+                    finding simple solutions to complex problems.
                   </p>
                 </div>
+                <Link
+                  href={"https://www.linkedin.com/in/suhell-khan/"}
+                  target="_blank"
+                  className=" mt-8 md:mt-0"
+                >
+                  <PrimaryButton>Let's connect</PrimaryButton>
+                </Link>
               </div>
-              <Link
-                href="https://www.linkedin.com/in/suhel-khan-925aa222a/"
-                target="blank"
-              >
-                <PrimaryButton>Let's connect</PrimaryButton>
-              </Link>
             </div>
-            <ScrollDown />
+          </div>
+        </Wrapper>
+      </section>
+
+      <section className=" xxl:h-auto mb-28 flex items-center md:my-28 lg:min-h-[100vh] ">
+        <Wrapper>
+          <div className="px-4">
+            <div className=" sticky top-10 mx-auto w-full max-w-[800px] text-center text-white ">
+              <H2 classnames="md:text-[3rem] text-[1.5rem] font-semibold ">
+                Great frontend should aim to feel intuitive, as if there was
+                never a better way to implement it.
+              </H2>
+            </div>
           </div>
         </Wrapper>
       </section>

@@ -64,7 +64,7 @@ export const projectsData: ProjectCardProps[] = [
     name:'Devflow',
     logo:'/work/devflow-logo.svg',
     description: 'Revolutionize knowledge sharing and career growth with our StackOverflow-inspired app, seamlessly integrating Q&A forums with job listings across diverse roles.',
-    tags:['Nextjs', 'Server actions', 'Tailwind','Shadcn', 'Mongodb', 'Clerk'],
+    tags:['Nextjs', 'Server actions','Shadcn', 'Mongodb', 'Clerk'],
     image:'/work/devflow.png',
     githubLink: 'https://github.com/Suhelkhan12/devflow.git',
     liveLink:'#'
