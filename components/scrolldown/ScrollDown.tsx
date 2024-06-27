@@ -1,9 +1,6 @@
-import OpenToWork from "../opentowork/OpenToWork";
-
 const ScrollDown = () => {
   return (
-    <div className="mt-12 flex w-full  justify-center gap-8 md:mt-24 md:flex-row md:items-center md:justify-between md:gap-0">
-      <div className=" hidden md:block"></div>
+    <div className="mt-12 flex w-full  justify-center gap-8 md:mt-24 ">
       <div className="relative flex h-12 w-8 items-center rounded-[24px] border-[2px] border-white p-1">
         <svg
           viewBox="0 0 24 24"
@@ -26,7 +23,6 @@ const ScrollDown = () => {
           </g>
         </svg>
       </div>
-      <OpenToWork />
     </div>
   );
 };
