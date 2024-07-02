@@ -36,7 +36,6 @@ export type ButtonProps =  {
 
 export type ProjectCardProps = {
   name:string,
-  description:string,
   githubLink?: string,
   liveLink?:string,
   tags:string[]

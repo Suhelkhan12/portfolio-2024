@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className + " bg-darkBg"}>
         <SpeedInsights />
-        <div className="fixed left-[50%] top-2 z-50 w-[90%] translate-x-[-50%] rounded-xl bg-darkNav backdrop-blur-md sm:top-6  md:top-8 lg:max-w-[75rem] ">
+        <div className="fixed left-[50%] top-0 z-50 w-full translate-x-[-50%]  bg-darkNav backdrop-blur-md">
           <Navbar />
         </div>
         <main className="relative z-10 overflow-hidden">

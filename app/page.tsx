@@ -7,47 +7,27 @@ import H2 from "@/components/heading/H2";
 import Wrapper from "@/components/wrapper/Wrapper";
 import Link from "next/link";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
-import PrimaryButton from "@/components/buttons/PrimaryButton";
-import ScrollDown from "@/components/scrolldown/ScrollDown";
+import HeroTop from "@/components/hero/Top";
+import HeroBottom from "@/components/hero/Bottom";
 
 const page = () => {
   return (
     <>
-      <section className="flex items-center justify-center pt-[160px]  md:block md:pt-[200px] ">
+      <section>
         <Wrapper>
           <div className="px-4">
-            <div className="relative z-10 flex flex-col gap-8 text-basicDarkGray sm:gap-10">
-              <div className="flex flex-col gap-4 lg:gap-8">
-                <h1 className="text-[3rem] font-bold leading-normal md:text-[3.5rem] lg:text-[5rem]">
-                  Hi
-                  <span className=" inline-block animate-wave">👋</span>, I'm{" "}
-                  <span className=" text-white">Suhel</span>
-                </h1>
-                <div className=" w-full lg:w-[800px]">
-                  <p className="text-[1.5rem] leading-normal md:text-[1.5rem] lg:text-[2rem]">
-                    I'm an India based{" "}
-                    <span className=" text-white">Frontend dev</span>. I love
-                    finding simple solutions to complex problems.
-                  </p>
-                </div>
-                <Link
-                  href={"https://www.linkedin.com/in/suhell-khan/"}
-                  target="_blank"
-                  className=" mt-8 md:mt-0"
-                >
-                  <PrimaryButton>Let's connect</PrimaryButton>
-                </Link>
-              </div>
-              <ScrollDown />
+            <div className=" pt-[100px]">
+              <HeroTop />
+              <HeroBottom />
             </div>
           </div>
         </Wrapper>
       </section>
 
-      <section className=" flex min-h-screen items-center">
+      <section className=" hidden min-h-screen items-center">
         <Wrapper>
           <div className="px-4">
-            <div className="mx-auto w-full max-w-[800px] text-center text-white">
+            <div className="mx-auto w-full max-w-[800px] text-center text-basicLightGray">
               <H2 classnames="md:text-[3rem] text-[1.5rem] font-semibold ">
                 Great frontend should aim to feel intuitive, as if there was
                 never a better way to implement it.

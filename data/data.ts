@@ -47,7 +47,6 @@ export const projectsData: ProjectCardProps[] = [
   {
     name:'Cashinvoice',
     logo:'/work/cashinvoice-logo.svg',
-    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/cashinvoice.png',
     liveLink: 'https://cashinvoice.in',
@@ -55,7 +54,6 @@ export const projectsData: ProjectCardProps[] = [
   {
     name:'Shineagro',
     logo:'/work/shineagro-logo.svg',
-    description: 'Shine Agro is your reliable partner for top-quality farm produce, supplying fresh, nutritious, ethically grown products to B2B partners with a focus on sustainability and dependable delivery.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/shineagro.png',
     liveLink: 'https://shineagrotech.com',
@@ -63,7 +61,6 @@ export const projectsData: ProjectCardProps[] = [
   {
     name:'Devflow',
     logo:'/work/devflow-logo.svg',
-    description: 'Revolutionize knowledge sharing and career growth with our StackOverflow-inspired app, seamlessly integrating Q&A forums with job listings across diverse roles.',
     tags:['Nextjs', 'Server actions','Shadcn', 'Mongodb', 'Clerk'],
     image:'/work/devflow.png',
     githubLink: 'https://github.com/Suhelkhan12/devflow.git',
@@ -72,7 +69,6 @@ export const projectsData: ProjectCardProps[] = [
   {
     name:'Word Gamble',
     logo:"/work/wordle-logo.png",
-    description: 'I was so amazed by the popularity of wordle. Being a developer I started thinking about the logic and decided to give it a try.',
     tags:['React', 'React-router', 'Zod', 'Zustand', 'Tainwind'],
     image:'/work/wordle.png',
     githubLink: 'https://github.com/Suhelkhan12/Wordle.git'
@@ -270,7 +266,6 @@ export const workCardsData: WorkCardProps[] = [
   {
     name:'Cashinvoice',
     logo: '/work/cashinvoice-logo.svg',
-    description: 'Empower your financial ecosystem with our tailored solutions, designed to optimize the supply chain and unleash the potential of stakeholders at every level.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/cashinvoice.png',
     liveLink: 'https://cashinvoice.in',
@@ -278,7 +273,6 @@ export const workCardsData: WorkCardProps[] = [
   {
     name:'Shineagro',
     logo:'/work/shineagro-logo.svg',
-    description: 'Shine Agro is your reliable partner for top-quality farm produce, supplying fresh, nutritious, ethically grown products to B2B partners with a focus on sustainability and dependable delivery.',
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/shineagro.png',
     liveLink: 'https://shineagrotech.com',
@@ -286,7 +280,6 @@ export const workCardsData: WorkCardProps[] = [
   {
     name:'Devflow',
     logo:'/work/devflow-logo.svg',
-    description: 'Revolutionize knowledge sharing and career growth with our StackOverflow-inspired app, seamlessly integrating Q&A forums with job listings across diverse roles.',
     tags:['Nextjs', 'Server actions', 'Tailwind','Shadcn', 'Mongodb', 'Clerk'],
     image:'/work/devflow.png',
     githubLink: 'https://github.com/Suhelkhan12/devflow.git',
@@ -295,7 +288,6 @@ export const workCardsData: WorkCardProps[] = [
   {
     name:'Word Gamble',
     logo:"/work/wordle-logo.png",
-    description: 'I was so amazed by the popularity of wordle. Being a developer I started thinking about the logic and decided to give it a try.',
     tags:['React', 'React-router', 'Zod', 'Zustand', 'Tainwind'],
     image:'/work/wordle.png',
     githubLink: 'https://github.com/Suhelkhan12/Wordle.git'
@@ -303,7 +295,6 @@ export const workCardsData: WorkCardProps[] = [
   {
     name:'Remind me',
     logo:"/work/devflow-logo.svg",
-    description: 'Full stack reminde me web app.',
     tags:['Nextjs','Server-actions', 'Prisma', 'Zod', 'Tainwind'],
     image:'/work/remindme.png',
     githubLink: 'https://github.com/Suhelkhan12/Remind-me'

@@ -5,13 +5,13 @@ import Navlink from "../navlink/Navlink";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between p-4 ">
+    <nav className="mx-auto flex w-full items-center justify-between py-6 lg:max-w-[75rem]">
       <div className=" hidden w-full justify-between sm:flex">
         <div className="flex items-center gap-10">
           <Link href="/" className="transition hover:rotate-6">
             <FaCode className="text-3xl text-white" />
           </Link>
-          <ul className="flex gap-10">
+          <ul className="flex gap-16">
             {navlinks.map((link) => (
               <li key={link.name} className="relative">
                 <Navlink {...link} />

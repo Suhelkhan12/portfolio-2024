@@ -35,11 +35,10 @@ const ProjectCard = (props: ProjectCardProps) => {
         </div>
         <div className=" mt-4 flex flex-col gap-2 ">
           <h2 className=" text-[2rem] font-medium text-white">{props.name}</h2>
-          <p className=" text-basicDarkGray">{props.description}</p>
         </div>
       </div>
 
-      <div className="mt-12 flex items-center justify-between gap-2 text-white transition duration-300  ease-in-out group-hover:text-blue-500">
+      <div className="mt-8 flex items-center justify-between gap-2 text-white transition duration-300  ease-in-out group-hover:text-blue-500">
         {props.liveLink === linkToUse && (
           <div className="flex items-center gap-2">
             <p className="text-sm">See live website</p>{" "}
