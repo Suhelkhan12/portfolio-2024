@@ -9,7 +9,7 @@ const HeroBottom = () => {
         <PrimaryButton>Let&apos;s connect</PrimaryButton>
       </Link>
       <div className=" w-full max-w-[50rem]">
-        <h1 className=" text-[1.25rem] font-medium text-lightCardBg md:text-[3vw]">
+        <h1 className=" text-[1.25rem] font-medium text-lightCardBg md:text-[2.75rem]">
           Hi there! I&apos;m Suhel. I&apos;m an India-based Frontend Developer
           with a passion for creating intuitive and engaging user interfaces. I
           love finding simple solutions to complex problems.

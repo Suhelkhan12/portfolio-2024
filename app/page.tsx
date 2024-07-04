@@ -24,19 +24,6 @@ const page = () => {
         </Wrapper>
       </section>
 
-      <section className=" hidden min-h-screen items-center">
-        <Wrapper>
-          <div className="px-4">
-            <div className="mx-auto w-full max-w-[800px] text-center text-basicLightGray">
-              <H2 classnames="md:text-[3rem] text-[1.5rem] font-semibold ">
-                Great frontend should aim to feel intuitive, as if there was
-                never a better way to implement it.
-              </H2>
-            </div>
-          </div>
-        </Wrapper>
-      </section>
-
       <section className=" mt-28 ">
         <Wrapper>
           <div className="px-4">
@@ -55,6 +42,19 @@ const page = () => {
               <Link href="/work">
                 <SecondaryButton>View more</SecondaryButton>
               </Link>
+            </div>
+          </div>
+        </Wrapper>
+      </section>
+
+      <section className="my-[240px] items-center">
+        <Wrapper>
+          <div className="px-4">
+            <div className="mx-auto w-full max-w-[800px] text-center text-basicLightGray">
+              <H2 classnames="md:text-[3rem] text-[1.5rem] font-semibold ">
+                Great frontend should aim to feel intuitive, as if there was
+                never a better way to implement it.
+              </H2>
             </div>
           </div>
         </Wrapper>
