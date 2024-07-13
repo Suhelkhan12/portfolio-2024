@@ -62,7 +62,15 @@ export type MobileNavProps = {
   icon: IconType
 }
 
-export type WorkCardProps =  ProjectCardProps;
+export type WorkCardProps =  {
+  name:string,
+  githubLink?: string,
+  liveLink?:string,
+  tags:string[],
+  image:string,
+  logo:string,
+  type:string
+};
 
 export type FreetimeCardProps = {
   heading:string,

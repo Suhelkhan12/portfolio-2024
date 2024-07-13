@@ -24,7 +24,7 @@ const page = () => {
         </Wrapper>
       </section>
 
-      <section className=" mt-28 ">
+      <section className=" mt-[200px] ">
         <Wrapper>
           <div className="px-4">
             <H2 classnames="md:text-[3.5rem] text-[2.5rem]  font-bold text-white">
@@ -47,7 +47,7 @@ const page = () => {
         </Wrapper>
       </section>
 
-      <section className="my-[240px] items-center">
+      <section className="my-[260px] items-center">
         <Wrapper>
           <div className="px-4">
             <div className="mx-auto w-full max-w-[800px] text-center text-basicLightGray">

@@ -59,20 +59,12 @@ export const projectsData: ProjectCardProps[] = [
     liveLink: 'https://shineagrotech.com',
   },
   {
-    name:'Devflow',
-    logo:'/work/devflow-logo.svg',
-    tags:['Nextjs', 'Server actions','Shadcn', 'Mongodb', 'Clerk'],
-    image:'/work/devflow.png',
-    githubLink: 'https://github.com/Suhelkhan12/devflow.git',
-    liveLink:'#'
+    name:'Perdoo',
+    logo:'/work/perdoo-fav.svg',
+    tags:['Webflow', 'GSAP','Finsweet', 'Recruitee'],
+    image:'/work/perdoo.png',
+    liveLink:'https://www.perdoo.com/'
   },
-  {
-    name:'Word Gamble',
-    logo:"/work/wordle-logo.png",
-    tags:['React', 'React-router', 'Zod', 'Zustand', 'Tainwind'],
-    image:'/work/wordle.png',
-    githubLink: 'https://github.com/Suhelkhan12/Wordle.git'
-  }
 ]
 
 // get to know me cards data
@@ -269,6 +261,7 @@ export const workCardsData: WorkCardProps[] = [
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/cashinvoice.png',
     liveLink: 'https://cashinvoice.in',
+    type:"Selected"
   },
   {
     name:'Shineagro',
@@ -276,6 +269,17 @@ export const workCardsData: WorkCardProps[] = [
     tags:['Webflow', 'Finsweet', 'GSAP'],
     image:'/work/shineagro.png',
     liveLink: 'https://shineagrotech.com',
+    type:"Selected"
+
+  },
+  {
+    name:'Perdoo',
+    logo:'/work/perdoo-fav.svg',
+    tags:['Webflow', 'GSAP','Finsweet', 'Recruitee'],
+    image:'/work/perdoo.png',
+    liveLink:'https://www.perdoo.com/',
+    type:"Selected"
+
   },
   {
     name:'Devflow',
@@ -283,21 +287,26 @@ export const workCardsData: WorkCardProps[] = [
     tags:['Nextjs', 'Server actions', 'Tailwind','Shadcn', 'Mongodb', 'Clerk'],
     image:'/work/devflow.png',
     githubLink: 'https://github.com/Suhelkhan12/devflow.git',
-    liveLink: '#'
+    liveLink: '#',
+    type:'Learning Experiment'
   },
   {
     name:'Word Gamble',
     logo:"/work/wordle-logo.png",
     tags:['React', 'React-router', 'Zod', 'Zustand', 'Tainwind'],
     image:'/work/wordle.png',
-    githubLink: 'https://github.com/Suhelkhan12/Wordle.git'
+    githubLink: 'https://github.com/Suhelkhan12/Wordle.git',
+    type:'Learning Experiment'
+
   },
   {
     name:'Remind me',
     logo:"/work/devflow-logo.svg",
     tags:['Nextjs','Server-actions', 'Prisma', 'Zod', 'Tainwind'],
     image:'/work/remindme.png',
-    githubLink: 'https://github.com/Suhelkhan12/Remind-me'
+    githubLink: 'https://github.com/Suhelkhan12/Remind-me',
+    type:'Learning Experiment'
+
   }
 ]
 
@@ -386,5 +395,16 @@ export const freeeTimeCardData: FreetimeCardProps[] = [
         image:'/trek4.jpg'
       },
     ]
+  }
+]
+
+export const workCategory = [
+  {
+    id:"live",
+    name:"Live",
+  },
+  {
+    id:"learning-experiment",
+    name:"Learning experiemnt",
   }
 ]
