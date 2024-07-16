@@ -281,15 +281,15 @@ export const workCardsData: WorkCardProps[] = [
     type:"Selected"
 
   },
-  {
-    name:'Devflow',
-    logo:'/work/devflow-logo.svg',
-    tags:['Nextjs', 'Server actions', 'Tailwind','Shadcn', 'Mongodb', 'Clerk'],
-    image:'/work/devflow.png',
-    githubLink: 'https://github.com/Suhelkhan12/devflow.git',
-    liveLink: '#',
-    type:'Learning Experiment'
-  },
+  // {
+  //   name:'Devflow',
+  //   logo:'/work/devflow-logo.svg',
+  //   tags:['Nextjs', 'Server actions', 'Tailwind','Shadcn', 'Mongodb', 'Clerk'],
+  //   image:'/work/devflow.png',
+  //   githubLink: 'https://github.com/Suhelkhan12/devflow.git',
+  //   liveLink: '#',
+  //   type:'Learning Experiment'
+  // },
   {
     name:'Word Gamble',
     logo:"/work/wordle-logo.png",
