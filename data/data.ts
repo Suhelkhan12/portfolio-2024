@@ -378,10 +378,33 @@ export const experienceDetails: ExperienceProps[] = [
     ],
   },
   {
+    id: 3,
+    companyname: "ParallelHq",
+    designation: "UI Engineer(Intern)",
+    dateLocation: "May 2023 - Oct 2023 | Bengaluru, India.",
+    about: [
+      {
+        id: "1",
+        point:
+          "Learned Webflow and Finsweet for low-code development, gaining proficiency in creating complex layouts and interactions.",
+      },
+      {
+        id: "2",
+        point:
+          " Solved challenging animations using GSAP, improving the visual appeal and interactivity of client websites.",
+      },
+      {
+        id: "3",
+        point:
+          "Contributed to client projects by assisting in the development of UI/UX elements and ensuring their alignment with project requirements.",
+      },
+    ],
+  },
+  {
     id: 2,
     companyname: "Teamflexbox",
-    designation: "Frontend developer(Freelance)",
-    dateLocation: "July 2023 - Present | Delhi, India.",
+    designation: "Frontend developer",
+    dateLocation: "Jan 2023 - May 2023 | Delhi, India.",
     about: [
       {
         id: "1",
