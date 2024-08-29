@@ -42,6 +42,7 @@ const ContactForm = () => {
               <FormControl>
                 <Input
                   placeholder="Enter your name"
+                  type="text"
                   {...field}
                   className="!m-0 rounded-none border-none bg-transparent  !p-0 px-0 placeholder:text-basicMediumGray"
                   style={{ boxShadow: "none", background: "transparent" }}
@@ -60,6 +61,7 @@ const ContactForm = () => {
               <FormControl>
                 <Input
                   placeholder="Enter your email"
+                  type="email"
                   {...field}
                   className=" !m-0 rounded-none border-none  bg-transparent !p-0 px-0 placeholder:text-basicMediumGray  "
                   style={{ boxShadow: "none", background: "transparent" }}
