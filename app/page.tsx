@@ -15,7 +15,7 @@ const page = () => {
     <>
       <section>
         <Wrapper>
-          <div className="px-4">
+          <div className=" px-4">
             <div className=" pt-[100px]">
               <HeroTop />
               <HeroBottom />
@@ -50,10 +50,11 @@ const page = () => {
       <section className="my-[260px] items-center">
         <Wrapper>
           <div className="px-4">
-            <div className="mx-auto w-full max-w-[800px] text-center text-basicLightGray">
+            <div className="mx-auto w-full max-w-[900px] text-center text-basicLightGray">
               <H2 classnames="md:text-[3rem] text-[1.5rem] font-semibold ">
-                Great frontend should aim to feel intuitive, as if there was
-                never a better way to implement it.
+                Great development should strive to create an experience so
+                seamless and intuitive that it feels like the only way it could
+                have been doveloped.
               </H2>
             </div>
           </div>

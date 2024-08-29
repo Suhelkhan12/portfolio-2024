@@ -27,6 +27,10 @@ export const navlinks: NavlinkType[] = [
     name: "Work",
   },
   {
+    href: "/techstack",
+    name: "Tech",
+  },
+  {
     href: "/resume",
     name: "Resume",
   },
@@ -136,23 +140,12 @@ export const techCards: TechCardProps[] = [
     category: "development",
   },
   {
-    name: "VScode",
-    tag: "Editor",
-    image: "/tech/VSCode.svg",
+    name: "Prisma",
+    tag: "ORM",
+    image: "/tech/prisma.png",
     category: "development",
   },
-  {
-    name: "Github",
-    tag: "Version control",
-    image: "/tech/Github.svg",
-    category: "development",
-  },
-  {
-    name: "Sanity",
-    tag: "Headless CMS",
-    image: "/tech/Sanity.svg",
-    category: "development",
-  },
+
   {
     name: "Typescript",
     tag: "Language",
@@ -166,6 +159,18 @@ export const techCards: TechCardProps[] = [
     category: "development",
   },
   {
+    name: "Zod",
+    tag: "Validations",
+    image: "/tech/Zod.svg",
+    category: "development",
+  },
+  {
+    name: "Sanity",
+    tag: "Headless CMS",
+    image: "/tech/Sanity.svg",
+    category: "development",
+  },
+  {
     name: "GSAP",
     tag: "Animations",
     image: "/tech/gsap.png",
@@ -175,6 +180,18 @@ export const techCards: TechCardProps[] = [
     name: "Figma",
     tag: "Design",
     image: "/tech/Figma.svg",
+    category: "development",
+  },
+  {
+    name: "VScode",
+    tag: "Editor",
+    image: "/tech/VSCode.svg",
+    category: "development",
+  },
+  {
+    name: "Github",
+    tag: "Version control",
+    image: "/tech/Github.svg",
     category: "development",
   },
   {
@@ -201,12 +218,7 @@ export const techCards: TechCardProps[] = [
     image: "/tech/react-query.svg",
     category: "learning",
   },
-  {
-    name: "Zod",
-    tag: "Validations",
-    image: "/tech/Zod.svg",
-    category: "learning",
-  },
+
   {
     name: "Node.js",
     tag: "Backend",

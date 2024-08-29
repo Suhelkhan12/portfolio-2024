@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,21 +31,27 @@
     height: 140px;
   }
   .primaryBtnLight {
-    background: var(--Gradient-Dark-Gradient, linear-gradient(180deg, #1a1a1a 0%, #131313 100%));
-    box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(255, 255, 255, 0.08) inset, 0px 1px 2px 0px rgba(255, 255, 255, 0.02) inset;
+    background: var(
+      --Gradient-Dark-Gradient,
+      linear-gradient(180deg, #1a1a1a 0%, #131313 100%)
+    );
+    box-shadow:
+      0px 7px 4px 0px rgba(0, 0, 0, 0.15),
+      0px 2px 4px 0px rgba(255, 255, 255, 0.08) inset,
+      0px 1px 2px 0px rgba(255, 255, 255, 0.02) inset;
   }
   .secondaryButtonDark {
     background: var(--Basic-Onyx, #181818);
   }
   .clicktext::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 50%;
-    margin-left: -10px; 
+    margin-left: -10px;
     border: solid transparent;
     border-width: 10px;
-    border-top-color: #fff; 
+    border-top-color: #fff;
     z-index: 10;
   }
 }

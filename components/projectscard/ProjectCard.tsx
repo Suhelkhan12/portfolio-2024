@@ -11,7 +11,7 @@ const ProjectCard = (props: ProjectCardProps) => {
     <Link
       href={linkToUse!}
       target="_blank"
-      className="group flex flex-col justify-between rounded-lg bg-basicOnyx p-3 transition hover:bg-white/5 md:rounded-xl md:p-4 lg:rounded-2xl lg:p-6 "
+      className="group relative flex flex-col justify-between rounded-lg bg-basicOnyx p-3 transition hover:bg-white/5 md:rounded-xl md:p-4 lg:rounded-2xl lg:p-6 "
     >
       <div>
         <div className="relative h-[14rem]  w-full overflow-hidden rounded-lg md:h-[16rem] lg:h-[20rem] ">
