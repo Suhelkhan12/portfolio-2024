@@ -63,7 +63,6 @@ export const projectsData: ProjectCardProps[] = [
     tags: ["Webflow", "GSAP", "Finsweet"],
     image: "/work/cube.png",
     liveLink: "https://www.cube.ms/",
-    type: "Side project",
   },
 
   {
@@ -72,7 +71,6 @@ export const projectsData: ProjectCardProps[] = [
     tags: ["Webflow", "Finsweet", "GSAP"],
     image: "/work/cashinvoice.png",
     liveLink: "https://cashinvoice.in",
-    type: "Side project",
   },
   {
     name: "Shineagro",
@@ -80,7 +78,6 @@ export const projectsData: ProjectCardProps[] = [
     tags: ["Webflow", "Finsweet", "GSAP"],
     image: "/work/shineagro.png",
     liveLink: "https://shineagrotech.com",
-    type: "Side project",
   },
   {
     name: "Perdoo",
@@ -88,7 +85,6 @@ export const projectsData: ProjectCardProps[] = [
     tags: ["Webflow", "GSAP", "Finsweet", "Node", "Cloudfare workers"],
     image: "/work/perdoo.png",
     liveLink: "https://www.perdoo.com/",
-    type: "Side project",
   },
 ];
 
