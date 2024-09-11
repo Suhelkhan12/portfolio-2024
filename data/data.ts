@@ -63,6 +63,7 @@ export const projectsData: ProjectCardProps[] = [
     tags: ["Webflow", "GSAP", "Finsweet"],
     image: "/work/cube.png",
     liveLink: "https://www.cube.ms/",
+    type: "Side project",
   },
 
   {
@@ -71,6 +72,7 @@ export const projectsData: ProjectCardProps[] = [
     tags: ["Webflow", "Finsweet", "GSAP"],
     image: "/work/cashinvoice.png",
     liveLink: "https://cashinvoice.in",
+    type: "Side project",
   },
   {
     name: "Shineagro",
@@ -78,6 +80,7 @@ export const projectsData: ProjectCardProps[] = [
     tags: ["Webflow", "Finsweet", "GSAP"],
     image: "/work/shineagro.png",
     liveLink: "https://shineagrotech.com",
+    type: "Side project",
   },
   {
     name: "Perdoo",
@@ -85,6 +88,7 @@ export const projectsData: ProjectCardProps[] = [
     tags: ["Webflow", "GSAP", "Finsweet", "Node", "Cloudfare workers"],
     image: "/work/perdoo.png",
     liveLink: "https://www.perdoo.com/",
+    type: "Side project",
   },
 ];
 
@@ -309,7 +313,7 @@ export const workCardsData: WorkCardProps[] = [
   {
     name: "Perdoo",
     logo: "/work/perdoo-fav.svg",
-    tags: ["Webflow", "GSAP", "Finsweet", "Recruitee"],
+    tags: ["Webflow", "GSAP", "Finsweet", "Node", "Cloudfare workers"],
     image: "/work/perdoo.png",
     liveLink: "https://www.perdoo.com/",
     type: "Selected",
@@ -330,20 +334,38 @@ export const workCardsData: WorkCardProps[] = [
     liveLink: "#",
     type: "Learning Experiment",
   },
-  {
-    name: "Word Gamble",
-    logo: "/work/wordle-logo.png",
-    tags: ["React", "React-router", "Zod", "Zustand", "Tainwind"],
-    image: "/work/wordle.png",
-    githubLink: "https://github.com/Suhelkhan12/Wordle.git",
-    type: "Learning Experiment",
-  },
+  // {
+  //   name: "Word Gamble",
+  //   logo: "/work/wordle-logo.png",
+  //   tags: ["React", "React-router", "Zod", "Zustand", "Tainwind"],
+  //   image: "/work/wordle.png",
+  //   githubLink: "https://github.com/Suhelkhan12/Wordle.git",
+  //   type: "Learning Experiment",
+  // },
   {
     name: "Remind me",
     logo: "/work/devflow-logo.svg",
     tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
     image: "/work/remindme.png",
     githubLink: "https://github.com/Suhelkhan12/Remind-me",
+    type: "Learning Experiment",
+  },
+  {
+    name: "Next auth implementation",
+    logo: "/work/lock.svg",
+    tags: [
+      "Nextjs",
+      "Server actions",
+      "NextAuth",
+      "Mongodb",
+      "Prisma",
+      "Zod",
+      "Tailwind",
+      "Shadcn",
+    ],
+    image: "/work/next-auth.png",
+    githubLink: "https://github.com/Suhelkhan12/AuthJs-Next-Auth-guide",
+    liveLink: "#",
     type: "Learning Experiment",
   },
 ];

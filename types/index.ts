@@ -44,6 +44,7 @@ export type ProjectCardProps = {
   tags: string[];
   image: string;
   logo: string;
+  type: "Side project";
 };
 
 export type GetToKnowMeCardProps = {
