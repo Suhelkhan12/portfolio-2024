@@ -73,7 +73,7 @@ export type WorkCardProps = {
   tags: string[];
   image: string;
   logo: string;
-  type: "Selected" | "Learning Experiment";
+  type: "Selected" | "Learning Experiment" | "Side Project";
 };
 
 export type FreetimeCardProps = {
