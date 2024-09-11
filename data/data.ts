@@ -138,6 +138,12 @@ export const techCards: TechCardProps[] = [
     category: "development",
   },
   {
+    name: "Zustand",
+    tag: "State management",
+    image: "/tech/Zustand.svg",
+    category: "development",
+  },
+  {
     name: "React Hook Form",
     tag: "Library",
     image: "/tech/react-hook-form.svg",
@@ -149,7 +155,6 @@ export const techCards: TechCardProps[] = [
     image: "/tech/prisma.png",
     category: "development",
   },
-
   {
     name: "Typescript",
     tag: "Language",
@@ -163,17 +168,23 @@ export const techCards: TechCardProps[] = [
     category: "development",
   },
   {
+    name: "C++",
+    tag: "Language",
+    image: "/tech/cpp.svg",
+    category: "development",
+  },
+  {
     name: "Zod",
     tag: "Validations",
     image: "/tech/Zod.svg",
     category: "development",
   },
-  {
-    name: "Sanity",
-    tag: "Headless CMS",
-    image: "/tech/Sanity.svg",
-    category: "development",
-  },
+  // {
+  //   name: "Sanity",
+  //   tag: "Headless CMS",
+  //   image: "/tech/Sanity.svg",
+  //   category: "development",
+  // },
   {
     name: "GSAP",
     tag: "Animations",
@@ -209,12 +220,6 @@ export const techCards: TechCardProps[] = [
     tag: "Integration",
     image: "/tech/finsweet.png",
     category: "low-code",
-  },
-  {
-    name: "Zustand",
-    tag: "State management",
-    image: "/tech/Zustand.svg",
-    category: "learning",
   },
   {
     name: "React Query",
