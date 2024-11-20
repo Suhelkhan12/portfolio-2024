@@ -55,7 +55,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             </div>
 
             <div className=" transition duration-300 sm:opacity-0 sm:group-hover:opacity-100">
-              <ProjectTag text="Side project" />
+              <ProjectTag text="Freelance project" />
             </div>
           </div>
         )}

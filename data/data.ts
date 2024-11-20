@@ -58,26 +58,26 @@ export const navlinkImages: SocialImageType[] = [
 // all projects data
 export const projectsData: ProjectCardProps[] = [
   {
+    name: "Video compression tool",
+    logo: "/work/video.svg",
+    tags: ["Nextjs", "ffmpeg wasm", "Shadcn Ui", "Tainwindcss"],
+    image: "/work/video.png",
+    githubLink: "https://github.com/Suhelkhan12/Vidsquash",
+  },
+  {
+    name: "Remind me",
+    logo: "/work/devflow-logo.svg",
+    tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
+    image: "/work/remindme.png",
+    githubLink: "https://github.com/Suhelkhan12/Remind-me",
+  },
+
+  {
     name: "Cube",
     logo: "/work/cube.svg",
     tags: ["Webflow", "GSAP", "Finsweet"],
     image: "/work/cube.png",
     liveLink: "https://www.cube.ms/",
-  },
-
-  {
-    name: "Cashinvoice",
-    logo: "/work/cashinvoice-logo.svg",
-    tags: ["Webflow", "Finsweet", "GSAP"],
-    image: "/work/cashinvoice.png",
-    liveLink: "https://cashinvoice.in",
-  },
-  {
-    name: "Shineagro",
-    logo: "/work/shineagro-logo.svg",
-    tags: ["Webflow", "Finsweet", "GSAP"],
-    image: "/work/shineagro.png",
-    liveLink: "https://shineagrotech.com",
   },
   {
     name: "Perdoo",
@@ -86,6 +86,101 @@ export const projectsData: ProjectCardProps[] = [
     image: "/work/perdoo.png",
     liveLink: "https://www.perdoo.com/",
   },
+];
+
+export const workCardsData: WorkCardProps[] = [
+  {
+    name: "Video compression tool",
+    logo: "/work/video.svg",
+    tags: ["Nextjs", "ffmpeg wasm", "Shadcn Ui", "Tainwindcss"],
+    image: "/work/video.png",
+    githubLink: "https://github.com/Suhelkhan12/Vidsquash",
+    type: "Learning Experiment",
+  },
+  {
+    name: "Remind me",
+    logo: "/work/devflow-logo.svg",
+    tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
+    image: "/work/remindme.png",
+    githubLink: "https://github.com/Suhelkhan12/Remind-me",
+    type: "Learning Experiment",
+  },
+
+  {
+    name: "Cube",
+    logo: "/work/cube.svg",
+    tags: ["Webflow", "GSAP", "Finsweet"],
+    image: "/work/cube.png",
+    liveLink: "https://www.cube.ms/",
+    type: "Selected",
+  },
+  {
+    name: "Next auth implementation",
+    logo: "/work/lock.svg",
+    tags: [
+      "Nextjs",
+      "Server actions",
+      "NextAuth",
+      "Mongodb",
+      "Prisma",
+      "Zod",
+      "Tailwind",
+      "Shadcn",
+    ],
+    image: "/work/next-auth.png",
+    githubLink: "https://github.com/Suhelkhan12/AuthJs-Next-Auth-guide",
+    liveLink: "#",
+    type: "Learning Experiment",
+  },
+  {
+    name: "Perdoo",
+    logo: "/work/perdoo-fav.svg",
+    tags: ["Webflow", "GSAP", "Finsweet", "Node", "Cloudfare workers"],
+    image: "/work/perdoo.png",
+    liveLink: "https://www.perdoo.com/",
+    type: "Selected",
+  },
+  {
+    name: "Cashinvoice",
+    logo: "/work/cashinvoice-logo.svg",
+    tags: ["Webflow", "Finsweet", "GSAP"],
+    image: "/work/cashinvoice.png",
+    liveLink: "https://cashinvoice.in",
+    type: "Selected",
+  },
+  {
+    name: "Shineagro",
+    logo: "/work/shineagro-logo.svg",
+    tags: ["Webflow", "Finsweet", "GSAP"],
+    image: "/work/shineagro.png",
+    liveLink: "https://shineagrotech.com",
+    type: "Selected",
+  },
+
+  // {
+  //   name: "Devflow",
+  //   logo: "/work/devflow-logo.svg",
+  //   tags: [
+  //     "Nextjs",
+  //     "Server actions",
+  //     "Tailwind",
+  //     "Shadcn",
+  //     "Mongodb",
+  //     "Clerk",
+  //   ],
+  //   image: "/work/devflow.png",
+  //   githubLink: "https://github.com/Suhelkhan12/devflow.git",
+  //   liveLink: "#",
+  //   type: "Learning Experiment",
+  // },
+  // {
+  //   name: "Word Gamble",
+  //   logo: "/work/wordle-logo.png",
+  //   tags: ["React", "React-router", "Zod", "Zustand", "Tainwind"],
+  //   image: "/work/wordle.png",
+  //   githubLink: "https://github.com/Suhelkhan12/Wordle.git",
+  //   type: "Learning Experiment",
+  // },
 ];
 
 // get to know me cards data
@@ -283,92 +378,6 @@ export const portraitText = [
   "I enjoy football.",
   "Animes are best.",
   "Upcoming Full Stack Dev.",
-];
-
-export const workCardsData: WorkCardProps[] = [
-  {
-    name: "Cube",
-    logo: "/work/cube.svg",
-    tags: ["Webflow", "GSAP", "Finsweet"],
-    image: "/work/cube.png",
-    liveLink: "https://www.cube.ms/",
-    type: "Selected",
-  },
-
-  {
-    name: "Cashinvoice",
-    logo: "/work/cashinvoice-logo.svg",
-    tags: ["Webflow", "Finsweet", "GSAP"],
-    image: "/work/cashinvoice.png",
-    liveLink: "https://cashinvoice.in",
-    type: "Selected",
-  },
-  {
-    name: "Shineagro",
-    logo: "/work/shineagro-logo.svg",
-    tags: ["Webflow", "Finsweet", "GSAP"],
-    image: "/work/shineagro.png",
-    liveLink: "https://shineagrotech.com",
-    type: "Selected",
-  },
-  {
-    name: "Perdoo",
-    logo: "/work/perdoo-fav.svg",
-    tags: ["Webflow", "GSAP", "Finsweet", "Node", "Cloudfare workers"],
-    image: "/work/perdoo.png",
-    liveLink: "https://www.perdoo.com/",
-    type: "Selected",
-  },
-  {
-    name: "Devflow",
-    logo: "/work/devflow-logo.svg",
-    tags: [
-      "Nextjs",
-      "Server actions",
-      "Tailwind",
-      "Shadcn",
-      "Mongodb",
-      "Clerk",
-    ],
-    image: "/work/devflow.png",
-    githubLink: "https://github.com/Suhelkhan12/devflow.git",
-    liveLink: "#",
-    type: "Learning Experiment",
-  },
-  // {
-  //   name: "Word Gamble",
-  //   logo: "/work/wordle-logo.png",
-  //   tags: ["React", "React-router", "Zod", "Zustand", "Tainwind"],
-  //   image: "/work/wordle.png",
-  //   githubLink: "https://github.com/Suhelkhan12/Wordle.git",
-  //   type: "Learning Experiment",
-  // },
-  {
-    name: "Remind me",
-    logo: "/work/devflow-logo.svg",
-    tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
-    image: "/work/remindme.png",
-    githubLink: "https://github.com/Suhelkhan12/Remind-me",
-    type: "Learning Experiment",
-  },
-  {
-    name: "Next auth implementation",
-    logo: "/work/lock.svg",
-    tags: [
-      "Nextjs",
-      "Server actions",
-      "NextAuth",
-      "Mongodb",
-      "Prisma",
-      "Zod",
-      "Tailwind",
-      "Shadcn",
-    ],
-    image: "/work/next-auth.png",
-    githubLink: "https://github.com/Suhelkhan12/AuthJs-Next-Auth-guide",
-    liveLink: "#",
-    type: "Learning Experiment",
-  },
 ];
 
 export const experienceDetails: ExperienceProps[] = [

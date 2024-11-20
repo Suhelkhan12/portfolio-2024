@@ -28,7 +28,7 @@ const page = () => {
         <Wrapper>
           <div className="px-4">
             <H2 classnames="md:text-[3.5rem] text-[2.5rem]  font-bold text-white">
-              Selected work
+              My Case studies & Client Works
             </H2>
             <div
               className=" mt-8 grid grid-cols-1 gap-8 sm:gap-6 md:grid-cols-2 md:gap-8"

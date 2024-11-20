@@ -46,7 +46,7 @@ const Page = () => {
     <section className="relative z-50 mb-28 pt-20 sm:pt-36">
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
-          <H1>Work</H1>
+          <H1>My Case studies & Client Works</H1>
           <p className="text-[1.25rem] font-normal text-basicMediumGray md:text-[1.5rem]">
             List of my selected works and side projects.
           </p>
