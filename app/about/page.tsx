@@ -7,7 +7,9 @@ import Portrait from "@/components/portrait/Portrait";
 import Wrapper from "@/components/wrapper/Wrapper";
 import { freeeTimeCardData } from "@/data/data";
 import { Metadata } from "next";
+import Link from "next/link";
 import React from "react";
+import { MdArrowOutward } from "react-icons/md";
 
 export const metadata: Metadata = {
   title: "Suhel Khan: Frontend Engineer | Portfolio, Projects.",
@@ -66,6 +68,21 @@ const page = () => {
               />
             ))}
           </div>
+        </div>
+      </Wrapper>
+      <Wrapper>
+        <div className="mt-24 flex flex-col items-center justify-center gap-2 px-4 text-center text-xl font-medium text-bgLight md:flex-row md:text-2xl">
+          <span className=" font-normal">
+            Alternatively, here&apos;s a fancy sheet of paper
+          </span>
+          <Link
+            href={"/Suhel-Resume.pdf"}
+            target="_blank"
+            className="flex items-center justify-center  text-blue-500 transition-colors hover:text-blue-400"
+          >
+            Résumé
+            <MdArrowOutward className=" size-5" />
+          </Link>
         </div>
       </Wrapper>
     </section>

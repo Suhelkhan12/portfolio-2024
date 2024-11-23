@@ -14,7 +14,6 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoHomeOutline, IoPersonOutline } from "react-icons/io5";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { GoPencil } from "react-icons/go";
-import { SlBookOpen } from "react-icons/sl";
 
 // nav links
 export const navlinks: NavlinkType[] = [
@@ -29,10 +28,6 @@ export const navlinks: NavlinkType[] = [
   {
     href: "/techstack",
     name: "Tech",
-  },
-  {
-    href: "/resume",
-    name: "Resume",
   },
 ];
 
@@ -365,11 +360,6 @@ export const mobileNavLinks: MobileNavProps[] = [
     slug: "/techstack",
     id: "techstack",
     icon: GoPencil,
-  },
-  {
-    slug: "/resume",
-    id: "resume",
-    icon: SlBookOpen,
   },
 ];
 
