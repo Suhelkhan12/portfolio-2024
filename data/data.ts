@@ -60,6 +60,13 @@ export const projectsData: ProjectCardProps[] = [
     githubLink: "https://github.com/Suhelkhan12/Vidsquash",
   },
   {
+    name: "Cube",
+    logo: "/work/cube.svg",
+    tags: ["Webflow", "GSAP", "Finsweet"],
+    image: "/work/cube.png",
+    liveLink: "https://www.cube.ms/",
+  },
+  {
     name: "Remind me",
     logo: "/work/devflow-logo.svg",
     tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
@@ -67,13 +74,6 @@ export const projectsData: ProjectCardProps[] = [
     githubLink: "https://github.com/Suhelkhan12/Remind-me",
   },
 
-  {
-    name: "Cube",
-    logo: "/work/cube.svg",
-    tags: ["Webflow", "GSAP", "Finsweet"],
-    image: "/work/cube.png",
-    liveLink: "https://www.cube.ms/",
-  },
   {
     name: "Perdoo",
     logo: "/work/perdoo-fav.svg",
@@ -85,22 +85,13 @@ export const projectsData: ProjectCardProps[] = [
 
 export const workCardsData: WorkCardProps[] = [
   {
-    name: "Video compression tool",
-    logo: "/work/video.svg",
-    tags: ["Nextjs", "ffmpeg wasm", "Shadcn Ui", "Tainwindcss"],
-    image: "/work/video.png",
-    githubLink: "https://github.com/Suhelkhan12/Vidsquash",
+    name: "Stayz",
+    logo: "/work/hotel.svg",
+    tags: ["Nextjs", "Prisma", "Supabase", "Zod", "Shadcn Ui", "Tainwindcss"],
+    image: "/work/airbnb.jpeg",
+    githubLink: "https://github.com/Suhelkhan12/Airbnb-clone",
     type: "Learning Experiment",
   },
-  {
-    name: "Remind me",
-    logo: "/work/devflow-logo.svg",
-    tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
-    image: "/work/remindme.png",
-    githubLink: "https://github.com/Suhelkhan12/Remind-me",
-    type: "Learning Experiment",
-  },
-
   {
     name: "Cube",
     logo: "/work/cube.svg",
@@ -110,21 +101,11 @@ export const workCardsData: WorkCardProps[] = [
     type: "Selected",
   },
   {
-    name: "Next auth implementation",
-    logo: "/work/lock.svg",
-    tags: [
-      "Nextjs",
-      "Server actions",
-      "NextAuth",
-      "Mongodb",
-      "Prisma",
-      "Zod",
-      "Tailwind",
-      "Shadcn",
-    ],
-    image: "/work/next-auth.png",
-    githubLink: "https://github.com/Suhelkhan12/AuthJs-Next-Auth-guide",
-    liveLink: "#",
+    name: "Video compression tool",
+    logo: "/work/video.svg",
+    tags: ["Nextjs", "ffmpeg wasm", "Shadcn Ui", "Tainwindcss"],
+    image: "/work/video.png",
+    liveLink: "https://vidsquash.vercel.app/",
     type: "Learning Experiment",
   },
   {
@@ -135,6 +116,34 @@ export const workCardsData: WorkCardProps[] = [
     liveLink: "https://www.perdoo.com/",
     type: "Selected",
   },
+  {
+    name: "Remind me",
+    logo: "/work/devflow-logo.svg",
+    tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
+    image: "/work/remindme.png",
+    githubLink: "https://github.com/Suhelkhan12/Remind-me",
+    type: "Learning Experiment",
+  },
+
+  // {
+  //   name: "Next auth implementation",
+  //   logo: "/work/lock.svg",
+  //   tags: [
+  //     "Nextjs",
+  //     "Server actions",
+  //     "NextAuth",
+  //     "Mongodb",
+  //     "Prisma",
+  //     "Zod",
+  //     "Tailwind",
+  //     "Shadcn",
+  //   ],
+  //   image: "/work/next-auth.png",
+  //   githubLink: "https://github.com/Suhelkhan12/AuthJs-Next-Auth-guide",
+  //   liveLink: "#",
+  //   type: "Learning Experiment",
+  // },
+
   {
     name: "Cashinvoice",
     logo: "/work/cashinvoice-logo.svg",
