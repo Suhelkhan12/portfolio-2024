@@ -7,8 +7,8 @@ import H2 from "@/components/heading/H2";
 import Wrapper from "@/components/wrapper/Wrapper";
 import Link from "next/link";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
-import HeroTop from "@/components/hero/Top";
-import HeroBottom from "@/components/hero/Bottom";
+import HeroLeft from "@/components/hero/Left";
+import HeroRight from "@/components/hero/Right";
 
 const page = () => {
   return (
@@ -16,9 +16,10 @@ const page = () => {
       <section>
         <Wrapper>
           <div className=" px-4">
-            <div className=" pt-[100px]">
-              <HeroTop />
-              <HeroBottom />
+            {" "}
+            <div className="flex flex-col items-center gap-8 pt-28  md:flex-row md:pt-36 ">
+              <HeroLeft />
+              <HeroRight />
             </div>
           </div>
         </Wrapper>

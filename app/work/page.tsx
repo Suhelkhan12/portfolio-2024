@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <section className="relative z-50 mb-28 pt-20 sm:pt-36">
+    <section className="relative z-50 mb-28 gap-8 pt-28  md:pt-36">
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
           <H1>My Case studies & Client Works</H1>

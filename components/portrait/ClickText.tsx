@@ -14,7 +14,7 @@ const ClickText = () => {
 
   return (
     <button
-      className="clicktext absolute -top-20 right-0 hidden cursor-pointer rounded-full bg-ligthFaintWhite px-5 py-4 text-black sm:block"
+      className="clicktext absolute -top-20 right-0 cursor-pointer rounded-full bg-ligthFaintWhite px-5 py-4 text-black"
       onClick={handleClick}
     >
       {currText}

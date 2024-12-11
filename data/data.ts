@@ -34,17 +34,17 @@ export const navlinks: NavlinkType[] = [
 // navlinks image
 export const navlinkImages: SocialImageType[] = [
   {
-    src: FaGithub,
+    src: FaLinkedin,
     alt: "Linkedin",
     link: "https://www.linkedin.com/in/suhel-khan-925aa222a/",
   },
   {
-    src: FaLinkedin,
+    src: FaXTwitter,
     alt: "Twitter",
     link: "https://twitter.com/suhel7822",
   },
   {
-    src: FaXTwitter,
+    src: FaGithub,
     alt: "Github",
     link: "https://github.com/Suhelkhan12",
   },

@@ -27,7 +27,8 @@ const Footer = () => {
 
           <div className="flex flex-col-reverse items-start gap-8 sm:flex-row sm:items-end sm:justify-between">
             <p className=" text-basicDarkGray">
-              © 2024 Suhel Khan - created with inspo from the world.
+              © {new Date().getFullYear()} Suhel Khan - created with inspo from
+              the world.
             </p>
             <div className="flex flex-col gap-6 sm:gap-8">
               <div className="flex flex-col gap-2 sm:gap-3">
