@@ -6,7 +6,7 @@ const HeroRight = () => {
     <Image
       src={suhel}
       alt="suhel image"
-      className=" h-[25rem] rounded-lg object-cover object-top md:max-h-[40rem] md:max-w-[45%]"
+      className=" max-h-[25rem] rounded-lg object-cover object-top md:max-h-[40rem] md:max-w-[45%]"
       priority
     />
   );
