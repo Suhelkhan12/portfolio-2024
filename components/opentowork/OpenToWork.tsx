@@ -1,19 +1,19 @@
+import Link from "next/link";
+import { FaChevronRight } from "react-icons/fa";
 import React from "react";
 
 const OpenToWork = () => {
   return (
-    <div className=" hidden items-center gap-4 text-basicDarkGray sm:flex ">
-      <div className=" size-3 rounded-full">
-        <span className="relative flex size-3">
-          <span className="absolute inline-flex size-full animate-ping rounded-full bg-green-500 opacity-75"></span>
-          <span className="relative inline-flex size-3 rounded-full bg-green-500"></span>
-        </span>
-      </div>
-      <div>
-        <h2 className="text-xl">OPEN TO WORK</h2>
-        <p className=" text-sm">Based in India</p>
-      </div>
-    </div>
+    <Link
+      href={"https://www.linkedin.com/in/suhell-khan/"}
+      target="_blank"
+      className="primaryBtnLight group mb-2 flex items-center  gap-3  rounded-full px-4 py-2 text-xs text-white"
+    >
+      <span className="block size-2 animate-ping rounded-full bg-green-500"></span>
+      <span className="block h-4 w-[1px] bg-basicDarkGray"></span>
+      <p>Open to work</p>
+      <FaChevronRight className="size-2 transition-transform duration-300 group-hover:translate-x-1" />
+    </Link>
   );
 };
 

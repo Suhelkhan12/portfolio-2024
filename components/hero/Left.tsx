@@ -3,9 +3,11 @@ import H1 from "../heading/H1";
 import PrimaryButton from "../buttons/PrimaryButton";
 import Link from "next/link";
 import { FaGithub, FaTwitter } from "react-icons/fa";
+import OpenToWork from "../opentowork/OpenToWork";
 const HeroLeft = () => {
   return (
-    <div className=" flex w-full  flex-col md:max-w-[50%]">
+    <div className=" flex w-full flex-col  items-start md:max-w-[50%]">
+      <OpenToWork />
       <H1>
         Hi, I am <br /> Suhel khan.
       </H1>
