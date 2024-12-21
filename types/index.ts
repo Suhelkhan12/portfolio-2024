@@ -44,7 +44,6 @@ export type ProjectCardProps = {
   tags: string[];
   image: string;
   logo: string;
-  type: { freelance: "Freelance project"; learning: "Learning experiment" };
 };
 
 export type GetToKnowMeCardProps = {
