@@ -53,18 +53,18 @@ export const navlinkImages: SocialImageType[] = [
 // all projects data
 export const projectsData: ProjectCardProps[] = [
   {
+    name: "Leetcode card generator",
+    logo: "/work/leetcode-logo.svg",
+    tags: ["Next.js", "React.js", "ShadnUI", "GraphQl", "Leetcode-api"],
+    image: "/work/leetcode.png",
+    liveLink: "https://leetinsight.vercel.app/",
+  },
+  {
     name: "Video compression tool",
     logo: "/work/video.svg",
     tags: ["Nextjs", "ffmpeg wasm", "Shadcn Ui", "Tainwindcss"],
     image: "/work/video.png",
-    githubLink: "https://github.com/Suhelkhan12/Vidsquash",
-  },
-  {
-    name: "Cube",
-    logo: "/work/cube.svg",
-    tags: ["Webflow", "GSAP", "Finsweet"],
-    image: "/work/cube.png",
-    liveLink: "https://www.cube.ms/",
+    liveLink: "https://vidsquash.vercel.app/",
   },
   {
     name: "Remind me",
@@ -98,7 +98,7 @@ export const workCardsData: WorkCardProps[] = [
     tags: ["Webflow", "GSAP", "Finsweet"],
     image: "/work/cube.png",
     liveLink: "https://www.cube.ms/",
-    type: "Selected",
+    type: "Freelance project",
   },
   {
     name: "Video compression tool",
@@ -114,7 +114,7 @@ export const workCardsData: WorkCardProps[] = [
     tags: ["Webflow", "GSAP", "Finsweet", "Node", "Cloudfare workers"],
     image: "/work/perdoo.png",
     liveLink: "https://www.perdoo.com/",
-    type: "Selected",
+    type: "Freelance project",
   },
   {
     name: "Remind me",
@@ -125,32 +125,21 @@ export const workCardsData: WorkCardProps[] = [
     type: "Learning Experiment",
   },
 
-  // {
-  //   name: "Next auth implementation",
-  //   logo: "/work/lock.svg",
-  //   tags: [
-  //     "Nextjs",
-  //     "Server actions",
-  //     "NextAuth",
-  //     "Mongodb",
-  //     "Prisma",
-  //     "Zod",
-  //     "Tailwind",
-  //     "Shadcn",
-  //   ],
-  //   image: "/work/next-auth.png",
-  //   githubLink: "https://github.com/Suhelkhan12/AuthJs-Next-Auth-guide",
-  //   liveLink: "#",
-  //   type: "Learning Experiment",
-  // },
-
   {
     name: "Cashinvoice",
     logo: "/work/cashinvoice-logo.svg",
     tags: ["Webflow", "Finsweet", "GSAP"],
     image: "/work/cashinvoice.png",
     liveLink: "https://cashinvoice.in",
-    type: "Selected",
+    type: "Freelance project",
+  },
+  {
+    name: "Leetcode card generator",
+    logo: "/work/leetcode-logo.svg",
+    tags: ["Next.js", "React.js", "ShadnUI", "GraphQl", "Leetcode-api"],
+    image: "/work/leetcode.png",
+    liveLink: "https://leetinsight.vercel.app/",
+    type: "Learning Experiment",
   },
   {
     name: "Shineagro",
@@ -158,7 +147,7 @@ export const workCardsData: WorkCardProps[] = [
     tags: ["Webflow", "Finsweet", "GSAP"],
     image: "/work/shineagro.png",
     liveLink: "https://shineagrotech.com",
-    type: "Selected",
+    type: "Freelance project",
   },
 
   // {
@@ -175,14 +164,6 @@ export const workCardsData: WorkCardProps[] = [
   //   image: "/work/devflow.png",
   //   githubLink: "https://github.com/Suhelkhan12/devflow.git",
   //   liveLink: "#",
-  //   type: "Learning Experiment",
-  // },
-  // {
-  //   name: "Word Gamble",
-  //   logo: "/work/wordle-logo.png",
-  //   tags: ["React", "React-router", "Zod", "Zustand", "Tainwind"],
-  //   image: "/work/wordle.png",
-  //   githubLink: "https://github.com/Suhelkhan12/Wordle.git",
   //   type: "Learning Experiment",
   // },
 ];

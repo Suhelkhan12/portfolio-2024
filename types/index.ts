@@ -44,6 +44,7 @@ export type ProjectCardProps = {
   tags: string[];
   image: string;
   logo: string;
+  type: { freelance: "Freelance project"; learning: "Learning experiment" };
 };
 
 export type GetToKnowMeCardProps = {
@@ -72,7 +73,7 @@ export type WorkCardProps = {
   tags: string[];
   image: string;
   logo: string;
-  type: "Selected" | "Learning Experiment" | "Side Project";
+  type: "Freelance project" | "Learning Experiment";
 };
 
 export type FreetimeCardProps = {

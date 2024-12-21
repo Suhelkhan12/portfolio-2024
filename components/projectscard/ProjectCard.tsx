@@ -54,9 +54,9 @@ const ProjectCard = (props: ProjectCardProps) => {
               <MdOutlineArrowOutward />
             </div>
 
-            <div className=" transition duration-300 sm:opacity-0 sm:group-hover:opacity-100">
-              <ProjectTag text="Freelance project" />
-            </div>
+            {/* <div className=" transition duration-300 sm:opacity-0 sm:group-hover:opacity-100">
+              <ProjectTag text={props.type.freelance} />
+            </div> */}
           </div>
         )}
         {props.githubLink === linkToUse && (
@@ -65,9 +65,9 @@ const ProjectCard = (props: ProjectCardProps) => {
               <p className="text-sm">Github repository</p>{" "}
               <MdOutlineArrowOutward />
             </div>
-            <div className=" transition duration-300 sm:opacity-0 sm:group-hover:opacity-100">
+            {/* <div className=" transition duration-300 sm:opacity-0 sm:group-hover:opacity-100">
               <ProjectTag text="Learning Experiment" />
-            </div>
+            </div> */}
           </div>
         )}
       </div>
