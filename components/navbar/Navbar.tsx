@@ -5,7 +5,7 @@ import Navlink from "../navlink/Navlink";
 
 const Navbar = () => {
   return (
-    <nav className="mx-auto flex w-full items-center justify-between px-4 py-6 lg:max-w-[75rem]">
+    <nav className="mx-auto flex w-full items-center justify-between p-4 sm:py-6 lg:max-w-[75rem]">
       <div className=" hidden w-full justify-between sm:flex">
         <div className="flex items-center gap-10">
           <Link href="/" className="transition hover:rotate-6">
@@ -39,9 +39,10 @@ const Navbar = () => {
             <Link
               href={link.slug}
               key={link.id}
-              className=" flex items-center justify-center p-1 text-white"
+              className=" flex flex-col items-center justify-center gap-1 p-1 text-xs text-white"
             >
-              <link.icon className="text-[20px]" />
+              <link.icon className="size-4" />
+              <span className=" capitalize">{link.id}</span>
             </Link>
           ))}
         </div>

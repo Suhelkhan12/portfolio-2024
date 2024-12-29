@@ -10,8 +10,7 @@ export default function NotFound() {
         <div className="flex flex-col items-center justify-center gap-4 px-4">
           <h1 className="text-8xl font-bold text-ligthFaintWhite">404</h1>
           <p className="text-center text-[1.5rem] text-basicLightGray sm:text-xl md:text-2xl">
-            This page is currently under development. My appologies for the
-            confusion.
+            There is no such page on this website.
           </p>
           <Link href="/">
             <PrimaryButton>Return to Home</PrimaryButton>

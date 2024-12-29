@@ -18,16 +18,28 @@ const HeroLeft = () => {
           solutions to complex problems.
         </p>
       </div>
-      <div className="mt-8 flex items-center gap-6">
-        <Link href={"https://www.linkedin.com/in/suhell-khan/"} target="_blank">
+      <div className="mt-8 flex flex-wrap items-center gap-6">
+        <Link
+          href={"https://www.linkedin.com/in/suhell-khan/"}
+          target="_blank"
+          className="shrink-0"
+        >
           <PrimaryButton>Let&apos; connect</PrimaryButton>
         </Link>
-        <Link href={"https://x.com/suhel7822"} target="_blank">
+        <Link
+          href={"https://x.com/suhel7822"}
+          target="_blank"
+          className="shrink-0"
+        >
           <PrimaryButton>
             <FaTwitter className="size-6" />
           </PrimaryButton>
         </Link>
-        <Link href={"https://github.com/Suhelkhan12"} target="_blank">
+        <Link
+          href={"https://github.com/Suhelkhan12"}
+          target="_blank"
+          className="shrink-0"
+        >
           <PrimaryButton>
             <FaGithub className="size-6" />
           </PrimaryButton>
