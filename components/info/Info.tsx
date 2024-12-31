@@ -7,15 +7,7 @@ const Info = () => {
     <div className="flex flex-col gap-12">
       <div className="flex flex-col gap-2">
         <h2 className=" text-3xl font-semibold text-basicLightGray">
-          Hi there, I&apos;m Suhel, a frontend engineer currently at{" "}
-          <Link
-            href="https://parallelhq.com"
-            target="_blank"
-            className=" text-white"
-          >
-            Parallel<span className="text-3xl font-medium">↗</span>
-          </Link>{" "}
-          based in India.
+          Hi there, I&apos;m Suhel, a frontend engineer based in India.
         </h2>
         <p className="text-base font-normal text-basicDarkGray md:text-xl">
           I have an insatiable curiosity for exploring the possibilities of
