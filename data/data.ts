@@ -85,6 +85,14 @@ export const projectsData: ProjectCardProps[] = [
 
 export const workCardsData: WorkCardProps[] = [
   {
+    name: "BioGinie",
+    logo: "/work/bot.svg",
+    tags: ["Nextjs", "Shadcn", "Vercel AI SDK", "Groq"],
+    image: "/work/ai.png",
+    liveLink: "https://ai-bios.vercel.app/",
+    type: "Learning Experiment",
+  },
+  {
     name: "Stayz",
     logo: "/work/hotel.svg",
     tags: ["Nextjs", "Prisma", "Supabase", "Zod", "Shadcn Ui", "Tainwindcss"],
@@ -93,19 +101,28 @@ export const workCardsData: WorkCardProps[] = [
     type: "Learning Experiment",
   },
   {
-    name: "Cube",
-    logo: "/work/cube.svg",
-    tags: ["Webflow", "GSAP", "Finsweet"],
-    image: "/work/cube.png",
-    liveLink: "https://www.cube.ms/",
-    type: "Freelance project",
-  },
-  {
     name: "Video compression tool",
     logo: "/work/video.svg",
     tags: ["Nextjs", "ffmpeg wasm", "Shadcn Ui", "Tainwindcss"],
     image: "/work/video.png",
     liveLink: "https://vidsquash.vercel.app/",
+    type: "Learning Experiment",
+  },
+
+  {
+    name: "Remind me",
+    logo: "/work/devflow-logo.svg",
+    tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
+    image: "/work/remindme.png",
+    githubLink: "https://github.com/Suhelkhan12/Remind-me",
+    type: "Learning Experiment",
+  },
+  {
+    name: "Leetcode card generator",
+    logo: "/work/leetcode-logo.svg",
+    tags: ["Next.js", "React.js", "ShadnUI", "GraphQl", "Leetcode-api"],
+    image: "/work/leetcode.png",
+    liveLink: "https://leetinsight.vercel.app/",
     type: "Learning Experiment",
   },
   {
@@ -117,14 +134,13 @@ export const workCardsData: WorkCardProps[] = [
     type: "Freelance project",
   },
   {
-    name: "Remind me",
-    logo: "/work/devflow-logo.svg",
-    tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
-    image: "/work/remindme.png",
-    githubLink: "https://github.com/Suhelkhan12/Remind-me",
-    type: "Learning Experiment",
+    name: "Shineagro",
+    logo: "/work/shineagro-logo.svg",
+    tags: ["Webflow", "Finsweet", "GSAP"],
+    image: "/work/shineagro.png",
+    liveLink: "https://shineagrotech.com",
+    type: "Freelance project",
   },
-
   {
     name: "Cashinvoice",
     logo: "/work/cashinvoice-logo.svg",
@@ -134,22 +150,13 @@ export const workCardsData: WorkCardProps[] = [
     type: "Freelance project",
   },
   {
-    name: "Leetcode card generator",
-    logo: "/work/leetcode-logo.svg",
-    tags: ["Next.js", "React.js", "ShadnUI", "GraphQl", "Leetcode-api"],
-    image: "/work/leetcode.png",
-    liveLink: "https://leetinsight.vercel.app/",
-    type: "Learning Experiment",
-  },
-  {
-    name: "Shineagro",
-    logo: "/work/shineagro-logo.svg",
-    tags: ["Webflow", "Finsweet", "GSAP"],
-    image: "/work/shineagro.png",
-    liveLink: "https://shineagrotech.com",
+    name: "Cube",
+    logo: "/work/cube.svg",
+    tags: ["Webflow", "GSAP", "Finsweet"],
+    image: "/work/cube.png",
+    liveLink: "https://www.cube.ms/",
     type: "Freelance project",
   },
-
   // {
   //   name: "Devflow",
   //   logo: "/work/devflow-logo.svg",
