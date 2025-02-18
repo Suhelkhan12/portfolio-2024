@@ -7,7 +7,6 @@ import {
   MobileNavProps,
   WorkCardProps,
   FreetimeCardProps,
-  ExperienceProps,
 } from "@/types";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -85,12 +84,69 @@ export const projectsData: ProjectCardProps[] = [
 
 export const workCardsData: WorkCardProps[] = [
   {
+    name: "Perdoo",
+    logo: "/work/perdoo-fav.svg",
+    tags: ["Webflow", "GSAP", "Finsweet", "Typescript", "Cloudfare workers"],
+    image: "/work/perdoo.png",
+    liveLink: "https://www.perdoo.com/",
+    type: "Professional project",
+  },
+  {
+    name: "Anyonecan Ai",
+    logo: "/work/ai-fav.svg",
+    tags: ["Webflow", "GSAP", "Finsweet", "Javascript"],
+    image: "/work/ai-photo.png",
+    liveLink: "https://www.anyonecanai.io/",
+    type: "Professional project",
+  },
+  {
+    name: "Conscious Patterns",
+    logo: "/work/cp-fav.svg",
+    tags: ["Webflow", "GSAP", "Finsweet", "Javascript"],
+    image: "/work/cp.png",
+    liveLink: "https://www.consciouspatterns.in/",
+    type: "Professional project",
+  },
+  {
+    name: "Cube",
+    logo: "/work/cube.svg",
+    tags: ["Webflow", "GSAP", "Finsweet", "Javascript"],
+    image: "/work/cube.png",
+    liveLink: "https://www.consciouspatterns.in/",
+    type: "Professional project",
+  },
+  {
+    name: "Shineagro",
+    logo: "/work/shineagro-logo.svg",
+    tags: ["Webflow", "Finsweet", "GSAP"],
+    image: "/work/shineagro.png",
+    liveLink: "https://shineagrotech.com",
+    type: "Professional project",
+  },
+  {
+    name: "Raphe",
+    logo: "/work/Raphe -fav.png",
+    tags: ["Webflow", "Finsweet", "GSAP", "Javascript"],
+    image: "/work/Raphe-.png",
+    liveLink: "https://www.raphe.com/",
+    type: "Professional project",
+  },
+  {
+    name: "Cashinvoice",
+    logo: "/work/cashinvoice-logo.svg",
+    tags: ["Webflow", "Finsweet", "GSAP"],
+    image: "/work/cashinvoice.png",
+    liveLink: "https://cashinvoice.in",
+    type: "Professional project",
+  },
+
+  {
     name: "BioGinie",
     logo: "/work/bot.svg",
     tags: ["Nextjs", "Shadcn", "Vercel AI SDK", "Groq"],
     image: "/work/ai.png",
     liveLink: "https://ai-bios.vercel.app/",
-    type: "Learning Experiment",
+    type: "Learning experiment",
   },
   {
     name: "Stayz",
@@ -98,7 +154,7 @@ export const workCardsData: WorkCardProps[] = [
     tags: ["Nextjs", "Prisma", "Supabase", "Zod", "Shadcn Ui", "Tainwindcss"],
     image: "/work/airbnb.jpeg",
     githubLink: "https://github.com/Suhelkhan12/Airbnb-clone",
-    type: "Learning Experiment",
+    type: "Learning experiment",
   },
   {
     name: "Video compression tool",
@@ -106,7 +162,7 @@ export const workCardsData: WorkCardProps[] = [
     tags: ["Nextjs", "ffmpeg wasm", "Shadcn Ui", "Tainwindcss"],
     image: "/work/video.png",
     liveLink: "https://vidsquash.vercel.app/",
-    type: "Learning Experiment",
+    type: "Learning experiment",
   },
 
   {
@@ -115,7 +171,7 @@ export const workCardsData: WorkCardProps[] = [
     tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
     image: "/work/remindme.png",
     githubLink: "https://github.com/Suhelkhan12/Remind-me",
-    type: "Learning Experiment",
+    type: "Learning experiment",
   },
   {
     name: "Leetcode card generator",
@@ -123,40 +179,9 @@ export const workCardsData: WorkCardProps[] = [
     tags: ["Next.js", "React.js", "ShadnUI", "GraphQl", "Leetcode-api"],
     image: "/work/leetcode.png",
     liveLink: "https://leetinsight.vercel.app/",
-    type: "Learning Experiment",
+    type: "Learning experiment",
   },
-  {
-    name: "Perdoo",
-    logo: "/work/perdoo-fav.svg",
-    tags: ["Webflow", "GSAP", "Finsweet", "Node", "Cloudfare workers"],
-    image: "/work/perdoo.png",
-    liveLink: "https://www.perdoo.com/",
-    type: "Freelance project",
-  },
-  {
-    name: "Shineagro",
-    logo: "/work/shineagro-logo.svg",
-    tags: ["Webflow", "Finsweet", "GSAP"],
-    image: "/work/shineagro.png",
-    liveLink: "https://shineagrotech.com",
-    type: "Freelance project",
-  },
-  {
-    name: "Cashinvoice",
-    logo: "/work/cashinvoice-logo.svg",
-    tags: ["Webflow", "Finsweet", "GSAP"],
-    image: "/work/cashinvoice.png",
-    liveLink: "https://cashinvoice.in",
-    type: "Freelance project",
-  },
-  {
-    name: "Cube",
-    logo: "/work/cube.svg",
-    tags: ["Webflow", "GSAP", "Finsweet"],
-    image: "/work/cube.png",
-    liveLink: "https://www.cube.ms/",
-    type: "Freelance project",
-  },
+
   // {
   //   name: "Devflow",
   //   logo: "/work/devflow-logo.svg",
@@ -367,98 +392,6 @@ export const portraitText = [
   "Upcoming Full Stack Dev.",
 ];
 
-export const experienceDetails: ExperienceProps[] = [
-  {
-    id: 1,
-    companyname: "ParallelHq",
-    designation: "UI Engineer",
-    dateLocation: "January 2024 - Present | Bengaluru, India.",
-    about: [
-      {
-        id: "1",
-        point:
-          "Respoinsible for UI design and development for websites, emphasizing user-centric principles for enhanced usability and accessibility.",
-      },
-      {
-        id: "2",
-        point:
-          "Collaborate cross-functionally to refine designs and elevate user experience.",
-      },
-      {
-        id: "3",
-        point:
-          "Engage in comprehensive analysis and problem-solving to address complex design challenges, ensuring seamless integration and functionality across various platforms.",
-      },
-      {
-        id: "5",
-        point:
-          "Demonstrated adaptability and proficiency in addressing varying project demands while upholding stringent standards of quality and efficiency.",
-      },
-    ],
-  },
-  {
-    id: 3,
-    companyname: "ParallelHq",
-    designation: "UI Engineer(Intern)",
-    dateLocation: "May 2023 - Oct 2023 | Bengaluru, India.",
-    about: [
-      {
-        id: "1",
-        point:
-          "Learned Webflow and Finsweet for low-code development, gaining proficiency in creating complex layouts and interactions.",
-      },
-      {
-        id: "2",
-        point:
-          " Solved challenging animations using GSAP, improving the visual appeal and interactivity of client websites.",
-      },
-      {
-        id: "3",
-        point:
-          "Contributed to client projects by assisting in the development of UI/UX elements and ensuring their alignment with project requirements.",
-      },
-    ],
-  },
-  {
-    id: 2,
-    companyname: "Teamflexbox",
-    designation: "Frontend developer",
-    dateLocation: "Jan 2023 - May 2023 | Delhi, India.",
-    about: [
-      {
-        id: "1",
-        point:
-          "Led the conceptualization and refinement of intuitive user interfaces for diverse websites, harmonizing aesthetic appeal with usability.",
-      },
-      {
-        id: "2",
-        point:
-          "Implemented user-centric design methodologies to ensure optimal accessibility and functionality, enhancing overall user experience.",
-      },
-      {
-        id: "5",
-        point:
-          "Demonstrated adaptability and proficiency in addressing varying project demands while upholding stringent standards of quality and efficiency.",
-      },
-    ],
-  },
-];
-
-export const educationDetails = [
-  {
-    id: 1,
-    university: "Delhi univeristy",
-    dateLocatoin: "July 2018 - August 2021 | 8/10 CGPA",
-    degreeName: "Bsc(hons) Mathematics",
-  },
-  {
-    id: 2,
-    university: "Panjab univeristy",
-    dateLocatoin: "August 2021 - present | 7/10 CGPA",
-    degreeName: "Masters in computer science and applications",
-  },
-];
-
 export const freeeTimeCardData: FreetimeCardProps[] = [
   {
     heading: "Anime",
@@ -510,11 +443,11 @@ export const freeeTimeCardData: FreetimeCardProps[] = [
 
 export const workCategory = [
   {
-    id: "live",
-    name: "Live",
+    id: "professional-project",
+    name: "Professional project",
   },
   {
     id: "learning-experiment",
-    name: "Learning experiemnt",
+    name: "Learning experiment",
   },
 ];

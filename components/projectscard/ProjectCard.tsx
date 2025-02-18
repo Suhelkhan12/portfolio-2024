@@ -19,6 +19,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             src={props.image}
             alt={props.name}
             fill
+            className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute inset-0 flex size-full translate-y-full items-center justify-center bg-black transition-transform duration-500 ease-in-out group-hover:translate-y-0">

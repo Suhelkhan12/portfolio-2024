@@ -2,8 +2,9 @@ import Wrapper from "@/components/wrapper/Wrapper";
 import H1 from "@/components/heading/H1";
 import Separator from "@/components/graySeparator/Separator";
 import { workCardsData } from "@/data/data";
-import ProjectCard from "@/components/projectscard/ProjectCard";
+
 import { Metadata } from "next";
+import ProjectCard from "@/components/projectscard/ProjectCard";
 
 export const metadata: Metadata = {
   title: "Suhel Khan's Tech Portfolio",

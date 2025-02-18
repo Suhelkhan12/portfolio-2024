@@ -72,7 +72,7 @@ export type WorkCardProps = {
   tags: string[];
   image: string;
   logo: string;
-  type: "Freelance project" | "Learning Experiment";
+  type: "Professional project" | "Learning experiment";
 };
 
 export type FreetimeCardProps = {
@@ -82,12 +82,4 @@ export type FreetimeCardProps = {
     name: string;
     image: string;
   }[];
-};
-
-export type ExperienceProps = {
-  id: number;
-  companyname: string;
-  designation: string;
-  dateLocation: string;
-  about: { id: string; point: string }[];
 };
