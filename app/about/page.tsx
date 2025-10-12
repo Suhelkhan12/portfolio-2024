@@ -76,7 +76,7 @@ const page = () => {
             Alternatively, here&apos;s a fancy sheet of paper
           </span>
           <Link
-            href={"/Suhel_resume_2025.pdf"}
+            href={"/suhel_resume_2025.pdf"}
             target="_blank"
             className="flex items-center justify-center  text-blue-500 transition-colors hover:text-blue-400"
           >
