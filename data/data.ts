@@ -52,6 +52,20 @@ export const navlinkImages: SocialImageType[] = [
 // all projects data
 export const projectsData: ProjectCardProps[] = [
   {
+    name: "Perdoo",
+    logo: "/work/perdoo-fav.svg",
+    tags: ["Webflow", "GSAP", "Finsweet", "Node", "Cloudfare workers"],
+    image: "/work/perdoo.png",
+    liveLink: "https://www.perdoo.com/",
+  },
+  {
+    name: "Conscious Patterns",
+    logo: "/work/cp-fav.svg",
+    tags: ["Webflow", "GSAP", "Finsweet", "Javascript"],
+    image: "/work/cp.png",
+    liveLink: "https://www.consciouspatterns.in/",
+  },
+  {
     name: "Leetcode card generator",
     logo: "/work/leetcode-logo.svg",
     tags: ["Next.js", "React.js", "ShadnUI", "GraphQl", "Leetcode-api"],
@@ -64,21 +78,6 @@ export const projectsData: ProjectCardProps[] = [
     tags: ["Nextjs", "ffmpeg wasm", "Shadcn Ui", "Tainwindcss"],
     image: "/work/video.png",
     liveLink: "https://vidsquash.vercel.app/",
-  },
-  {
-    name: "Remind me",
-    logo: "/work/devflow-logo.svg",
-    tags: ["Nextjs", "Server-actions", "Prisma", "Zod", "Tainwind"],
-    image: "/work/remindme.png",
-    githubLink: "https://github.com/Suhelkhan12/Remind-me",
-  },
-
-  {
-    name: "Perdoo",
-    logo: "/work/perdoo-fav.svg",
-    tags: ["Webflow", "GSAP", "Finsweet", "Node", "Cloudfare workers"],
-    image: "/work/perdoo.png",
-    liveLink: "https://www.perdoo.com/",
   },
 ];
 

@@ -5,7 +5,6 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import React from "react";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
-
 import "./globals.css";
 import HeaderBackground from "@/components/headerbackground/HeaderBackground";
 
