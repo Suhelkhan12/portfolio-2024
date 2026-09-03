@@ -66,6 +66,13 @@ export const projectsData: ProjectCardProps[] = [
     liveLink: "https://www.consciouspatterns.in/",
   },
   {
+    name: "Anyonecan Ai",
+    logo: "/work/ai-fav.svg",
+    tags: ["Webflow", "GSAP", "Finsweet", "Javascript"],
+    image: "/work/ai-photo.png",
+    liveLink: "https://www.anyonecanai.io/",
+  },
+  {
     name: "Leetcode card generator",
     logo: "/work/leetcode-logo.svg",
     tags: ["Next.js", "React.js", "ShadnUI", "GraphQl", "Leetcode-api"],
@@ -96,6 +103,14 @@ export const workCardsData: WorkCardProps[] = [
     tags: ["Webflow", "GSAP", "Finsweet", "Javascript"],
     image: "/work/ai-photo.png",
     liveLink: "https://www.anyonecanai.io/",
+    type: "Professional project",
+  },
+    {
+    name: "Wearekomodo",
+    logo: "/work/komodo-icon.png",
+    tags: ["Webflow", "GSAP", "Finsweet", "Javascript"],
+    image: "/work/wearekomodo.png",
+    liveLink: "https://wearekomodo.com/",
     type: "Professional project",
   },
   {
