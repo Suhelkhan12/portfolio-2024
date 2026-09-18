@@ -19,6 +19,7 @@ const Footer = () => {
               <Link
                 href="https://www.linkedin.com/in/suhel-khan-925aa222a/"
                 target="blank"
+                data-cursor="-inverse"
               >
                 <SecondaryButton>Get in touch</SecondaryButton>
               </Link>
@@ -38,6 +39,7 @@ const Footer = () => {
                     href="https://www.linkedin.com/in/suhel-khan-925aa222a/"
                     className="group flex items-center gap-1 text-base text-white transition hover:text-basicDarkGray"
                     target="blank"
+                    data-cursor="-inverse"
                   >
                     Linkedin
                     <IoIosArrowRoundForward className="transition group-hover:translate-x-1" />
@@ -45,6 +47,7 @@ const Footer = () => {
                   <Link
                     href="https://twitter.com/suhel7822"
                     target="blank"
+                    data-cursor="-inverse"
                     className=" group flex items-center gap-1 text-base text-white transition hover:text-basicDarkGray"
                   >
                     Twitter
@@ -53,6 +56,7 @@ const Footer = () => {
                   <Link
                     href="https://github.com/Suhelkhan12"
                     className=" group flex items-center gap-1 text-base text-white transition hover:text-basicDarkGray"
+                    data-cursor="-inverse"
                   >
                     Github
                     <IoIosArrowRoundForward className="transition group-hover:translate-x-1" />

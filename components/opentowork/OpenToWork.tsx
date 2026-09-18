@@ -8,6 +8,7 @@ const OpenToWork = () => {
       href={"https://www.linkedin.com/in/suhell-khan/"}
       target="_blank"
       className="primaryBtnLight group mb-2 flex items-center  gap-3  rounded-full px-4 py-2 text-xs text-white"
+      data-cursor="-inverse"
     >
       <span className="block size-2 animate-ping rounded-full bg-green-500"></span>
       <span className="block h-4 w-[1px] bg-basicDarkGray"></span>

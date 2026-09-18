@@ -26,6 +26,7 @@ const Navbar = () => {
               key={image.alt}
               className="opacity-50 transition hover:scale-110 hover:opacity-100"
               target="blank"
+              data-cursor="-inverse"
             >
               <image.src className="text-2xl text-basicLightGray  hover:text-white" />
             </Link>

@@ -42,7 +42,7 @@ const page = () => {
               ))}
             </div>
             <div className="mt-8 flex items-center justify-center md:mt-12 lg:mt-16 ">
-              <Link href="/work">
+              <Link href="/work" data-cursor="-inverse">
                 <SecondaryButton>View more</SecondaryButton>
               </Link>
             </div>

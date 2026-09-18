@@ -23,6 +23,7 @@ const HeroLeft = () => {
           href={"https://www.linkedin.com/in/suhell-khan/"}
           target="_blank"
           className="shrink-0"
+          data-cursor="-inverse"
         >
           <PrimaryButton>Let&apos; connect</PrimaryButton>
         </Link>
@@ -30,6 +31,7 @@ const HeroLeft = () => {
           href={"https://x.com/suhel7822"}
           target="_blank"
           className="shrink-0"
+          data-cursor="-inverse"
         >
           <PrimaryButton>
             <FaTwitter className="size-6" />
@@ -39,6 +41,7 @@ const HeroLeft = () => {
           href={"https://github.com/Suhelkhan12"}
           target="_blank"
           className="shrink-0"
+          data-cursor="-inverse"
         >
           <PrimaryButton>
             <FaGithub className="size-6" />

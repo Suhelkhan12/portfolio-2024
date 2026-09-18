@@ -7,7 +7,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import "./globals.css";
 import HeaderBackground from "@/components/headerbackground/HeaderBackground";
-
+import MouseFollowerComponent from "@/components/mouseFollower/MouseFollower";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -50,6 +50,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className + " bg-darkBg"}>
         <SpeedInsights />
+        <MouseFollowerComponent/>
         <div className="sticky  top-0 z-50 mx-auto w-full bg-darkNav backdrop-blur-md ">
           <Navbar />
         </div>
