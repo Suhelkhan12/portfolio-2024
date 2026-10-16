@@ -1,7 +1,7 @@
 const ScrollDown = () => {
   return (
     <div className="mt-12 flex w-full  justify-center gap-8 md:mt-24 ">
-      <div className="relative flex h-12 w-8 items-center rounded-[24px] border-[2px] border-white p-1">
+      <div className="relative flex h-12 w-8 items-center rounded-[24px] border-2 border-white p-1">
         <svg
           viewBox="0 0 24 24"
           fill="none"

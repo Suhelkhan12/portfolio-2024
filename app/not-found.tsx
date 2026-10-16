@@ -8,11 +8,16 @@ export default function NotFound() {
     <section className="relative z-50 flex h-[70vh] items-center justify-center">
       <Wrapper>
         <div className="flex flex-col items-center justify-center gap-4 px-4">
-          <h1 className="text-8xl font-bold text-ligthFaintWhite">404</h1>
+          <h1
+            data-animate="split"
+            className="text-8xl font-bold text-ligthFaintWhite"
+          >
+            404
+          </h1>
           <p className="text-center text-[1.5rem] text-basicLightGray sm:text-xl md:text-2xl">
             There is no such page on this website.
           </p>
-          <Link href="/">
+          <Link href="/" data-magnetic>
             <PrimaryButton>Return to Home</PrimaryButton>
           </Link>
         </div>

@@ -39,7 +39,10 @@ const page = () => {
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
           <H1>Techstack</H1>
-          <p className="text-[1.25rem] font-normal text-basicMediumGray md:text-[1.5rem]">
+          <p
+            data-animate="fade"
+            className="text-[1.25rem] font-normal text-basicDarkGray md:text-[1.5rem]"
+          >
             The dev tools I know and am currently learning.
           </p>
         </div>
@@ -47,8 +50,73 @@ const page = () => {
       <Separator />
       <Wrapper>
         <div className="flex flex-col gap-4 px-4 md:gap-8">
-          <H2 classnames="text-[3rem] font-bold text-basicDarkGray">Dev</H2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <H2
+            data-animate="split"
+            classnames="text-[2rem] md:text-[3rem] font-bold text-basicDarkGray"
+          >
+            Low-code
+          </H2>
+          <p
+            data-animate="fade"
+            className="max-w-xl text-base text-basicDarkGray md:text-lg"
+          >
+            Where I spend most of my time — building and shipping production
+            sites with Webflow and Finsweet.
+          </p>
+          <div
+            data-animate="stagger"
+            className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2"
+          >
+            {techCards
+              .filter((card) => card.category === "low-code")
+              .map((card) => (
+                <TechCard {...card} key={card.name} />
+              ))}
+          </div>
+        </div>
+      </Wrapper>
+
+      <Separator />
+      <Wrapper>
+        <div className="flex flex-col gap-4 px-4 md:gap-8">
+          <H2
+            data-animate="split"
+            classnames="text-[2rem] md:text-[3rem] font-bold text-basicDarkGray"
+          >
+            AI tools
+          </H2>
+          <p
+            data-animate="fade"
+            className="max-w-xl text-base text-basicDarkGray md:text-lg"
+          >
+            I build alongside AI day to day — from pairing with Claude and
+            Copilot on logic to generating UI scaffolds with v0.
+          </p>
+          <div
+            data-animate="stagger"
+            className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
+          >
+            {techCards
+              .filter((card) => card.category === "ai")
+              .map((card) => (
+                <TechCard {...card} key={card.name} />
+              ))}
+          </div>
+        </div>
+      </Wrapper>
+      <Separator />
+      <Wrapper>
+        <div className="flex flex-col gap-4 px-4 md:gap-8">
+          <H2
+            data-animate="split"
+            classnames="text-[2rem] md:text-[3rem] font-bold text-basicDarkGray"
+          >
+            Dev
+          </H2>
+          <div
+            data-animate="stagger"
+            className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          >
             {techCards
               .filter((card) => card.category === "development")
               .map((card) => (
@@ -60,25 +128,16 @@ const page = () => {
       <Separator />
       <Wrapper>
         <div className="flex flex-col gap-4 px-4 md:gap-8">
-          <H2 classnames=" text-[2rem] md:text-[3rem] font-bold text-basicDarkGray">
-            Low-code
+          <H2
+            data-animate="split"
+            classnames="text-[2rem] md:text-[3rem] font-bold text-basicDarkGray"
+          >
+            Also know
           </H2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {techCards
-              .filter((card) => card.category === "low-code")
-              .map((card) => (
-                <TechCard {...card} key={card.name} />
-              ))}
-          </div>
-        </div>
-      </Wrapper>
-      <Separator />
-      <Wrapper>
-        <div className="flex flex-col gap-4 px-4 md:gap-8">
-          <H2 classnames=" text-[2rem] md:text-[3rem] font-bold text-basicDarkGray">
-            Learning
-          </H2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            data-animate="stagger"
+            className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          >
             {techCards
               .filter((card) => card.category === "learning")
               .map((card) => (

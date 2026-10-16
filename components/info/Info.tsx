@@ -4,7 +4,7 @@ import PrimaryButton from "../buttons/PrimaryButton";
 
 const Info = () => {
   return (
-    <div className="flex flex-col gap-12">
+    <div data-animate="stagger" className="flex flex-col gap-12">
       <div className="flex flex-col gap-2">
         <h2 className=" text-3xl font-semibold text-basicLightGray">
           Hi there, I&apos;m Suhel, a frontend engineer based in India.
@@ -41,10 +41,10 @@ const Info = () => {
       </div>
       <Link
         href="https://www.linkedin.com/in/suhel-khan-925aa222a/"
-        target="blank"
+        target="_blank"
         className="flex sm:hidden "
       >
-        <PrimaryButton classNames="grow flex items-center justify-center gap-2 group ">
+        <PrimaryButton classNames="group grow gap-2">
           Let&apos;s connect{" "}
           <IoIosArrowDropright className="transition group-hover:translate-x-1" />
         </PrimaryButton>

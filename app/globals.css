@@ -2,11 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 3px;
+}
+
+/* Motion: hide animated elements until components/animations takes over, so
+   server-rendered content doesn't flash. The .js class is set by an inline
+   script in the layout; the delayed keyframe reveals content if JS never runs. */
+@media (prefers-reduced-motion: no-preference) {
+  .js:not(.anim-ready) [data-animate]:not([data-animate="stagger"]),
+  .js:not(.anim-ready) [data-animate="stagger"] > * {
+    visibility: hidden;
+    animation: anim-fallback 0s 3s forwards;
+  }
+}
+
+@keyframes anim-fallback {
+  to {
+    visibility: visible;
+  }
+}
+
+/* Cursor-following light on cards; --mx/--my are set on pointer move. */
+[data-spotlight] {
+  position: relative;
+  isolation: isolate;
+}
+
+[data-spotlight]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(255, 255, 255, 0.07),
+    transparent 45%
+  );
+  transition: opacity 0.4s ease;
+}
+
+[data-spotlight]:hover::after {
+  opacity: 1;
 }
 
 @layer utilities {
@@ -57,30 +104,29 @@
   }
 }
 
+/* Cursor follower (mouse-follower). Only mounted for fine pointers without
+   reduced-motion; see components/mouseFollower. */
 .mf-cursor {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999999;
   pointer-events: none;
+  mix-blend-mode: difference;
+  transition: opacity 0.2s ease;
 }
 
 .mf-cursor:before {
   content: "";
   position: absolute;
-  top: -36px;
-  left: -36px;
-  width: 72px;
-  height: 72px;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: #EEAECA;
-background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-  transform: scale(0.2);
-  transition: transform 0.3s ease;
-}
-
-.mf-cursor.-visible:before {
-  transform: scale(1);
+  background: #fff;
+  transform: scale(0.25);
+  transition: transform 0.25s ease;
 }
 
 .mf-cursor.-hidden {
@@ -88,27 +134,9 @@ background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233
 }
 
 .mf-cursor.-pointer:before {
-  transform: scale(0.5);
+  transform: scale(1);
 }
 
-.mf-cursor-text {
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  color: white;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.mf-cursor.-inverse {
-background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-  mix-blend-mode: difference;
-}
-
-.mf-cursor.-inverse:before {
-background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+.mf-cursor.-active:before {
+  transform: scale(0.8);
 }

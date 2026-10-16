@@ -35,7 +35,10 @@ const Contact = () => {
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
           <H1>Get in touch</H1>
-          <p className="text-[1.25rem] font-normal text-basicMediumGray md:text-[1.5rem]">
+          <p
+            data-animate="fade"
+            className="text-[1.25rem] font-normal text-basicDarkGray md:text-[1.5rem]"
+          >
             Drop me a line for collaborations, coffee catch-ups & tips.
           </p>
         </div>
@@ -43,12 +46,15 @@ const Contact = () => {
       <Separator />
       <Wrapper>
         <div className="px-4">
-          <div className=" w-full rounded-xl  bg-basicOnyx text-white shadow-lg shadow-black/20">
+          <div
+            data-animate="fade"
+            className="w-full rounded-xl border border-white/5 bg-basicOnyx text-white shadow-lg shadow-black/20"
+          >
             <div className=" flex justify-between border-b border-white/10 p-3 sm:p-4">
               <div className="  hidden items-center gap-1 sm:flex sm:gap-2">
-                <div className=" size-3 rounded-full bg-red-500"></div>
-                <div className=" size-3 rounded-full bg-yellow-500"></div>
-                <div className=" size-3 rounded-full bg-green-500"></div>
+                <div className="size-3 rounded-full bg-red-500"></div>
+                <div className="size-3 rounded-full bg-yellow-500"></div>
+                <div className="size-3 rounded-full bg-green-500"></div>
               </div>
               <p className=" text-sm font-normal sm:font-medium md:text-base">
                 New message

@@ -8,6 +8,8 @@ import Footer from "@/components/footer/Footer";
 import "./globals.css";
 import HeaderBackground from "@/components/headerbackground/HeaderBackground";
 import MouseFollowerComponent from "@/components/mouseFollower/MouseFollower";
+import Animations from "@/components/animations/Animations";
+import CursorBubbles from "@/components/cursorBubbles/CursorBubbles";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -47,10 +49,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Lets CSS pre-hide animated content only when JS will reveal it. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js')",
+          }}
+        />
+      </head>
       <body className={inter.className + " bg-darkBg"}>
         <SpeedInsights />
-        <MouseFollowerComponent/>
+        <MouseFollowerComponent />
+        <CursorBubbles />
+        <Animations />
         <div className="sticky  top-0 z-50 mx-auto w-full bg-darkNav backdrop-blur-md ">
           <Navbar />
         </div>

@@ -8,8 +8,8 @@ const Navlink = ({ href, name }: NavlinkType) => {
   return (
     <Link
       href={href}
-      className={`relative z-0 origin-top text-[1rem] font-medium leading-normal text-basicLightGray transition `}
-      data-cursor="-inverse"
+      className={`relative z-0 origin-top text-[1rem] font-medium leading-normal text-basicLightGray transition before:absolute before:-inset-2 before:scale-90 before:rounded-md before:bg-basicMediumGray/20 before:opacity-0 before:transition-[opacity,transform] before:duration-300 hover:text-white hover:before:scale-100 hover:before:opacity-100 ${path === href ? "text-white before:scale-100 before:opacity-100" : ""}`}
+      aria-current={path === href ? "page" : undefined}
     >
       <p className="relative z-10">{name}</p>
     </Link>

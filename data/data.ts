@@ -230,6 +230,12 @@ export const getToKnowMeData: GetToKnowMeCardProps[] = [
 
 export const techCards: TechCardProps[] = [
   {
+    name: "Cloudflare",
+    tag: "Framework",
+    image: "/tech/logo-cloudflare-dark.svg",
+    category: "development",
+  },
+  {
     name: "Next.js",
     tag: "Web framework",
     image: "/tech/Nextjs.svg",
@@ -336,12 +342,46 @@ export const techCards: TechCardProps[] = [
     tag: "Editor",
     image: "/tech/webflow.png",
     category: "low-code",
+    featured: true,
   },
   {
     name: "Finsweet",
     tag: "Integration",
     image: "/tech/finsweet.png",
     category: "low-code",
+    featured: true,
+  },
+  {
+    name: "Claude",
+    tag: "AI pair programmer",
+    image: "/tech/claude.svg",
+    category: "ai",
+    featured: true,
+    badge: "Trending",
+  },
+  {
+    name: "Cursor",
+    tag: "AI code editor",
+    image: "/tech/cursor.svg",
+    category: "ai",
+    featured: true,
+    badge: "Trending",
+  },
+  // {
+  //   name: "GitHub Copilot",
+  //   tag: "AI pair programmer",
+  //   image: "/tech/githubcopilot.svg",
+  //   category: "ai",
+  //   featured: true,
+  //   badge: "Trending",
+  // },
+  {
+    name: "v0",
+    tag: "AI UI generation",
+    image: "/tech/v0.svg",
+    category: "ai",
+    featured: true,
+    badge: "Trending",
   },
   {
     name: "React Query",

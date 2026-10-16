@@ -40,7 +40,10 @@ const page = () => {
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
           <H1>Just a little bit about me</H1>
-          <p className="text-[1.25rem] font-normal text-basicMediumGray sm:text-[1.5rem]">
+          <p
+            data-animate="fade"
+            className="text-[1.25rem] font-normal text-basicDarkGray sm:text-[1.5rem]"
+          >
             Who I am and what I do.
           </p>
         </div>
@@ -56,11 +59,17 @@ const page = () => {
       <Wrapper>
         <div className="flex flex-col justify-between gap-4 px-4 lg:gap-8">
           <div className="flex flex-col gap-3">
-            <H2 classnames="md:text-5xl text-4xl font-bold text-white">
+            <H2
+              data-animate="split"
+              classnames="md:text-5xl text-4xl font-bold text-white"
+            >
               When I&apos;m not coding
             </H2>
           </div>
-          <div className="mt-3 grid gap-5 sm:grid-cols-1 md:grid-cols-2">
+          <div
+            data-animate="stagger"
+            className="mt-3 grid gap-5 sm:grid-cols-1 md:grid-cols-2"
+          >
             {freeeTimeCardData.map((freeeTimeCardData) => (
               <Freetimecard
                 key={freeeTimeCardData.heading}
@@ -71,17 +80,23 @@ const page = () => {
         </div>
       </Wrapper>
       <Wrapper>
-        <div className="mt-24 flex flex-col items-center justify-center gap-2 px-4 text-center text-xl font-medium text-bgLight md:flex-row md:text-2xl">
+        <div
+          data-animate="fade"
+          className="mt-24 flex flex-col items-center justify-center gap-2 px-4 text-center text-xl font-medium text-bgLight md:flex-row md:text-2xl"
+        >
           <span className=" font-normal">
             Alternatively, here&apos;s a fancy sheet of paper
           </span>
           <Link
             href={"/suhel-resume.pdf"}
             target="_blank"
-            className="flex items-center justify-center  text-blue-500 transition-colors hover:text-blue-400"
+            className="group flex items-center justify-center text-blue-500 transition-colors hover:text-blue-400"
           >
             Résumé
-            <MdArrowOutward className=" size-5" />
+            <MdArrowOutward
+              aria-hidden
+              className="size-5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+            />
           </Link>
         </div>
       </Wrapper>

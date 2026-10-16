@@ -15,10 +15,8 @@ const page = () => {
     <>
       <section>
         <Wrapper>
-          ``
-          <div className=" px-4">
-            {" "}
-            <div className="flex flex-col items-center gap-8 pt-40  md:flex-row md:pt-10 ">
+          <div className="px-4">
+            <div className="flex flex-col items-center gap-8 pt-40 md:flex-row md:pt-10">
               <HeroLeft />
               <HeroRight />
             </div>
@@ -26,23 +24,33 @@ const page = () => {
         </Wrapper>
       </section>
 
-      <div className=" my-20 h-[2px] w-full bg-white/10 md:my-[140px]"></div>
+      <div
+        data-animate="line"
+        className="my-20 h-px w-full bg-white/10 md:my-32"
+      ></div>
       <section>
         <Wrapper>
           <div className="px-4">
-            <H2 classnames="md:text-[3.5rem] text-[2.5rem]  font-bold text-white">
+            <H2
+              data-animate="split"
+              classnames="md:text-[3.5rem] text-[2.5rem] font-bold text-white"
+            >
               My Case studies & Client Works
             </H2>
             <div
-              className=" mt-8 grid grid-cols-1 gap-8 sm:gap-6 md:grid-cols-2 md:gap-8"
-              id="#work"
+              data-animate="stagger"
+              className="mt-8 grid grid-cols-1 gap-6 md:mt-12 md:grid-cols-2 md:gap-8"
+              id="work"
             >
               {projectsData.map((project) => (
                 <ProjectCard {...project} key={project.name} />
               ))}
             </div>
-            <div className="mt-8 flex items-center justify-center md:mt-12 lg:mt-16 ">
-              <Link href="/work" data-cursor="-inverse">
+            <div
+              data-animate="fade"
+              className="mt-8 flex items-center justify-center md:mt-12 lg:mt-16"
+            >
+              <Link href="/work" data-magnetic>
                 <SecondaryButton>View more</SecondaryButton>
               </Link>
             </div>
@@ -50,27 +58,34 @@ const page = () => {
         </Wrapper>
       </section>
 
-      <section className="my-[260px] items-center">
+      <section className="my-32 md:my-48 lg:my-60">
         <Wrapper>
           <div className="px-4">
-            <div className="mx-auto w-full max-w-[900px] text-center text-basicLightGray">
-              <H2 classnames="md:text-[3rem] text-[1.5rem] font-semibold ">
-                Great development should strive to create an experience so
-                seamless and intuitive that it feels like the only way it could
-                have been doveloped.
-              </H2>
-            </div>
+            <blockquote
+              data-animate="dim-reveal"
+              className="mx-auto w-full max-w-[900px] text-center text-2xl font-semibold leading-snug text-basicLightGray md:text-5xl md:leading-tight"
+            >
+              Great development should strive to create an experience so
+              seamless and intuitive that it feels like the only way it could
+              have been developed.
+            </blockquote>
           </div>
         </Wrapper>
       </section>
 
-      <section className=" my-28 ">
+      <section className="my-28">
         <Wrapper>
           <div className="px-4">
-            <H2 classnames="md:text-[3.5rem] text-[2.5rem] font-bold text-white">
+            <H2
+              data-animate="split"
+              classnames="md:text-[3.5rem] text-[2.5rem] font-bold text-white"
+            >
               Get to know me
             </H2>
-            <div className="mt-8 flex flex-col gap-8 sm:gap-6 md:flex-row md:gap-8">
+            <div
+              data-animate="stagger"
+              className="mt-8 flex flex-col gap-6 md:mt-12 md:flex-row md:gap-8"
+            >
               {getToKnowMeData.map((data) => (
                 <GetToKnowmeCard {...data} key={data.heading} />
               ))}

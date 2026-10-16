@@ -5,11 +5,16 @@ import Navlink from "../navlink/Navlink";
 
 const Navbar = () => {
   return (
-    <nav className="mx-auto flex w-full items-center justify-between p-4 sm:py-6 lg:max-w-[75rem]">
+    <nav className="mx-auto flex w-full items-center justify-between p-4 sm:py-6 lg:max-w-7xl">
       <div className=" hidden w-full justify-between sm:flex">
         <div className="flex items-center gap-10">
-          <Link href="/" className="transition hover:rotate-6">
-            <FaCode className="text-3xl text-white" />
+          <Link
+            href="/"
+            aria-label="Home"
+            className="transition hover:rotate-6"
+            data-magnetic 
+          >
+            <FaCode aria-hidden className="text-3xl text-white" />
           </Link>
           <ul className="flex gap-16">
             {navlinks.map((link) => (
@@ -24,11 +29,12 @@ const Navbar = () => {
             <Link
               href={image.link}
               key={image.alt}
-              className="opacity-50 transition hover:scale-110 hover:opacity-100"
-              target="blank"
-              data-cursor="-inverse"
+              aria-label={image.alt}
+              data-magnetic
+              className="text-basicLightGray opacity-60 transition hover:text-white hover:opacity-100"
+              target="_blank"
             >
-              <image.src className="text-2xl text-basicLightGray  hover:text-white" />
+              <image.src aria-hidden className="text-2xl" />
             </Link>
           ))}
         </div>

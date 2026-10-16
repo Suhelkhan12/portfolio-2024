@@ -5,7 +5,8 @@ const HeroRight = () => {
   return (
     <Image
       src={suhel}
-      alt="suhel image"
+      alt="Suhel Khan"
+      data-animate="image"
       className=" max-h-[25rem] rounded-lg object-cover object-top md:max-h-[40rem] md:max-w-[45%]"
       priority
     />

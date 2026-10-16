@@ -57,6 +57,8 @@ export type TechCardProps = {
   tag: string;
   image: string;
   category: string;
+  featured?: boolean;
+  badge?: string;
 };
 
 export type MobileNavProps = {

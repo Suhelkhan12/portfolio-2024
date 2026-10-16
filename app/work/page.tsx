@@ -48,14 +48,20 @@ const Page = () => {
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
           <H1>My Case studies & Client Works</H1>
-          <p className="text-[1.25rem] font-normal text-basicMediumGray md:text-[1.5rem]">
+          <p
+            data-animate="fade"
+            className="text-[1.25rem] font-normal text-basicDarkGray md:text-[1.5rem]"
+          >
             List of my selected works and side projects.
           </p>
         </div>
       </Wrapper>
       <Separator />
       <Wrapper>
-        <div className=" grid grid-cols-1 gap-8 px-4 sm:gap-6 md:grid-cols-2 md:gap-8">
+        <div
+          data-animate="stagger"
+          className="grid grid-cols-1 gap-6 px-4 md:grid-cols-2 md:gap-8"
+        >
           {workCardsData.map((data) => (
             <ProjectCard {...data} key={data.name} />
           ))}
