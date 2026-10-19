@@ -15,7 +15,7 @@ const OpenToWork = () => {
         <span className="relative inline-flex size-2 rounded-full bg-green-500"></span>
       </span>
       <span aria-hidden className="block h-4 w-px bg-basicDarkGray"></span>
-      <span>Open to work</span>
+      <span>Available for new projects</span>
       <FaChevronRight
         aria-hidden
         className="size-2 transition-transform duration-300 group-hover:translate-x-1"

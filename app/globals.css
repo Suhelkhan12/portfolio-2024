@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Palette as RGB channels so Tailwind can apply opacity (see tailwind.config).
+   Light is the default; the .dark class on <html> is set by the theme script
+   in app/layout.tsx and toggled by components/themeToggle. */
+:root {
+  --page: 255 255 255;
+  --surface: 246 246 246;
+  --fg: 17 17 17;
+  --muted: 102 102 102;
+  --subtle: 58 58 58;
+  --line: 229 229 229;
+  --curtain: 17 17 17;
+  color-scheme: light;
+}
+
+.dark {
+  --page: 13 13 13;
+  --surface: 24 24 24;
+  --fg: 255 255 255;
+  --muted: 128 128 128;
+  --subtle: 197 197 197;
+  --line: 56 55 55;
+  --curtain: 28 28 28;
+  color-scheme: dark;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +34,23 @@
 }
 
 :focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline: 2px solid rgb(var(--fg) / 0.6);
   outline-offset: 3px;
+}
+
+/* Theme switch: components/themeToggle grows the new theme out of the toggle
+   as a circle, so the default cross-fade is turned off. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Colors snap during the switch; per-element color transitions would
+   otherwise still be fading inside the circle. */
+.theme-switching,
+.theme-switching * {
+  transition: none !important;
 }
 
 /* Motion: hide animated elements until components/animations takes over, so
@@ -46,7 +86,7 @@
   opacity: 0;
   background: radial-gradient(
     420px circle at var(--mx, 50%) var(--my, 50%),
-    rgba(255, 255, 255, 0.07),
+    rgb(var(--fg) / 0.06),
     transparent 45%
   );
   transition: opacity 0.4s ease;
@@ -99,7 +139,7 @@
     margin-left: -10px;
     border: solid transparent;
     border-width: 10px;
-    border-top-color: #fff;
+    border-top-color: rgb(var(--fg));
     z-index: 10;
   }
 }

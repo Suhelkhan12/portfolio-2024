@@ -26,8 +26,12 @@ export const navlinks: NavlinkType[] = [
   },
   {
     href: "/techstack",
-    name: "Tech",
+    name: "Toolkit",
   },
+  // {
+  //   href: "/contact",
+  //   name: "Contact",
+  // },
 ];
 
 // navlinks image
@@ -218,12 +222,12 @@ export const workCardsData: WorkCardProps[] = [
 export const getToKnowMeData: GetToKnowMeCardProps[] = [
   {
     heading: "About me",
-    subheading: "Who I am what I do?",
+    subheading: "Who I am, how I work and what I care about.",
     link: "/about",
   },
   {
-    heading: "Techstack",
-    subheading: "Technology I use and currenly learning.",
+    heading: "Toolkit",
+    subheading: "The tools I build with and what I'm learning next.",
     link: "/techstack",
   },
 ];
@@ -450,7 +454,7 @@ export const freeeTimeCardData: FreetimeCardProps[] = [
   {
     heading: "Anime",
     subheading:
-      "Anime transcend mere pastimes for me; they're wellsprings of inspiration. Each intricate narrative and meticulously crafted scene ignite my creativity, influencing my storytelling techniques and enriching my development endeavors.",
+      "Anime is where a lot of my visual taste comes from. The pacing, the framing and the way a single scene can carry so much emotion all shape how I think about motion and storytelling on the web.",
     images: [
       {
         name: "onepice",
@@ -473,7 +477,7 @@ export const freeeTimeCardData: FreetimeCardProps[] = [
   {
     heading: "Mountains",
     subheading:
-      "Beyond coding, I find solace and inspiration in trekking through mountains. Each step in nature's vast landscapes mirrors the problem-solving journey in coding, fostering resilience, balance, and innovative thinking.",
+      "When I need to reset, I head for the mountains. Long treks teach the same things good projects do: plan the route, pace yourself and keep going when the climb gets steep.",
     images: [
       {
         name: "Trek1",

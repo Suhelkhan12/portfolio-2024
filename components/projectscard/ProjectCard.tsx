@@ -12,7 +12,7 @@ const ProjectCard = (props: ProjectCardProps) => {
       href={linkToUse!}
       target="_blank"
       data-spotlight
-      className="group relative flex flex-col justify-between rounded-lg border border-white/5 bg-basicOnyx p-3 transition-colors duration-300 hover:border-white/10 hover:bg-white/5 md:rounded-xl md:p-4 lg:rounded-2xl lg:p-6"
+      className="group relative flex flex-col justify-between rounded-lg border border-fg/[0.06] bg-basicOnyx p-3 transition-colors duration-300 hover:border-fg/10 hover:bg-fg/5 md:rounded-xl md:p-4 lg:rounded-2xl lg:p-6"
     >
       <div>
         <div className="relative h-56 w-full overflow-hidden rounded-lg md:h-64 lg:h-80">
@@ -29,13 +29,13 @@ const ProjectCard = (props: ProjectCardProps) => {
             <ProjectTag text={tag} key={tag} />
           ))}
         </div>
-        <h3 className="mt-4 text-2xl font-medium text-white md:text-[1.75rem]">
+        <h3 className="mt-4 text-2xl font-medium text-fg md:text-[1.75rem]">
           {props.name}
         </h3>
       </div>
 
-      <div className="mt-8 flex items-center gap-2 text-sm text-basicLightGray transition-colors duration-300 group-hover:text-white">
-        <span>{isLive ? "See live website" : "Github repository"}</span>
+      <div className="mt-8 flex items-center gap-2 text-sm text-basicLightGray transition-colors duration-300 group-hover:text-fg">
+        <span>{isLive ? "Visit live site" : "View source on GitHub"}</span>
         <MdOutlineArrowOutward
           aria-hidden
           className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"

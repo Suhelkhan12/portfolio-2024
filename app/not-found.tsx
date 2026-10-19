@@ -10,12 +10,12 @@ export default function NotFound() {
         <div className="flex flex-col items-center justify-center gap-4 px-4">
           <h1
             data-animate="split"
-            className="text-8xl font-bold text-ligthFaintWhite"
+            className="text-8xl font-bold text-fg"
           >
             404
           </h1>
           <p className="text-center text-[1.5rem] text-basicLightGray sm:text-xl md:text-2xl">
-            There is no such page on this website.
+            This page wandered off. Let&apos;s get you back on track.
           </p>
           <Link href="/" data-magnetic>
             <PrimaryButton>Return to Home</PrimaryButton>

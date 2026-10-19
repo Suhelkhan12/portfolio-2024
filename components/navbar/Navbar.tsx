@@ -2,6 +2,7 @@ import { navlinks, navlinkImages, mobileNavLinks } from "@/data/data";
 import { FaCode } from "react-icons/fa6";
 import Link from "next/link";
 import Navlink from "../navlink/Navlink";
+import ThemeToggle from "../themeToggle/ThemeToggle";
 
 const Navbar = () => {
   return (
@@ -12,11 +13,11 @@ const Navbar = () => {
             href="/"
             aria-label="Home"
             className="transition hover:rotate-6"
-            data-magnetic 
+            data-magnetic
           >
-            <FaCode aria-hidden className="text-3xl text-white" />
+            <FaCode aria-hidden className="text-3xl text-fg" />
           </Link>
-          <ul className="flex gap-16">
+          <ul className="flex gap-12 lg:gap-16">
             {navlinks.map((link) => (
               <li key={link.name} className="relative">
                 <Navlink {...link} />
@@ -24,34 +25,37 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="flex gap-6">
+        <div className="flex items-center gap-6">
           {navlinkImages.map((image) => (
             <Link
               href={image.link}
               key={image.alt}
               aria-label={image.alt}
               data-magnetic
-              className="text-basicLightGray opacity-60 transition hover:text-white hover:opacity-100"
+              className="text-basicLightGray opacity-60 transition hover:text-fg hover:opacity-100"
               target="_blank"
             >
               <image.src aria-hidden className="text-2xl" />
             </Link>
           ))}
+          <span aria-hidden className="h-6 w-px bg-fg/10" />
+          <ThemeToggle />
         </div>
       </div>
 
       <div className=" block w-full sm:hidden">
-        <div className="flex justify-between self-stretch">
+        <div className="flex items-center justify-between self-stretch">
           {mobileNavLinks.map((link) => (
             <Link
               href={link.slug}
               key={link.id}
-              className=" flex flex-col items-center justify-center gap-1 p-1 text-xs text-white"
+              className=" flex flex-col items-center justify-center gap-1 p-1 text-xs text-fg"
             >
               <link.icon className="size-4" />
               <span className=" capitalize">{link.id}</span>
             </Link>
           ))}
+          <ThemeToggle />
         </div>
       </div>
     </nav>

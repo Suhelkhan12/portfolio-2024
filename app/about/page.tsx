@@ -12,9 +12,9 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 export const metadata: Metadata = {
-  title: "Suhel Khan: Frontend Engineer | Portfolio, Projects.",
+  title: "About Suhel Khan | Frontend & Webflow Developer",
   description:
-    "Suhel is Frontend engineer at Parallelhq, banglore. He has an insatiable curiosity for exploring the possibilities of technology and understanding the diverse perspectives that shape our world",
+    "Suhel Khan is a frontend and Webflow developer from India who turns designs into fast, animated, pixel-perfect websites. Learn how he works and what he cares about.",
   keywords: [
     "portfolio",
     "Suhel Khan",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   ],
   twitter: {
     title:
-      "Suhel Khan: Frontend Engineer | Portfolio, Projects, and Experience",
+      "About Suhel Khan | Frontend & Webflow Developer",
     description:
-      "Suhel is Frontend engineer at Parallelhq, banglore. He has an insatiable curiosity for exploring the possibilities of technology and understanding the diverse perspectives that shape our world.",
+      "Suhel Khan is a frontend and Webflow developer from India who turns designs into fast, animated, pixel-perfect websites.",
     card: "summary_large_image",
   },
 };
@@ -39,12 +39,12 @@ const page = () => {
     <section className=" relative z-50 mb-28 gap-8 pt-28  md:pt-36">
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
-          <H1>Just a little bit about me</H1>
+          <H1>A little about me</H1>
           <p
             data-animate="fade"
             className="text-[1.25rem] font-normal text-basicDarkGray sm:text-[1.5rem]"
           >
-            Who I am and what I do.
+            The person behind the pixels, and how I like to work.
           </p>
         </div>
       </Wrapper>
@@ -61,7 +61,7 @@ const page = () => {
           <div className="flex flex-col gap-3">
             <H2
               data-animate="split"
-              classnames="md:text-5xl text-4xl font-bold text-white"
+              classnames="md:text-5xl text-4xl font-bold text-fg"
             >
               When I&apos;m not coding
             </H2>
@@ -82,10 +82,10 @@ const page = () => {
       <Wrapper>
         <div
           data-animate="fade"
-          className="mt-24 flex flex-col items-center justify-center gap-2 px-4 text-center text-xl font-medium text-bgLight md:flex-row md:text-2xl"
+          className="mt-24 flex flex-col items-center justify-center gap-2 px-4 text-center text-xl font-medium text-fg md:flex-row md:text-2xl"
         >
           <span className=" font-normal">
-            Alternatively, here&apos;s a fancy sheet of paper
+            Prefer the one-page version? Here&apos;s my
           </span>
           <Link
             href={"/suhel-resume.pdf"}

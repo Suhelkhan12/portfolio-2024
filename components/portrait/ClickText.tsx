@@ -26,7 +26,7 @@ const ClickText = () => {
   return (
     <button
       ref={ref}
-      className="clicktext absolute -top-20 right-0 cursor-pointer rounded-full bg-ligthFaintWhite px-5 py-4 text-black"
+      className="clicktext absolute -top-20 right-0 cursor-pointer rounded-full bg-fg px-5 py-4 text-page"
       onClick={handleClick}
     >
       {currText}

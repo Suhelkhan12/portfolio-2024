@@ -84,7 +84,7 @@ const ContactForm = () => {
           control={form.control}
           name="username"
           render={({ field }) => (
-            <FormItem className="flex items-center gap-2  border-0 border-b border-b-darkCardBorder pb-2 transition-colors focus-within:border-b-white/60">
+            <FormItem className="flex items-center gap-2  border-0 border-b border-b-darkCardBorder pb-2 transition-colors focus-within:border-b-fg/60">
               <FormLabel className=" text-base font-medium">Name:</FormLabel>
               <FormControl>
                 <Input
@@ -102,7 +102,7 @@ const ContactForm = () => {
           control={form.control}
           name="useremail"
           render={({ field }) => (
-            <FormItem className="flex items-center gap-2 border-0 border-b border-b-darkCardBorder pb-2 transition-colors focus-within:border-b-white/60">
+            <FormItem className="flex items-center gap-2 border-0 border-b border-b-darkCardBorder pb-2 transition-colors focus-within:border-b-fg/60">
               <FormLabel className=" text-base font-medium">Email:</FormLabel>
               <FormControl>
                 <Input
@@ -127,7 +127,7 @@ const ContactForm = () => {
                   rows={10}
                   placeholder="Write your message here"
                   {...field}
-                  className="resize-none rounded-lg border-0 bg-darkBg p-6 focus-visible:ring-offset-basicOnyx"
+                  className="resize-none rounded-lg border-0 bg-page p-6 focus-visible:ring-offset-basicOnyx"
                 />
               </FormControl>
               <FormMessage className="text-xs font-normal text-red-500" />
@@ -140,9 +140,9 @@ const ContactForm = () => {
             type="submit"
             disabled={isSubmitting}
             variant="ghost"
-            className="primaryBtnLight rounded-full p-8 text-lg transition duration-300 hover:bg-basicOnyx/10 hover:text-basicDarkGray hover:shadow-lg"
+            className="primaryBtnLight rounded-full p-8 text-lg text-white transition duration-300 hover:bg-basicOnyx/10 hover:text-white/70 hover:shadow-lg"
           >
-            {isSubmitting ? "Sending…" : "Submit your response :)"}
+            {isSubmitting ? "Sending…" : "Send message"}
           </Button>
           <p
             ref={statusRef}

@@ -6,17 +6,17 @@ import { cn } from "@/lib/utils";
 
 // Mapped to the site's palette; the shadcn theme tokens aren't defined here.
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-darkBg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-darkBg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fg/60 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-white text-darkBg hover:bg-white/90",
+        default: "bg-fg text-page hover:bg-fg/90",
         destructive: "bg-red-600 text-white hover:bg-red-600/90",
         outline:
-          "border border-darkCardBorder bg-darkBg text-white hover:bg-basicOnyx",
-        secondary: "bg-basicOnyx text-white hover:bg-basicOnyx/80",
-        ghost: "text-white hover:bg-basicOnyx",
-        link: "text-white underline-offset-4 hover:underline",
+          "border border-darkCardBorder bg-darkBg text-fg hover:bg-basicOnyx",
+        secondary: "bg-basicOnyx text-fg hover:bg-basicOnyx/80",
+        ghost: "text-fg hover:bg-basicOnyx",
+        link: "text-fg underline-offset-4 hover:underline",
       },
       size: {
         default: "h-10 px-4 py-2",

@@ -34,12 +34,13 @@ const Contact = () => {
     <section className="relative z-50 mb-28 pt-20 sm:pt-36">
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
-          <H1>Get in touch</H1>
+          <H1>Let&apos;s build something</H1>
           <p
             data-animate="fade"
             className="text-[1.25rem] font-normal text-basicDarkGray md:text-[1.5rem]"
           >
-            Drop me a line for collaborations, coffee catch-ups & tips.
+            Have a project, a role or just an idea? Send me a message and
+            I&apos;ll get back to you as soon as I can.
           </p>
         </div>
       </Wrapper>
@@ -48,9 +49,9 @@ const Contact = () => {
         <div className="px-4">
           <div
             data-animate="fade"
-            className="w-full rounded-xl border border-white/5 bg-basicOnyx text-white shadow-lg shadow-black/20"
+            className="w-full rounded-xl border border-fg/[0.06] bg-basicOnyx text-fg shadow-lg shadow-black/5 dark:shadow-black/20"
           >
-            <div className=" flex justify-between border-b border-white/10 p-3 sm:p-4">
+            <div className=" flex justify-between border-b border-fg/10 p-3 sm:p-4">
               <div className="  hidden items-center gap-1 sm:flex sm:gap-2">
                 <div className="size-3 rounded-full bg-red-500"></div>
                 <div className="size-3 rounded-full bg-yellow-500"></div>

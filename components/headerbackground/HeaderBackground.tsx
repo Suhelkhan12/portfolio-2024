@@ -2,7 +2,7 @@ const HeaderBackground = () => {
   return (
     <div
       aria-hidden="true"
-      className={`absolute left-1/2 top-[-5%]  -z-10 flex h-[35rem] w-[1200px]  -translate-x-1/2 items-center justify-center `}
+      className={`absolute left-1/2 top-[-5%]  -z-10 flex h-[35rem] w-[1200px]  -translate-x-1/2 items-center justify-center opacity-50 transition-opacity duration-500 dark:opacity-100`}
     >
       <div aria-hidden="true" className="relative">
         <div

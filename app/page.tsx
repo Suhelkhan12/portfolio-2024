@@ -26,17 +26,24 @@ const page = () => {
 
       <div
         data-animate="line"
-        className="my-20 h-px w-full bg-white/10 md:my-32"
+        className="my-20 h-px w-full bg-fg/10 md:my-32"
       ></div>
       <section>
         <Wrapper>
           <div className="px-4">
             <H2
               data-animate="split"
-              classnames="md:text-[3.5rem] text-[2.5rem] font-bold text-white"
+              classnames="md:text-[3.5rem] text-[2.5rem] font-bold text-fg"
             >
-              My Case studies & Client Works
+              Selected work
             </H2>
+            <p
+              data-animate="fade"
+              className="mt-3 max-w-2xl text-lg text-basicDarkGray md:text-xl"
+            >
+              A few recent websites I&apos;ve built for clients, plus side
+              projects where I try out new ideas.
+            </p>
             <div
               data-animate="stagger"
               className="mt-8 grid grid-cols-1 gap-6 md:mt-12 md:grid-cols-2 md:gap-8"
@@ -51,7 +58,7 @@ const page = () => {
               className="mt-8 flex items-center justify-center md:mt-12 lg:mt-16"
             >
               <Link href="/work" data-magnetic>
-                <SecondaryButton>View more</SecondaryButton>
+                <SecondaryButton>View all work</SecondaryButton>
               </Link>
             </div>
           </div>
@@ -63,11 +70,11 @@ const page = () => {
           <div className="px-4">
             <blockquote
               data-animate="dim-reveal"
-              className="mx-auto w-full max-w-[900px] text-center text-2xl font-semibold leading-snug text-basicLightGray md:text-5xl md:leading-tight"
+              className="mx-auto w-full max-w-[900px] text-center text-2xl font-semibold leading-snug text-fg md:text-5xl md:leading-tight"
             >
-              Great development should strive to create an experience so
-              seamless and intuitive that it feels like the only way it could
-              have been developed.
+              Great websites don&apos;t just look good, they feel effortless. I
+              sweat the details so every scroll, hover and transition feels like
+              it couldn&apos;t have been built any other way.
             </blockquote>
           </div>
         </Wrapper>
@@ -78,7 +85,7 @@ const page = () => {
           <div className="px-4">
             <H2
               data-animate="split"
-              classnames="md:text-[3.5rem] text-[2.5rem] font-bold text-white"
+              classnames="md:text-[3.5rem] text-[2.5rem] font-bold text-fg"
             >
               Get to know me
             </H2>

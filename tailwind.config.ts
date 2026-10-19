@@ -1,6 +1,9 @@
-import { Config } from "prettier";
+import type { Config } from "tailwindcss";
+
+const themed = (variable: string) => `rgb(var(${variable}) / <alpha-value>)`;
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -35,23 +38,30 @@ const config: Config = {
         "bounce-slow": "bounce 2s linear infinite",
         "wave": "wave 2s linear infinite"
       },
+      // Theme-aware colors resolve to the CSS variables in app/globals.css,
+      // so the same class flips between the light and dark palettes.
       colors: {
-        bgLight: '#FBFBFB',
+        page: themed("--page"),
+        surface: themed("--surface"),
+        fg: themed("--fg"),
+        line: themed("--line"),
+        curtain: themed("--curtain"),
+
+        bgLight: themed("--fg"),
         navLight: 'rgba(255,255,255,0.25)',
-        basicOnyx: '#181818',
-        basicDarkGray: '#808080',
+        basicOnyx: themed("--surface"),
+        basicDarkGray: themed("--muted"),
         basicMediumGray: 'rgba(128, 128, 128, 0.5)',
-        basicLightGray: '#C5C5C5',
-        ligthFaintWhite: '#F3F3F3',
+        basicLightGray: themed("--subtle"),
+        ligthFaintWhite: themed("--fg"),
         lightCardBorder: '#EBEBEB',
         lightCardBg: '#F6F6F6',
         lightBlack: 'rgba(21, 21, 21, 0.1)',
 
-        darkCardBorder: '#383737',
-        darkBg: '#0D0D0D',
-        darkNav:'rgba(24, 24, 29, 0.50)',
-        dardCardBorder: '#383737'
-        
+        darkCardBorder: themed("--line"),
+        darkBg: themed("--page"),
+        darkNav: "rgb(var(--page) / 0.7)",
+        dardCardBorder: themed("--line"),
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

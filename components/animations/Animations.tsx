@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import { pageTransition } from "@/lib/pageTransition";
 
 if (typeof window !== "undefined")
   gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -44,10 +45,12 @@ const Animations = () => {
         const cleanups: (() => void)[] = [];
 
         if (motion) {
-          // Content already in view on load waits for the page title to lead.
+          // Content already in view on load waits for the page title to lead,
+          // and after a route change, for the page-transition curtain to lift.
           const startedAt = performance.now();
-          const introDelay = () =>
-            performance.now() - startedAt < 200 ? 0.3 : 0;
+          const lead = pageTransition.revealDelay;
+          const onLoad = () => performance.now() - startedAt < 200;
+          const introDelay = () => (onLoad() ? lead + 0.3 : 0);
 
           all('[data-animate="split"]').forEach((el) => {
             SplitText.create(el, {
@@ -56,12 +59,13 @@ const Animations = () => {
               autoSplit: true,
               onSplit(self) {
                 gsap.set(el, { autoAlpha: 1 });
+                const inView = onLoad() && ScrollTrigger.isInViewport(el);
                 return gsap.from(self.lines, {
                   yPercent: 110,
                   duration: 1.1,
                   ease: "expo.out",
                   stagger: 0.09,
-                  delay: 0.05,
+                  delay: 0.05 + (inView ? lead : 0),
                   scrollTrigger: { trigger: el, start: "top 90%", once: true },
                 });
               },
@@ -74,10 +78,10 @@ const Animations = () => {
               type: "words",
               autoSplit: true,
               onSplit(self) {
-                gsap.set(self.words, { autoAlpha: 0, color: "#808080" });
+                // Opacity only: the text color comes from the theme.
+                gsap.set(self.words, { autoAlpha: 0.08 });
                 return gsap.to(self.words, {
                   autoAlpha: 1,
-                  color: "#ffffff",
                   stagger: 0.04,
                   ease: "none",
                   scrollTrigger: {
@@ -133,7 +137,8 @@ const Animations = () => {
                 scale: 1,
                 duration: 1.4,
                 ease: "expo.out",
-                delay: introDelay() + 0.1,
+                delay:
+                  (ScrollTrigger.isInViewport(el) ? introDelay() : 0) + 0.1,
                 clearProps: "clipPath,transform",
                 scrollTrigger: { trigger: el, start: "top 90%", once: true },
               },

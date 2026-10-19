@@ -10,12 +10,14 @@ import HeaderBackground from "@/components/headerbackground/HeaderBackground";
 import MouseFollowerComponent from "@/components/mouseFollower/MouseFollower";
 import Animations from "@/components/animations/Animations";
 import CursorBubbles from "@/components/cursorBubbles/CursorBubbles";
+import PageTransition from "@/components/pageTransition/PageTransition";
+import { THEME_STORAGE_KEY } from "@/lib/theme";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Suhel | Personal Portfolio Website",
+  title: "Suhel Khan | Frontend & Webflow Developer",
   description:
-    "Welcome to Suhel's portfolio. As a talented Frontend developer, Suhel Khan invites you to explore his projects, skills, experience, and interests. Dive into a showcase of innovative web development.",
+    "Suhel Khan is a frontend and Webflow developer who builds fast, animated, pixel-perfect websites with Webflow, GSAP, Next.js and React. Explore selected client work and side projects.",
   keywords: [
     "portfolio",
     "Suhel Khan",
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     description:
-      "Welcome to Suhel's portfolio! Talented Frontend developer specializing in JavaScript, React, and cutting-edge web technologies. Explore projects, skills, and passion for intuitive user experiences. #FrontendDev #WebDev",
+      "Frontend & Webflow developer building fast, animated websites with Webflow, GSAP, Next.js and React. See selected client work and side projects.",
   },
   metadataBase: new URL("https://suhelkhan.com"),
   alternates: {
@@ -51,19 +53,26 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Lets CSS pre-hide animated content only when JS will reveal it. */}
+        {/* Applies the saved theme before first paint (light by default), and
+            lets CSS pre-hide animated content only when JS will reveal it. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: "document.documentElement.classList.add('js')",
+            __html: `(function(){var d=document.documentElement;d.classList.add('js');try{if(localStorage.getItem('${THEME_STORAGE_KEY}')==='dark')d.classList.add('dark')}catch(e){}})()`,
           }}
         />
       </head>
-      <body className={inter.className + " bg-darkBg"}>
+      <body
+        className={
+          inter.className +
+          " bg-page text-fg"
+        }
+      >
         <SpeedInsights />
         <MouseFollowerComponent />
-        <CursorBubbles />
+        {/* <CursorBubbles /> */}
         <Animations />
-        <div className="sticky  top-0 z-50 mx-auto w-full bg-darkNav backdrop-blur-md ">
+        <PageTransition />
+        <div className="sticky top-0 z-50 mx-auto w-full border-b border-fg/5 bg-darkNav backdrop-blur-md">
           <Navbar />
         </div>
         <main className="relative z-10 overflow-hidden">

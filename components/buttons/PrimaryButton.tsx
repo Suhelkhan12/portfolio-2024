@@ -4,7 +4,7 @@ import { ButtonProps } from "@/types";
 const PrimaryButton = ({ children, classNames }: ButtonProps) => {
   return (
     <span
-      className={`primaryBtnLight inline-flex items-center justify-center rounded-full px-8 py-4 text-[1.125rem] font-medium text-white shadow-lg transition-[color,transform] duration-200 hover:text-basicLightGray active:scale-[0.97] ${classNames ?? ""}`}
+      className={`primaryBtnLight inline-flex items-center justify-center rounded-full px-8 py-4 text-[1.125rem] font-medium text-white shadow-lg transition-[color,transform] duration-200 hover:text-white/70 active:scale-[0.97] ${classNames ?? ""}`}
     >
       {children}
     </span>

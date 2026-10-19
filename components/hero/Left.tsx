@@ -15,22 +15,17 @@ const HeroLeft = () => {
       </H1>
       <div data-animate="fade" className="mt-2">
         <p className="text-[1.25rem] text-basicDarkGray sm:text-[1.5rem]">
-          I&apos;m an India-based Frontend Developer with a passion for creating
-          intuitive and engaging user interfaces. I love finding simple
-          solutions to complex problems.
+          A frontend &amp; Webflow developer from India. I turn designs into
+          fast, pixel-perfect websites with motion that makes people stop
+          scrolling, built with Webflow, GSAP and Next.js.
         </p>
       </div>
       <div
         data-animate="fade"
         className="mt-8 flex flex-wrap items-center gap-4"
       >
-        <Link
-          href={"https://www.linkedin.com/in/suhell-khan/"}
-          target="_blank"
-          className="shrink-0"
-          data-magnetic
-        >
-          <PrimaryButton>Let&apos;s connect</PrimaryButton>
+        <Link href="/contact" className="shrink-0" data-magnetic>
+          <PrimaryButton>Let&apos;s work together</PrimaryButton>
         </Link>
         <Link
           href={"https://x.com/suhel7822"}

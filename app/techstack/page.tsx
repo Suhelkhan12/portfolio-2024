@@ -38,12 +38,13 @@ const page = () => {
     <section className="relative z-50 mb-28 gap-8 pt-28  md:pt-36">
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
-          <H1>Techstack</H1>
+          <H1>Toolkit</H1>
           <p
             data-animate="fade"
             className="text-[1.25rem] font-normal text-basicDarkGray md:text-[1.5rem]"
           >
-            The dev tools I know and am currently learning.
+            The tools I use to design, build and ship, and the ones I&apos;m
+            learning next.
           </p>
         </div>
       </Wrapper>
@@ -111,8 +112,15 @@ const page = () => {
             data-animate="split"
             classnames="text-[2rem] md:text-[3rem] font-bold text-basicDarkGray"
           >
-            Dev
+            Development
           </H2>
+          <p
+            data-animate="fade"
+            className="max-w-xl text-base text-basicDarkGray md:text-lg"
+          >
+            For custom builds, web apps and anything Webflow can&apos;t do on
+            its own.
+          </p>
           <div
             data-animate="stagger"
             className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
@@ -132,8 +140,14 @@ const page = () => {
             data-animate="split"
             classnames="text-[2rem] md:text-[3rem] font-bold text-basicDarkGray"
           >
-            Also know
+            Currently exploring
           </H2>
+          <p
+            data-animate="fade"
+            className="max-w-xl text-base text-basicDarkGray md:text-lg"
+          >
+            Backend and data tools I&apos;m learning on the way to full-stack.
+          </p>
           <div
             data-animate="stagger"
             className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"

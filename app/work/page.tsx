@@ -7,7 +7,7 @@ import { Metadata } from "next";
 import ProjectCard from "@/components/projectscard/ProjectCard";
 
 export const metadata: Metadata = {
-  title: "Suhel Khan's Tech Portfolio",
+  title: "Work | Suhel Khan, Frontend & Webflow Developer",
   description:
     "Delve into the diverse tech expertise of Suhel Khan, a seasoned technologist proficient in an array of cutting-edge technologies.",
   keywords: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "web development",
   ],
   twitter: {
-    title: "Suhel Khan's Tech Portfolio",
+    title: "Work | Suhel Khan, Frontend & Webflow Developer",
     description:
       "Delve into the diverse tech expertise of Suhel Khan, a seasoned technologist proficient in an array of cutting-edge technologies.",
     card: "summary_large_image",
@@ -47,12 +47,13 @@ const Page = () => {
     <section className="relative z-50 mb-28 gap-8 pt-28  md:pt-36">
       <Wrapper>
         <div className="flex flex-col gap-2 px-4">
-          <H1>My Case studies & Client Works</H1>
+          <H1>Selected work</H1>
           <p
             data-animate="fade"
             className="text-[1.25rem] font-normal text-basicDarkGray md:text-[1.5rem]"
           >
-            List of my selected works and side projects.
+            Client websites I&apos;ve built, plus side projects I shipped to
+            learn something new.
           </p>
         </div>
       </Wrapper>

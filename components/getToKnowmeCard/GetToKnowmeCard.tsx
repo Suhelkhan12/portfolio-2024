@@ -8,13 +8,13 @@ const GetToKnowmeCard = (props: GetToKnowMeCardProps) => {
     <Link
       href={props.link}
       data-spotlight
-      className="group flex size-full flex-col items-center justify-center gap-2 rounded-2xl border border-white/5 bg-basicOnyx px-6 py-10 text-center transition-colors duration-300 hover:border-white/10 hover:bg-white/5 md:py-14"
+      className="group flex size-full flex-col items-center justify-center gap-2 rounded-2xl border border-fg/[0.06] bg-basicOnyx px-6 py-10 text-center transition-colors duration-300 hover:border-fg/10 hover:bg-fg/5 md:py-14"
     >
-      <H2 classnames="flex items-center gap-3 text-2xl font-semibold text-white md:text-[2.5rem]">
+      <H2 classnames="flex items-center gap-3 text-2xl font-semibold text-fg md:text-[2.5rem]">
         {props.heading}
         <MdArrowForward
           aria-hidden
-          className="size-6 text-basicDarkGray transition-all duration-300 group-hover:translate-x-1 group-hover:text-white md:size-8"
+          className="size-6 text-basicDarkGray transition-all duration-300 group-hover:translate-x-1 group-hover:text-fg md:size-8"
         />
       </H2>
       <p className="text-base text-basicDarkGray">{props.subheading}</p>
