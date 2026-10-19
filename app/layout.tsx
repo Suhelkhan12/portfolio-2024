@@ -9,7 +9,6 @@ import "./globals.css";
 import HeaderBackground from "@/components/headerbackground/HeaderBackground";
 import MouseFollowerComponent from "@/components/mouseFollower/MouseFollower";
 import Animations from "@/components/animations/Animations";
-import CursorBubbles from "@/components/cursorBubbles/CursorBubbles";
 import PageTransition from "@/components/pageTransition/PageTransition";
 import { THEME_STORAGE_KEY } from "@/lib/theme";
 const inter = Inter({ subsets: ["latin"] });
